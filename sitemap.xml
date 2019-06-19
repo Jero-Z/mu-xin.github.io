@@ -197,16 +197,22 @@
   </url>
   
   <url>
-    <loc>http://mu-xin.github.io/post/this-is-a-very-long-title/</loc>
+    <loc>http://mu-xin.github.io/categories/theory/</loc>
     <lastmod>2017-08-30T15:43:48+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
+    <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://mu-xin.github.io/categories/test/</loc>
+    <loc>http://mu-xin.github.io/tags/theory/</loc>
     <lastmod>2017-08-30T15:43:48+08:00</lastmod>
     <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://mu-xin.github.io/post/%E5%A5%A5%E5%8D%A1%E5%A7%86%E5%89%83%E5%88%80%E7%90%86%E8%AE%BA/</loc>
+    <lastmod>2017-08-30T15:43:48+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
   </url>
   
   <url>

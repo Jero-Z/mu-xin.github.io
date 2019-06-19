@@ -59,15 +59,7 @@
       
         <description>&lt;h2 id=&#34;what-a-shortcode-is&#34;&gt;What a Shortcode is&lt;/h2&gt;
 
-&lt;p&gt;Hugo loves Markdown because of its simple content format, but there are times when Markdown falls short. Often, content authors are forced to add raw HTML (e.g., video &lt;code&gt;&amp;lt;iframes&amp;gt;&lt;/code&gt;) to Markdown content. We think this contradicts the beautiful simplicity of Markdown&amp;rsquo;s syntax.&lt;/p&gt;
-
-&lt;p&gt;Hugo created &lt;strong&gt;shortcodes&lt;/strong&gt; to circumvent these limitations.&lt;/p&gt;
-
-&lt;p&gt;A shortcode is a simple snippet inside a content file that Hugo will render using a predefined template. Note that shortcodes will not work in template files. If you need the type of drop-in functionality that shortcodes provide but in a template, you most likely want a [partial template][partials] instead.&lt;/p&gt;
-
-&lt;p&gt;In addition to cleaner Markdown, shortcodes can be updated any time to reflect new classes, techniques, or standards. At the point of site generation, Hugo shortcodes will easily merge in your changes. You avoid a possibly complicated search and replace operation.&lt;/p&gt;
-
-&lt;p&gt;More details: &lt;a href=&#34;https://gohugo.io/content-management/shortcodes/&#34;&gt;https://gohugo.io/content-management/shortcodes/&lt;/a&gt;&lt;/p&gt;</description>
+&lt;p&gt;&lt;img src=&#34;https://i.loli.net/2019/06/19/5d09f5e23673748732.jpg&#34; alt=&#34;begin&#34; /&gt;&lt;/p&gt;</description>
       
     </item>
     
@@ -129,10 +121,27 @@ info {{% notice info %}} A info disclaimer {{% /notice %}}  info  An information
       
       <guid>http://mu-xin.github.io/post/%E8%AE%A1%E7%AE%97%E6%9C%BA%E4%BA%8C%E8%BF%9B%E5%88%B6%E8%BD%AC%E6%8D%A2%E6%96%B9%E5%BC%8F/</guid>
       
-        <description>编程语言和硬盘最小单位为:bit 单位之间的大小形式为:
-编程语言中单位转换格式为:
- 1GiB = 1024MiB 1MiB = 1024KiB 1KiB = 1024B 1B = 8bit 1B 存储最大值为 256 个单位除去 0 以后就是-128 到 127  硬盘的存储单位大小为: - 1GB = 1000MB - 1MB = 1000KB - 1KB = 1000Bit
-最后有很多没有接触过计算机的朋友会说,为什么电脑中显示的硬盘大小才480G呀? &amp;gt; 这个并不是硬盘厂商投机取巧的结果,因为计算机的操作系统也是用的1=1024的转换方式来计算的硬盘大小</description>
+        <description>&lt;h4 id=&#34;单位之间的大小形式为&#34;&gt;单位之间的大小形式为:&lt;/h4&gt;
+
+&lt;p&gt;&lt;em&gt;编程语言和硬盘最小单位为&lt;/em&gt;:bit&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;编程语言中单位转换格式为&lt;/strong&gt;:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;1GiB = 1024MiB&lt;/li&gt;
+&lt;li&gt;1MiB = 1024KiB&lt;/li&gt;
+&lt;li&gt;1KiB = 1024B&lt;/li&gt;
+&lt;li&gt;1B = 8bit&lt;/li&gt;
+&lt;li&gt;1B 存储最大值为 256 个单位除去 0 以后就是-128 到 127&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;硬盘的存储单位大小为:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;1GB = 1000MB&lt;/li&gt;
+&lt;li&gt;1MB = 1000KB&lt;/li&gt;
+&lt;li&gt;1KB = 1000Bit&lt;/li&gt;
+&lt;/ul&gt;</description>
       
     </item>
     
@@ -150,13 +159,15 @@ info {{% notice info %}} A info disclaimer {{% /notice %}}  info  An information
     </item>
     
     <item>
-      <title>This is a very long title This is a very long title This is a very long title This is a very long title This is a very long title</title>
-      <link>http://mu-xin.github.io/post/this-is-a-very-long-title/</link>
+      <title>奥卡姆剃刀 (奥坎的剃刀)</title>
+      <link>http://mu-xin.github.io/post/%E5%A5%A5%E5%8D%A1%E5%A7%86%E5%89%83%E5%88%80%E7%90%86%E8%AE%BA/</link>
       <pubDate>Wed, 30 Aug 2017 15:43:48 +0800</pubDate>
       
-      <guid>http://mu-xin.github.io/post/this-is-a-very-long-title/</guid>
+      <guid>http://mu-xin.github.io/post/%E5%A5%A5%E5%8D%A1%E5%A7%86%E5%89%83%E5%88%80%E7%90%86%E8%AE%BA/</guid>
       
-        <description>This is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long title</description>
+        <description>&lt;h3 id=&#34;奥卡姆剃刀&#34;&gt;奥卡姆剃刀&lt;/h3&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://ptc9zj33f.bkt.clouddn.com/coffee-contemporary-data-6307.jpg&#34; alt=&#34;less is more&#34; /&gt;&lt;/p&gt;</description>
       
     </item>
     
