@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Learn on Record the life</title>
+    <link>http://mu-xin.github.io/categories/learn/</link>
+    <description>Recent content in Learn on Record the life</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Mon, 04 Jun 2018 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="http://mu-xin.github.io/categories/learn/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>职业生涯中的那些网站</title>
+      <link>http://mu-xin.github.io/post/%E8%81%8C%E4%B8%9A%E7%94%9F%E6%B6%AF%E4%B8%AD%E7%9A%84%E9%82%A3%E4%BA%9B%E7%BD%91%E7%AB%99/</link>
+      <pubDate>Mon, 04 Jun 2018 00:00:00 +0000</pubDate>
+      
+      <guid>http://mu-xin.github.io/post/%E8%81%8C%E4%B8%9A%E7%94%9F%E6%B6%AF%E4%B8%AD%E7%9A%84%E9%82%A3%E4%BA%9B%E7%BD%91%E7%AB%99/</guid>
+      <description>&lt;p&gt;&lt;img src=&#34;https://i.loli.net/2019/07/03/5d1c9b36b568f35897.jpg&#34; alt=&#34;web&#34; /&gt;&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

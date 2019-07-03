@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Language on Record the life</title>
+    <link>http://mu-xin.github.io/tags/language/</link>
+    <description>Recent content in Language on Record the life</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Tue, 10 Jul 2018 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="http://mu-xin.github.io/tags/language/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Golang不同平台的安装</title>
+      <link>http://mu-xin.github.io/post/golang%E7%9A%84%E5%AE%89%E8%A3%85/</link>
+      <pubDate>Tue, 10 Jul 2018 00:00:00 +0000</pubDate>
+      
+      <guid>http://mu-xin.github.io/post/golang%E7%9A%84%E5%AE%89%E8%A3%85/</guid>
+      <description>&lt;p&gt;&lt;img src=&#34;https://i.loli.net/2019/07/03/5d1ca42221abb81680.jpg&#34; alt=&#34;golang&#34; /&gt;&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

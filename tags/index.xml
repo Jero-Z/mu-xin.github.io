@@ -6,15 +6,33 @@
     <description>Recent content in Tags on Record the life</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Tue, 06 Mar 2018 16:01:23 +0800</lastBuildDate>
+    <lastBuildDate>Sun, 02 Jun 2019 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="http://mu-xin.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
+      <title>Other</title>
+      <link>http://mu-xin.github.io/tags/other/</link>
+      <pubDate>Sun, 02 Jun 2019 00:00:00 +0000</pubDate>
+      
+      <guid>http://mu-xin.github.io/tags/other/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>读者文摘</title>
+      <link>http://mu-xin.github.io/tags/%E8%AF%BB%E8%80%85%E6%96%87%E6%91%98/</link>
+      <pubDate>Sun, 02 Jun 2019 00:00:00 +0000</pubDate>
+      
+      <guid>http://mu-xin.github.io/tags/%E8%AF%BB%E8%80%85%E6%96%87%E6%91%98/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>preview</title>
       <link>http://mu-xin.github.io/tags/preview/</link>
-      <pubDate>Tue, 06 Mar 2018 16:01:23 +0800</pubDate>
+      <pubDate>Sat, 02 Mar 2019 00:00:00 +0000</pubDate>
       
       <guid>http://mu-xin.github.io/tags/preview/</guid>
       <description></description>
@@ -23,7 +41,7 @@
     <item>
       <title>shortcodes</title>
       <link>http://mu-xin.github.io/tags/shortcodes/</link>
-      <pubDate>Tue, 06 Mar 2018 16:01:23 +0800</pubDate>
+      <pubDate>Sat, 02 Mar 2019 00:00:00 +0000</pubDate>
       
       <guid>http://mu-xin.github.io/tags/shortcodes/</guid>
       <description></description>
@@ -32,162 +50,144 @@
     <item>
       <title>tag-6</title>
       <link>http://mu-xin.github.io/tags/tag-6/</link>
-      <pubDate>Tue, 06 Mar 2018 16:01:23 +0800</pubDate>
+      <pubDate>Sat, 02 Mar 2019 00:00:00 +0000</pubDate>
       
       <guid>http://mu-xin.github.io/tags/tag-6/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>image</title>
-      <link>http://mu-xin.github.io/tags/image/</link>
-      <pubDate>Sat, 03 Mar 2018 16:01:23 +0800</pubDate>
+      <title>EN</title>
+      <link>http://mu-xin.github.io/tags/en/</link>
+      <pubDate>Thu, 03 Jan 2019 00:00:00 +0000</pubDate>
       
-      <guid>http://mu-xin.github.io/tags/image/</guid>
+      <guid>http://mu-xin.github.io/tags/en/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>tag-7</title>
-      <link>http://mu-xin.github.io/tags/tag-7/</link>
-      <pubDate>Sat, 03 Mar 2018 16:01:23 +0800</pubDate>
+      <title>Computer</title>
+      <link>http://mu-xin.github.io/tags/computer/</link>
+      <pubDate>Wed, 12 Sep 2018 00:00:00 +0000</pubDate>
       
-      <guid>http://mu-xin.github.io/tags/tag-7/</guid>
+      <guid>http://mu-xin.github.io/tags/computer/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>footnote</title>
-      <link>http://mu-xin.github.io/tags/footnote/</link>
-      <pubDate>Thu, 01 Mar 2018 16:01:23 +0800</pubDate>
+      <title>Mac</title>
+      <link>http://mu-xin.github.io/tags/mac/</link>
+      <pubDate>Wed, 12 Sep 2018 00:00:00 +0000</pubDate>
       
-      <guid>http://mu-xin.github.io/tags/footnote/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>markdown</title>
-      <link>http://mu-xin.github.io/tags/markdown/</link>
-      <pubDate>Thu, 01 Mar 2018 16:01:23 +0800</pubDate>
-      
-      <guid>http://mu-xin.github.io/tags/markdown/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>tag-11</title>
-      <link>http://mu-xin.github.io/tags/tag-11/</link>
-      <pubDate>Thu, 01 Mar 2018 16:01:23 +0800</pubDate>
-      
-      <guid>http://mu-xin.github.io/tags/tag-11/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>binary</title>
-      <link>http://mu-xin.github.io/tags/binary/</link>
-      <pubDate>Thu, 28 Sep 2017 00:00:00 +0000</pubDate>
-      
-      <guid>http://mu-xin.github.io/tags/binary/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>development</title>
-      <link>http://mu-xin.github.io/tags/development/</link>
-      <pubDate>Thu, 28 Sep 2017 00:00:00 +0000</pubDate>
-      
-      <guid>http://mu-xin.github.io/tags/development/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>English</title>
-      <link>http://mu-xin.github.io/tags/english/</link>
-      <pubDate>Thu, 31 Aug 2017 15:43:48 +0800</pubDate>
-      
-      <guid>http://mu-xin.github.io/tags/english/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>tag-2</title>
-      <link>http://mu-xin.github.io/tags/tag-2/</link>
-      <pubDate>Thu, 31 Aug 2017 15:43:48 +0800</pubDate>
-      
-      <guid>http://mu-xin.github.io/tags/tag-2/</guid>
+      <guid>http://mu-xin.github.io/tags/mac/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Theory</title>
       <link>http://mu-xin.github.io/tags/theory/</link>
-      <pubDate>Wed, 30 Aug 2017 15:43:48 +0800</pubDate>
+      <pubDate>Thu, 30 Aug 2018 00:00:00 +0000</pubDate>
       
       <guid>http://mu-xin.github.io/tags/theory/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>go</title>
-      <link>http://mu-xin.github.io/tags/go/</link>
-      <pubDate>Sun, 28 Sep 2014 00:00:00 +0000</pubDate>
-      
-      <guid>http://mu-xin.github.io/tags/go/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>golang</title>
+      <title>Golang</title>
       <link>http://mu-xin.github.io/tags/golang/</link>
-      <pubDate>Sun, 28 Sep 2014 00:00:00 +0000</pubDate>
+      <pubDate>Tue, 10 Jul 2018 00:00:00 +0000</pubDate>
       
       <guid>http://mu-xin.github.io/tags/golang/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>templates</title>
-      <link>http://mu-xin.github.io/tags/templates/</link>
-      <pubDate>Sun, 28 Sep 2014 00:00:00 +0000</pubDate>
+      <title>Language</title>
+      <link>http://mu-xin.github.io/tags/language/</link>
+      <pubDate>Tue, 10 Jul 2018 00:00:00 +0000</pubDate>
       
-      <guid>http://mu-xin.github.io/tags/templates/</guid>
+      <guid>http://mu-xin.github.io/tags/language/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>themes</title>
-      <link>http://mu-xin.github.io/tags/themes/</link>
-      <pubDate>Sun, 28 Sep 2014 00:00:00 +0000</pubDate>
+      <title>Domain</title>
+      <link>http://mu-xin.github.io/tags/domain/</link>
+      <pubDate>Mon, 04 Jun 2018 00:00:00 +0000</pubDate>
       
-      <guid>http://mu-xin.github.io/tags/themes/</guid>
+      <guid>http://mu-xin.github.io/tags/domain/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>hugo</title>
-      <link>http://mu-xin.github.io/tags/hugo/</link>
-      <pubDate>Wed, 02 Apr 2014 00:00:00 +0000</pubDate>
+      <title>Environment</title>
+      <link>http://mu-xin.github.io/tags/environment/</link>
+      <pubDate>Thu, 01 Mar 2018 00:00:00 +0000</pubDate>
       
-      <guid>http://mu-xin.github.io/tags/hugo/</guid>
+      <guid>http://mu-xin.github.io/tags/environment/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>jekyll</title>
-      <link>http://mu-xin.github.io/tags/jekyll/</link>
-      <pubDate>Mon, 10 Mar 2014 00:00:00 +0000</pubDate>
+      <title>Redis</title>
+      <link>http://mu-xin.github.io/tags/redis/</link>
+      <pubDate>Thu, 01 Mar 2018 00:00:00 +0000</pubDate>
       
-      <guid>http://mu-xin.github.io/tags/jekyll/</guid>
+      <guid>http://mu-xin.github.io/tags/redis/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>Syntax Highlighting</title>
-      <link>http://mu-xin.github.io/tags/syntax-highlighting/</link>
-      <pubDate>Tue, 30 Aug 2011 16:01:23 +0800</pubDate>
+      <title>Development</title>
+      <link>http://mu-xin.github.io/tags/development/</link>
+      <pubDate>Wed, 21 Feb 2018 00:00:00 +0000</pubDate>
       
-      <guid>http://mu-xin.github.io/tags/syntax-highlighting/</guid>
+      <guid>http://mu-xin.github.io/tags/development/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Test</title>
+      <link>http://mu-xin.github.io/tags/test/</link>
+      <pubDate>Wed, 21 Feb 2018 00:00:00 +0000</pubDate>
+      
+      <guid>http://mu-xin.github.io/tags/test/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Binary</title>
+      <link>http://mu-xin.github.io/tags/binary/</link>
+      <pubDate>Tue, 28 Nov 2017 00:00:00 +0000</pubDate>
+      
+      <guid>http://mu-xin.github.io/tags/binary/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Http</title>
+      <link>http://mu-xin.github.io/tags/http/</link>
+      <pubDate>Thu, 28 Sep 2017 00:00:00 +0000</pubDate>
+      
+      <guid>http://mu-xin.github.io/tags/http/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>NetWork</title>
+      <link>http://mu-xin.github.io/tags/network/</link>
+      <pubDate>Thu, 28 Sep 2017 00:00:00 +0000</pubDate>
+      
+      <guid>http://mu-xin.github.io/tags/network/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>WebServer</title>
+      <link>http://mu-xin.github.io/tags/webserver/</link>
+      <pubDate>Sun, 28 May 2017 00:00:00 +0000</pubDate>
+      
+      <guid>http://mu-xin.github.io/tags/webserver/</guid>
       <description></description>
     </item>
     

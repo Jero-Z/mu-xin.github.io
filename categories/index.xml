@@ -6,15 +6,42 @@
     <description>Recent content in Categories on Record the life</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Tue, 06 Mar 2018 16:01:23 +0800</lastBuildDate>
+    <lastBuildDate>Sun, 02 Jun 2019 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="http://mu-xin.github.io/categories/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
+      <title>好文</title>
+      <link>http://mu-xin.github.io/categories/%E5%A5%BD%E6%96%87/</link>
+      <pubDate>Sun, 02 Jun 2019 00:00:00 +0000</pubDate>
+      
+      <guid>http://mu-xin.github.io/categories/%E5%A5%BD%E6%96%87/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>读者文摘</title>
+      <link>http://mu-xin.github.io/categories/%E8%AF%BB%E8%80%85%E6%96%87%E6%91%98/</link>
+      <pubDate>Sun, 02 Jun 2019 00:00:00 +0000</pubDate>
+      
+      <guid>http://mu-xin.github.io/categories/%E8%AF%BB%E8%80%85%E6%96%87%E6%91%98/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>docs</title>
+      <link>http://mu-xin.github.io/categories/docs/</link>
+      <pubDate>Sat, 02 Mar 2019 00:00:00 +0000</pubDate>
+      
+      <guid>http://mu-xin.github.io/categories/docs/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>index</title>
       <link>http://mu-xin.github.io/categories/index/</link>
-      <pubDate>Tue, 06 Mar 2018 16:01:23 +0800</pubDate>
+      <pubDate>Sat, 02 Mar 2019 00:00:00 +0000</pubDate>
       
       <guid>http://mu-xin.github.io/categories/index/</guid>
       <description></description>
@@ -23,72 +50,117 @@
     <item>
       <title>shortcodes</title>
       <link>http://mu-xin.github.io/categories/shortcodes/</link>
-      <pubDate>Tue, 06 Mar 2018 16:01:23 +0800</pubDate>
+      <pubDate>Sat, 02 Mar 2019 00:00:00 +0000</pubDate>
       
       <guid>http://mu-xin.github.io/categories/shortcodes/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>docs</title>
-      <link>http://mu-xin.github.io/categories/docs/</link>
-      <pubDate>Sun, 04 Mar 2018 16:01:23 +0800</pubDate>
+      <title>EN</title>
+      <link>http://mu-xin.github.io/categories/en/</link>
+      <pubDate>Thu, 03 Jan 2019 00:00:00 +0000</pubDate>
       
-      <guid>http://mu-xin.github.io/categories/docs/</guid>
+      <guid>http://mu-xin.github.io/categories/en/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Other</title>
+      <link>http://mu-xin.github.io/categories/other/</link>
+      <pubDate>Fri, 12 Oct 2018 00:00:00 +0000</pubDate>
+      
+      <guid>http://mu-xin.github.io/categories/other/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Base</title>
       <link>http://mu-xin.github.io/categories/base/</link>
-      <pubDate>Thu, 28 Sep 2017 00:00:00 +0000</pubDate>
+      <pubDate>Wed, 12 Sep 2018 00:00:00 +0000</pubDate>
       
       <guid>http://mu-xin.github.io/categories/base/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>Development</title>
-      <link>http://mu-xin.github.io/categories/development/</link>
-      <pubDate>Thu, 28 Sep 2017 00:00:00 +0000</pubDate>
-      
-      <guid>http://mu-xin.github.io/categories/development/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>English</title>
-      <link>http://mu-xin.github.io/categories/english/</link>
-      <pubDate>Thu, 31 Aug 2017 15:43:48 +0800</pubDate>
-      
-      <guid>http://mu-xin.github.io/categories/english/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>Theory</title>
       <link>http://mu-xin.github.io/categories/theory/</link>
-      <pubDate>Wed, 30 Aug 2017 15:43:48 +0800</pubDate>
+      <pubDate>Thu, 30 Aug 2018 00:00:00 +0000</pubDate>
       
       <guid>http://mu-xin.github.io/categories/theory/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>golang</title>
+      <title>Development</title>
+      <link>http://mu-xin.github.io/categories/development/</link>
+      <pubDate>Tue, 10 Jul 2018 00:00:00 +0000</pubDate>
+      
+      <guid>http://mu-xin.github.io/categories/development/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Golang</title>
       <link>http://mu-xin.github.io/categories/golang/</link>
-      <pubDate>Sun, 28 Sep 2014 00:00:00 +0000</pubDate>
+      <pubDate>Tue, 10 Jul 2018 00:00:00 +0000</pubDate>
       
       <guid>http://mu-xin.github.io/categories/golang/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>Syntax Highlighting</title>
-      <link>http://mu-xin.github.io/categories/syntax-highlighting/</link>
-      <pubDate>Tue, 30 Aug 2011 16:01:23 +0800</pubDate>
+      <title>Learn</title>
+      <link>http://mu-xin.github.io/categories/learn/</link>
+      <pubDate>Mon, 04 Jun 2018 00:00:00 +0000</pubDate>
       
-      <guid>http://mu-xin.github.io/categories/syntax-highlighting/</guid>
+      <guid>http://mu-xin.github.io/categories/learn/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Web</title>
+      <link>http://mu-xin.github.io/categories/web/</link>
+      <pubDate>Mon, 04 Jun 2018 00:00:00 +0000</pubDate>
+      
+      <guid>http://mu-xin.github.io/categories/web/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Develop</title>
+      <link>http://mu-xin.github.io/categories/develop/</link>
+      <pubDate>Thu, 01 Mar 2018 00:00:00 +0000</pubDate>
+      
+      <guid>http://mu-xin.github.io/categories/develop/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Redis</title>
+      <link>http://mu-xin.github.io/categories/redis/</link>
+      <pubDate>Thu, 01 Mar 2018 00:00:00 +0000</pubDate>
+      
+      <guid>http://mu-xin.github.io/categories/redis/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Apache</title>
+      <link>http://mu-xin.github.io/categories/apache/</link>
+      <pubDate>Wed, 21 Feb 2018 00:00:00 +0000</pubDate>
+      
+      <guid>http://mu-xin.github.io/categories/apache/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Nginx</title>
+      <link>http://mu-xin.github.io/categories/nginx/</link>
+      <pubDate>Sun, 28 May 2017 00:00:00 +0000</pubDate>
+      
+      <guid>http://mu-xin.github.io/categories/nginx/</guid>
       <description></description>
     </item>
     
