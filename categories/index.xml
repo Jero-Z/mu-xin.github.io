@@ -6,10 +6,19 @@
     <description>Recent content in Categories on Record the life</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Thu, 04 Jul 2019 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 04 Jul 2019 19:44:24 +0800</lastBuildDate>
     
 	<atom:link href="http://mu-xin.github.io/categories/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Theory</title>
+      <link>http://mu-xin.github.io/categories/theory/</link>
+      <pubDate>Thu, 04 Jul 2019 19:44:24 +0800</pubDate>
+      
+      <guid>http://mu-xin.github.io/categories/theory/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>Develop</title>
@@ -71,15 +80,6 @@
       <pubDate>Wed, 12 Sep 2018 00:00:00 +0000</pubDate>
       
       <guid>http://mu-xin.github.io/categories/base/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Theory</title>
-      <link>http://mu-xin.github.io/categories/theory/</link>
-      <pubDate>Thu, 30 Aug 2018 00:00:00 +0000</pubDate>
-      
-      <guid>http://mu-xin.github.io/categories/theory/</guid>
       <description></description>
     </item>
     
