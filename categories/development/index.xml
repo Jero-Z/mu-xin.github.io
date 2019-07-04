@@ -6,10 +6,19 @@
     <description>Recent content in Development on Record the life</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Tue, 10 Jul 2018 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 14 Nov 2018 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="http://mu-xin.github.io/categories/development/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Josephus problem</title>
+      <link>http://mu-xin.github.io/post/josephus_problem/</link>
+      <pubDate>Wed, 14 Nov 2018 00:00:00 +0000</pubDate>
+      
+      <guid>http://mu-xin.github.io/post/josephus_problem/</guid>
+      <description>&lt;p&gt;![]()&lt;/p&gt;</description>
+    </item>
     
     <item>
       <title>Golang不同平台的安装</title>
