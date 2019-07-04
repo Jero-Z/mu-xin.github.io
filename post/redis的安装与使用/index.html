@@ -22,7 +22,7 @@
 
 <meta name="mobile-web-app-capable" content="yes">
 
-<meta name="author" content="xianmin" />
+<meta name="author" content="muxin" />
   <meta name="description" content="" />
 
 
@@ -69,7 +69,7 @@
 
 <meta itemprop="datePublished" content="2018-03-01T00:00:00&#43;00:00" />
 <meta itemprop="dateModified" content="2018-03-01T00:00:00&#43;00:00" />
-<meta itemprop="wordCount" content="248">
+<meta itemprop="wordCount" content="223">
 
 
 
@@ -260,85 +260,177 @@
 
 <h2 id="redis的基本介绍">Redis的基本介绍</h2>
 
-<pre><code class="language-markdown">You can create footnotes like this[^footnote].
+<blockquote>
+<p>Redis是一个开源（BSD许可），内存存储的数据结构服务器，可用作数据库，高速缓存和消息队列代理。它支持字符串、哈希表、列表、集合、有序集合，位图，hyperloglogs等数据类型。内置复制、Lua脚本、LRU收回、事务以及不同级别磁盘持久化功能，同时通过Redis Sentinel提供高可用，通过Redis Cluster提供自动分区。 ——redis 中文网</p>
 
-[^footnote]: Here is the *text* of the **footnote**.
-</code></pre>
-
-<p>will produce:</p>
-
-<p>You can create footnotes like this<sup class="footnote-ref" id="fnref:footnote1"><a href="#fn:footnote1">1</a></sup>.</p>
-
-<p>Mouse on the ‘footnote’ superscript to see content of the footnote.</p>
+<p>数据存储在内存中的高性能NoSql数据库 —— 个人理解</p>
+</blockquote>
 
 <h2 id="安装">安装</h2>
 
-<pre><code class="language-markdown">You can create footnotes like this[^footnote2].
+<pre><code>wget http://download.redis.io/releases/redis-3.2.6.tar.gz
 
-[^footnote2]: Here is the *text* of the **footnote**.
+tar zxf redis-3.2.6.tar.gz
+
+cd redis-3.2.6
+
+make &amp;&amp; make install
+
+mkdir /usr/loacl/redis
+
+cp ./redis-server /usr/local/redis/ # redis 服务端
+
+cp ./redis-cli /usr/local/redis/ # redis 客户端
+
+cp ../redis.conf /usr/local/redis/ # redis配置文件
+
+vim /usr/local/redis/redis.conf
+
+daemonize yes #修改配置文件为yes 表示redis作为守护进程运行
 </code></pre>
-
-<p>will produce:</p>
-
-<p>You can create footnotes like this<sup class="footnote-ref" id="fnref:footnote"><a href="#fn:footnote">2</a></sup>.</p>
-
-<p>Mouse on the ‘footnote’ superscript to see content of the footnote.</p>
 
 <h2 id="基本使用">基本使用</h2>
 
-<pre><code class="language-markdown">You can create footnotes like this[^footnote].
+<p><strong>把redis添加到开机启动</strong></p>
 
-[^footnote]: Here is the *text* of the **footnote**.
+<p><code>vim /etc/systemd/system/redis-server.service</code></p>
+
+<p><strong>粘贴下列内容</strong></p>
+
+<pre><code>[Unit]
+Description=The redis-server Process Manager # 描述
+After=syslog.target network.target #执行顺序(权重)
+
+[Service]
+Type=simple #服务类型
+PIDFile=/var/run/redis_6379.pid # pid文件位置
+ExecStart=/usr/local/redis/redis-server /usr/local/redis/redis.conf        #启动redsi-server  
+ExecReload=/bin/kill -USR2 $MAINPID
+ExecStop=/bin/kill -SIGINT $MAINPID
+
+[Install]
+WantedBy=multi-user.target
+
 </code></pre>
 
-<p>will produce:</p>
+<p><strong>设置到开机启动</strong></p>
 
-<p>You can create footnotes like this<sup class="footnote-ref" id="fnref:footnote3"><a href="#fn:footnote3">3</a></sup>.</p>
+<pre><code>systemctl daemon-reload 
+systemctl start redis-server.service 
+systemctl enable redis-server.service
+</code></pre>
 
-<p>Mouse on the ‘footnote’ superscript to see content of the footnote.</p>
+<p><strong>创建redis客户端软链到系统</strong></p>
+
+<p><code>ln -s  /usr/local/redis/redis-cli /usr/bin/redis</code></p>
+
+<p><strong>连接redis服务器直接执行redis即可</strong></p>
 
 <h2 id="数据类型">数据类型</h2>
 
-<pre><code class="language-markdown">You can create footnotes like this[^footnote].
+<ol>
+<li><p>String (字符串)</p>
 
-[^footnote]: Here is the *text* of the **footnote**.
+<ul>
+<li>key value 模式</li>
+<li>任意类型的数据存储时都将按照字符串类型存储</li>
+<li>最大存储512MB</li>
+
+<li><p>简单类型字符串(SDS)-simple dynamic string的抽象类型</p>
+
+<pre><code>struct sdshdr {
+    int len;#记录长度
+
+    int free; #未使用的字节数量
+
+    char buf[];字节数组,保存字符串
+}
 </code></pre>
 
-<p>will produce:</p>
+<ul>
+<li>优点:</li>
+<li>获取指定key的长度复杂度O(1)</li>
+<li>杜绝缓冲区溢出</li>
+<li>减少修改时内存申请次数</li>
+<li>惰性空间释放</li>
+<li>二进制安全(包含任意数据)</li>
+<li>兼容部分C字符串函数</li>
+</ul></li>
+</ul></li>
 
-<p>You can create footnotes like this<sup class="footnote-ref" id="fnref:footnote4"><a href="#fn:footnote4">4</a></sup>.</p>
+<li><p>Hash (哈希表)</p>
 
-<p>Mouse on the ‘footnote’ superscript to see content of the footnote.</p>
+<ul>
+<li>键值对集合</li>
+<li>适合存储对象</li>
+<li>使用ziplist 或者hashlist实现</li>
+<li>每个hash最大存储40多亿元素</li>
+</ul></li>
+
+<li><p>Set (集合)</p>
+
+<ul>
+<li>string类型的无序集合</li>
+<li>集合中的值是唯一性</li>
+<li>inset或者hashtable实现</li>
+<li>添加、查找、删除的复杂度都为O(1)</li>
+<li>写入不会失败,如果存在则会跳过</li>
+</ul></li>
+
+<li><p>List (列表)</p>
+
+<ul>
+<li>是一个简单的字符串列表</li>
+<li>最大存储40多亿元素</li>
+<li>使用ziplist 或者 linklist实现</li>
+</ul></li>
+
+<li><p>ZSet (有序集合)</p>
+
+<ul>
+<li>set基础上添加一个计分器,从而可以进行排序</li>
+<li>值可以唯一但是计分器(score)可重复</li>
+<li>源码实现方式为skipList或者zipList</li>
+<li>计分器(score)相同的情况下系统默认使用字典进行排序</li>
+</ul></li>
+</ol>
 
 <h2 id="一些命令">一些命令</h2>
 
-<pre><code class="language-markdown">You can create footnotes like this[^footnote].
+<pre><code>type key #查看key所存储的值的类型 hash
 
-[^footnote]: Here is the *text* of the **footnote**.
+object encoding  key #查看当前存储的内容使用的数据类型 ziplist
+
+rename  key  #修改key的名字
+
+move key # 移动key到指定数据库
+
+del key # 删除给定key
+
+ttl key # 查看key的指定时间
+
+keys pattern # 查找符合给定模式的key(不可使用keys *)
+
+getrange key # 字符串截取
+
+incrby key #key存在则增加指定增量,不存在则设置为0
+
+append key #追加字符串到指定key的值后面
+
+hmset key #同时设置多个filed-value 设置到hash key中
+
+hvals key #返回hash表中所有的值
+
+hincrby key filed # 为指定key下的指定字段增加指定增量
+
+lrange key # 返回指定表区间的元素
+
+blpop keys # 移出并获取列表的第一个元素， 如果列表没有元素会阻塞列表直到等待超时或发现可弹出元素为止。
+
+ltrim key #对一个列表进行修剪(trim)，就是说，让列表只保留指定区间内的元素，不在指定区间之内的元素都将被删除。
+
+linsert key before #在列表的元素前或者后插入元素。 当指定元素不存在于列表中时，不执行任何操作。 当列表不存在时，被视为空列表，不执行任何操作。 如果 key 不是列表类型，返回一个错误。
 </code></pre>
-
-<p>will produce dddddddddddddddddddddddddddddddddddddddddddddd:</p>
-
-<p>You can create footnotes like this<sup class="footnote-ref" id="fnref:footnote5"><a href="#fn:footnote5">5</a></sup>.</p>
-
-<p>Mouse on the ‘footnote’ superscript to see content of the footnote.</p>
-<div class="footnotes">
-
-<hr />
-
-<ol>
-<li id="fn:footnote1">Here is the <em>text</em> of the <strong>footnote-1</strong>.
- <a class="footnote-return" href="#fnref:footnote1"><sup>[return]</sup></a></li>
-<li id="fn:footnote">Here is the <em>text</em> of the <strong>footnote-2</strong>. Here is the text of the footnote-2. Here is the text of the footnote-2. Here is the text of the footnote-2. Here is the text of the footnote-2.  <a href="https://gohugo.io/">The world’s fastest framework for building websites | Hugo</a>
- <a class="footnote-return" href="#fnref:footnote"><sup>[return]</sup></a></li>
-<li id="fn:footnote3">Here is the <em>text</em> of the <strong>footnote-3</strong>.
- <a class="footnote-return" href="#fnref:footnote3"><sup>[return]</sup></a></li>
-<li id="fn:footnote4">Here is the <em>text</em> of the <strong>footnote-4</strong>.
- <a class="footnote-return" href="#fnref:footnote4"><sup>[return]</sup></a></li>
-<li id="fn:footnote5">Here is the <em>text</em> of the <strong>footnote-5</strong>.
- <a class="footnote-return" href="#fnref:footnote5"><sup>[return]</sup></a></li>
-</ol>
-</div>
     </div>
 
     
