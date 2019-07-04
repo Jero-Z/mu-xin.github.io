@@ -6,10 +6,28 @@
     <description>Recent content in Tags on Record the life</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Sun, 02 Jun 2019 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 04 Jul 2019 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="http://mu-xin.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Message Queue</title>
+      <link>http://mu-xin.github.io/tags/message-queue/</link>
+      <pubDate>Thu, 04 Jul 2019 00:00:00 +0000</pubDate>
+      
+      <guid>http://mu-xin.github.io/tags/message-queue/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Redis</title>
+      <link>http://mu-xin.github.io/tags/redis/</link>
+      <pubDate>Thu, 04 Jul 2019 00:00:00 +0000</pubDate>
+      
+      <guid>http://mu-xin.github.io/tags/redis/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>Other</title>
@@ -26,33 +44,6 @@
       <pubDate>Sun, 02 Jun 2019 00:00:00 +0000</pubDate>
       
       <guid>http://mu-xin.github.io/tags/%E8%AF%BB%E8%80%85%E6%96%87%E6%91%98/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>preview</title>
-      <link>http://mu-xin.github.io/tags/preview/</link>
-      <pubDate>Sat, 02 Mar 2019 00:00:00 +0000</pubDate>
-      
-      <guid>http://mu-xin.github.io/tags/preview/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>shortcodes</title>
-      <link>http://mu-xin.github.io/tags/shortcodes/</link>
-      <pubDate>Sat, 02 Mar 2019 00:00:00 +0000</pubDate>
-      
-      <guid>http://mu-xin.github.io/tags/shortcodes/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>tag-6</title>
-      <link>http://mu-xin.github.io/tags/tag-6/</link>
-      <pubDate>Sat, 02 Mar 2019 00:00:00 +0000</pubDate>
-      
-      <guid>http://mu-xin.github.io/tags/tag-6/</guid>
       <description></description>
     </item>
     
@@ -129,15 +120,6 @@
     </item>
     
     <item>
-      <title>Redis</title>
-      <link>http://mu-xin.github.io/tags/redis/</link>
-      <pubDate>Thu, 01 Mar 2018 00:00:00 +0000</pubDate>
-      
-      <guid>http://mu-xin.github.io/tags/redis/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>Development</title>
       <link>http://mu-xin.github.io/tags/development/</link>
       <pubDate>Wed, 21 Feb 2018 00:00:00 +0000</pubDate>
@@ -161,24 +143,6 @@
       <pubDate>Tue, 28 Nov 2017 00:00:00 +0000</pubDate>
       
       <guid>http://mu-xin.github.io/tags/binary/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Http</title>
-      <link>http://mu-xin.github.io/tags/http/</link>
-      <pubDate>Thu, 28 Sep 2017 00:00:00 +0000</pubDate>
-      
-      <guid>http://mu-xin.github.io/tags/http/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>NetWork</title>
-      <link>http://mu-xin.github.io/tags/network/</link>
-      <pubDate>Thu, 28 Sep 2017 00:00:00 +0000</pubDate>
-      
-      <guid>http://mu-xin.github.io/tags/network/</guid>
       <description></description>
     </item>
     

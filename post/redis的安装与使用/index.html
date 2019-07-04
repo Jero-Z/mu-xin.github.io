@@ -69,7 +69,7 @@
 
 <meta itemprop="datePublished" content="2018-03-01T00:00:00&#43;00:00" />
 <meta itemprop="dateModified" content="2018-03-01T00:00:00&#43;00:00" />
-<meta itemprop="wordCount" content="223">
+<meta itemprop="wordCount" content="228">
 
 
 
@@ -430,6 +430,8 @@ blpop keys # 移出并获取列表的第一个元素， 如果列表没有元素
 ltrim key #对一个列表进行修剪(trim)，就是说，让列表只保留指定区间内的元素，不在指定区间之内的元素都将被删除。
 
 linsert key before #在列表的元素前或者后插入元素。 当指定元素不存在于列表中时，不执行任何操作。 当列表不存在时，被视为空列表，不执行任何操作。 如果 key 不是列表类型，返回一个错误。
+
+brpop key # 移出并获取列表的最后一个元素， 如果列表没有元素会阻塞列表直到等待超时或发现可弹出元素为止。
 </code></pre>
     </div>
 

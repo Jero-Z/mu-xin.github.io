@@ -6,10 +6,19 @@
     <description>Recent content in Posts on Record the life</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Sun, 02 Jun 2019 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 04 Jul 2019 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="http://mu-xin.github.io/post/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>消息队列、Redis的订阅发布和List</title>
+      <link>http://mu-xin.github.io/post/%E6%B6%88%E6%81%AF%E9%98%9F%E5%88%97redis%E7%9A%84%E8%AE%A2%E9%98%85%E5%8F%91%E5%B8%83%E5%92%8Clist/</link>
+      <pubDate>Thu, 04 Jul 2019 00:00:00 +0000</pubDate>
+      
+      <guid>http://mu-xin.github.io/post/%E6%B6%88%E6%81%AF%E9%98%9F%E5%88%97redis%E7%9A%84%E8%AE%A2%E9%98%85%E5%8F%91%E5%B8%83%E5%92%8Clist/</guid>
+      <description>&lt;p&gt;&lt;img src=&#34;https://i.loli.net/2019/07/04/5d1dc1133fc1559064.jpg&#34; alt=&#34;queue&#34; /&gt;&lt;/p&gt;</description>
+    </item>
     
     <item>
       <title>备战备荒为自己</title>
@@ -18,15 +27,6 @@
       
       <guid>http://mu-xin.github.io/post/%E7%89%B2%E4%BA%A7%E9%98%9F-%E5%A4%87%E6%88%98%E5%A4%87%E8%8D%92%E4%B8%BA%E8%87%AA%E5%B7%B1/</guid>
       <description>&lt;p&gt;&lt;img src=&#34;https://i.loli.net/2019/07/03/5d1ca0607e7ec32698.jpg&#34; alt=&#34;思考&#34; /&gt;&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>未经审视的人生不值得一过</title>
-      <link>http://mu-xin.github.io/post/%E6%9C%AA%E7%BB%8F%E5%AE%A1%E8%A7%86%E7%9A%84%E4%BA%BA%E7%94%9F%E4%B8%8D%E5%80%BC%E5%BE%97%E4%B8%80%E8%BF%87/</link>
-      <pubDate>Sat, 02 Mar 2019 00:00:00 +0000</pubDate>
-      
-      <guid>http://mu-xin.github.io/post/%E6%9C%AA%E7%BB%8F%E5%AE%A1%E8%A7%86%E7%9A%84%E4%BA%BA%E7%94%9F%E4%B8%8D%E5%80%BC%E5%BE%97%E4%B8%80%E8%BF%87/</guid>
-      <description></description>
     </item>
     
     <item>
@@ -108,15 +108,6 @@
       
       <guid>http://mu-xin.github.io/post/%E8%AE%A1%E7%AE%97%E6%9C%BA%E4%BA%8C%E8%BF%9B%E5%88%B6%E8%BD%AC%E6%8D%A2%E6%96%B9%E5%BC%8F/</guid>
       <description>&lt;p&gt;&lt;img src=&#34;https://i.loli.net/2019/07/03/5d1c5affd0b4756843.jpg&#34; alt=&#34;binary&#34; /&gt;&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>常见的网络通信原理</title>
-      <link>http://mu-xin.github.io/post/%E5%B8%B8%E8%A7%81%E7%9A%84%E7%BD%91%E7%BB%9C%E9%80%9A%E4%BF%A1/</link>
-      <pubDate>Thu, 28 Sep 2017 00:00:00 +0000</pubDate>
-      
-      <guid>http://mu-xin.github.io/post/%E5%B8%B8%E8%A7%81%E7%9A%84%E7%BD%91%E7%BB%9C%E9%80%9A%E4%BF%A1/</guid>
-      <description>&lt;p&gt;&lt;img src=&#34;https://i.loli.net/2019/07/03/5d1c5c3d69f3239732.jpg&#34; alt=&#34;network&#34; /&gt;&lt;/p&gt;</description>
     </item>
     
     <item>

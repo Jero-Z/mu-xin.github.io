@@ -6,10 +6,28 @@
     <description>Recent content in Categories on Record the life</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Sun, 02 Jun 2019 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 04 Jul 2019 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="http://mu-xin.github.io/categories/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Develop</title>
+      <link>http://mu-xin.github.io/categories/develop/</link>
+      <pubDate>Thu, 04 Jul 2019 00:00:00 +0000</pubDate>
+      
+      <guid>http://mu-xin.github.io/categories/develop/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Redis</title>
+      <link>http://mu-xin.github.io/categories/redis/</link>
+      <pubDate>Thu, 04 Jul 2019 00:00:00 +0000</pubDate>
+      
+      <guid>http://mu-xin.github.io/categories/redis/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>好文</title>
@@ -26,33 +44,6 @@
       <pubDate>Sun, 02 Jun 2019 00:00:00 +0000</pubDate>
       
       <guid>http://mu-xin.github.io/categories/%E8%AF%BB%E8%80%85%E6%96%87%E6%91%98/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>docs</title>
-      <link>http://mu-xin.github.io/categories/docs/</link>
-      <pubDate>Sat, 02 Mar 2019 00:00:00 +0000</pubDate>
-      
-      <guid>http://mu-xin.github.io/categories/docs/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>index</title>
-      <link>http://mu-xin.github.io/categories/index/</link>
-      <pubDate>Sat, 02 Mar 2019 00:00:00 +0000</pubDate>
-      
-      <guid>http://mu-xin.github.io/categories/index/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>shortcodes</title>
-      <link>http://mu-xin.github.io/categories/shortcodes/</link>
-      <pubDate>Sat, 02 Mar 2019 00:00:00 +0000</pubDate>
-      
-      <guid>http://mu-xin.github.io/categories/shortcodes/</guid>
       <description></description>
     </item>
     
@@ -125,24 +116,6 @@
       <pubDate>Mon, 04 Jun 2018 00:00:00 +0000</pubDate>
       
       <guid>http://mu-xin.github.io/categories/web/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Develop</title>
-      <link>http://mu-xin.github.io/categories/develop/</link>
-      <pubDate>Thu, 01 Mar 2018 00:00:00 +0000</pubDate>
-      
-      <guid>http://mu-xin.github.io/categories/develop/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Redis</title>
-      <link>http://mu-xin.github.io/categories/redis/</link>
-      <pubDate>Thu, 01 Mar 2018 00:00:00 +0000</pubDate>
-      
-      <guid>http://mu-xin.github.io/categories/redis/</guid>
       <description></description>
     </item>
     
