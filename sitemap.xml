@@ -335,4 +335,29 @@
     <priority>0</priority>
   </url>
   
+  <url>
+    <loc>http://mu-xin.github.io/tags/tmux/</loc>
+    <lastmod>2017-03-19T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://mu-xin.github.io/tags/tools/</loc>
+    <lastmod>2017-03-19T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://mu-xin.github.io/categories/tools/</loc>
+    <lastmod>2017-03-19T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://mu-xin.github.io/post/%E8%81%8A%E4%B8%80%E8%81%8Atmux/</loc>
+    <lastmod>2017-03-19T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
 </urlset>
