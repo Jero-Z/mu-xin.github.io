@@ -33,13 +33,13 @@
   </url>
   
   <url>
-    <loc>http://mu-xin.github.io/tags/theory/</loc>
+    <loc>http://mu-xin.github.io/categories/theory/</loc>
     <lastmod>2019-07-04T19:44:24+08:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://mu-xin.github.io/categories/theory/</loc>
+    <loc>http://mu-xin.github.io/tags/theory/</loc>
     <lastmod>2019-07-04T19:44:24+08:00</lastmod>
     <priority>0</priority>
   </url>
@@ -64,13 +64,13 @@
   </url>
   
   <url>
-    <loc>http://mu-xin.github.io/tags/redis/</loc>
+    <loc>http://mu-xin.github.io/categories/redis/</loc>
     <lastmod>2019-07-04T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://mu-xin.github.io/categories/redis/</loc>
+    <loc>http://mu-xin.github.io/tags/redis/</loc>
     <lastmod>2019-07-04T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
@@ -102,25 +102,25 @@
   </url>
   
   <url>
-    <loc>http://mu-xin.github.io/tags/%E8%AF%BB%E8%80%85%E6%96%87%E6%91%98/</loc>
-    <lastmod>2019-06-02T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
     <loc>http://mu-xin.github.io/categories/%E8%AF%BB%E8%80%85%E6%96%87%E6%91%98/</loc>
     <lastmod>2019-06-02T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://mu-xin.github.io/tags/en/</loc>
-    <lastmod>2019-01-03T00:00:00+00:00</lastmod>
+    <loc>http://mu-xin.github.io/tags/%E8%AF%BB%E8%80%85%E6%96%87%E6%91%98/</loc>
+    <lastmod>2019-06-02T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>http://mu-xin.github.io/categories/en/</loc>
+    <lastmod>2019-01-03T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://mu-xin.github.io/tags/en/</loc>
     <lastmod>2019-01-03T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
@@ -146,13 +146,13 @@
   </url>
   
   <url>
-    <loc>http://mu-xin.github.io/tags/mathematics/</loc>
+    <loc>http://mu-xin.github.io/categories/mathematics/</loc>
     <lastmod>2018-11-14T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://mu-xin.github.io/categories/mathematics/</loc>
+    <loc>http://mu-xin.github.io/tags/mathematics/</loc>
     <lastmod>2018-11-14T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
@@ -209,13 +209,13 @@
   </url>
   
   <url>
-    <loc>http://mu-xin.github.io/tags/golang/</loc>
+    <loc>http://mu-xin.github.io/categories/golang/</loc>
     <lastmod>2018-07-10T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://mu-xin.github.io/categories/golang/</loc>
+    <loc>http://mu-xin.github.io/tags/golang/</loc>
     <lastmod>2018-07-10T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
@@ -261,6 +261,13 @@
   <url>
     <loc>http://mu-xin.github.io/post/%E8%81%8C%E4%B8%9A%E7%94%9F%E6%B6%AF%E4%B8%AD%E7%9A%84%E9%82%A3%E4%BA%9B%E7%BD%91%E7%AB%99/</loc>
     <lastmod>2018-06-04T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://mu-xin.github.io/post/mysql8.0%E7%9A%84%E9%82%A3%E4%BA%9B%E6%96%B0%E7%89%B9%E6%80%A7/</loc>
+    <lastmod>2018-05-04T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
@@ -342,13 +349,13 @@
   </url>
   
   <url>
-    <loc>http://mu-xin.github.io/tags/tools/</loc>
+    <loc>http://mu-xin.github.io/categories/tools/</loc>
     <lastmod>2017-03-19T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://mu-xin.github.io/categories/tools/</loc>
+    <loc>http://mu-xin.github.io/tags/tools/</loc>
     <lastmod>2017-03-19T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
