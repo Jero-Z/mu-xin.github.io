@@ -6,7 +6,7 @@
     <description>Recent content on Record the life</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Thu, 04 Jul 2019 21:25:39 +0800</lastBuildDate>
+    <lastBuildDate>Thu, 04 Jul 2019 21:39:41 +0800</lastBuildDate>
     
         <atom:link href="http://mu-xin.github.io/index.xml" rel="self" type="application/rss+xml" />
     
@@ -23,6 +23,17 @@
 有问题左下角,欢迎来信,一定第一时间回复!
 帝都生活不易,不抽烟,寻觅酒友ing(个人酒品良好,不限酒类)
  </description>
+      
+    </item>
+    
+    <item>
+      <title>JetBrains家IDE在天朝安装插件的方式</title>
+      <link>http://mu-xin.github.io/post/jetbrains%E5%AE%B6ide%E5%9C%A8%E5%A4%A9%E6%9C%9D%E5%AE%89%E8%A3%85%E6%8F%92%E4%BB%B6%E7%9A%84%E6%96%B9%E5%BC%8F/</link>
+      <pubDate>Thu, 04 Jul 2019 21:39:41 +0800</pubDate>
+      
+      <guid>http://mu-xin.github.io/post/jetbrains%E5%AE%B6ide%E5%9C%A8%E5%A4%A9%E6%9C%9D%E5%AE%89%E8%A3%85%E6%8F%92%E4%BB%B6%E7%9A%84%E6%96%B9%E5%BC%8F/</guid>
+      
+        <description>&lt;p&gt;&lt;img src=&#34;https://i.loli.net/2019/07/11/5d26ead745da362175.png&#34; alt=&#34;time-out-logo-no-background_orig.png&#34; /&gt;&lt;/p&gt;</description>
       
     </item>
     
@@ -221,17 +232,6 @@
       <guid>http://mu-xin.github.io/post/%E8%81%8A%E4%B8%80%E8%81%8Atmux/</guid>
       
         <description>&lt;p&gt;&lt;img src=&#34;https://i.loli.net/2019/07/08/5d22a416477fd25530.jpg&#34; alt=&#34;keyboard&#34; /&gt;&lt;/p&gt;</description>
-      
-    </item>
-    
-    <item>
-      <title>MySql的安装与基本使用</title>
-      <link>http://mu-xin.github.io/post/mysql%E7%9A%84%E5%AE%89%E8%A3%85%E4%B8%8E%E5%9F%BA%E6%9C%AC%E4%BD%BF%E7%94%A8/</link>
-      <pubDate>Sun, 14 Aug 2016 00:00:00 +0000</pubDate>
-      
-      <guid>http://mu-xin.github.io/post/mysql%E7%9A%84%E5%AE%89%E8%A3%85%E4%B8%8E%E5%9F%BA%E6%9C%AC%E4%BD%BF%E7%94%A8/</guid>
-      
-        <description>&lt;p&gt;&lt;img src=&#34;https://i.loli.net/2019/07/08/5d22cef77d13647850.jpg&#34; alt=&#34;mysql install&#34; /&gt;&lt;/p&gt;</description>
       
     </item>
     
