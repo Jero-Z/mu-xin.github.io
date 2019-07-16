@@ -69,7 +69,7 @@
 
 <meta itemprop="datePublished" content="2016-08-14T00:00:00&#43;00:00" />
 <meta itemprop="dateModified" content="2016-08-14T00:00:00&#43;00:00" />
-<meta itemprop="wordCount" content="4">
+<meta itemprop="wordCount" content="80">
 
 
 
@@ -256,11 +256,69 @@
 
 <h3 id="系统环境">系统环境</h3>
 
+<p>Centos7.0</p>
+
+<p><a href="https://dev.mysql.com/downloads/mysql/">下载地址:</a></p>
+
+<p>我下载的是(mysql-5.6.44-linux-glibc2.12-x86_64.tar.gz)</p>
+
+<p>直接在服务器使用wget下载还是本级下载后上传都可</p>
+
 <h3 id="安装">安装</h3>
+
+<pre><code>//解压
+tar zxvf mysql-5.6.44-linux-glibc2.12-x86_64.tar.gz
+
+//将解压出来都文件移动到/usr/local/mysql
+mv mysql-5.6.44-linux-glibc2.12-x86_64 /usr/local/mysql
+
+//新建mysql组和用户
+useradd -r -s /sbin/nologin -g mysql mysql -d /usr/local/mysql 
+
+//安装数据库
+./scripts/mysql_install_db --user=mysql
+
+//修改目录所有者
+cd /usr/local/mysql
+
+chown –R mysql .
+
+chgrp –R mysql .
+
+//创建软连接(方便安装不同版本)
+ln -s /usr/local/mysql/bin/mysql /usr/local/bin/mysql
+
+//添加开机启动：
+cp support-files/mysql.server /etc/init.d/mysql
+chmod 755 /etc/init.d/mysqld
+//启动
+service mysqld start  
+
+//修改密码
+
+./bin/mysqladmin -u root password '密码'
+
+//修改配置文件
+cp support-files/my-default.cnf /etc/my.cnf
+vi /etc/init.d/mysqld
+
+to:
+basedir=/usr/local/mysql/
+</code></pre>
 
 <h3 id="简单测试">简单测试</h3>
 
+<pre><code>//登录
+mysql -u root
+
+show databases;
+
+desc 'table name';
+</code></pre>
+
 <h3 id="后话">后话</h3>
+
+<p>如果需要的话还可以配置MySql的数据存放位置,然后对配置文件进行更新!当然还有更多的配置和优化方面的配置还要继续学习!</p>
     </div>
 
     
