@@ -407,4 +407,23 @@
     <priority>0.5</priority>
   </url>
   
+  <url>
+    <loc>http://mu-xin.github.io/categories/github/</loc>
+    <lastmod>2016-03-27T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://mu-xin.github.io/tags/github/</loc>
+    <lastmod>2016-03-27T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://mu-xin.github.io/post/%E5%85%B3%E4%BA%8Egithub%E4%B8%8A%E7%9A%84watchstarfork%E7%9A%84%E4%B8%AA%E4%BA%BA%E7%90%86%E8%A7%A3/</loc>
+    <lastmod>2016-03-27T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
 </urlset>
