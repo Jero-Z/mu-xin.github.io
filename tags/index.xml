@@ -6,10 +6,28 @@
     <description>Recent content in Tags on Record the life</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Thu, 04 Jul 2019 19:44:24 +0800</lastBuildDate>
+    <lastBuildDate>Sun, 28 Jul 2019 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="http://mu-xin.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Computer</title>
+      <link>http://mu-xin.github.io/tags/computer/</link>
+      <pubDate>Sun, 28 Jul 2019 00:00:00 +0000</pubDate>
+      
+      <guid>http://mu-xin.github.io/tags/computer/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Virtual</title>
+      <link>http://mu-xin.github.io/tags/virtual/</link>
+      <pubDate>Sun, 28 Jul 2019 00:00:00 +0000</pubDate>
+      
+      <guid>http://mu-xin.github.io/tags/virtual/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>Theory</title>
@@ -93,15 +111,6 @@
     </item>
     
     <item>
-      <title>Computer</title>
-      <link>http://mu-xin.github.io/tags/computer/</link>
-      <pubDate>Wed, 12 Sep 2018 00:00:00 +0000</pubDate>
-      
-      <guid>http://mu-xin.github.io/tags/computer/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>Mac</title>
       <link>http://mu-xin.github.io/tags/mac/</link>
       <pubDate>Wed, 12 Sep 2018 00:00:00 +0000</pubDate>
@@ -179,15 +188,6 @@
       <pubDate>Sun, 28 May 2017 00:00:00 +0000</pubDate>
       
       <guid>http://mu-xin.github.io/tags/webserver/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Tmux</title>
-      <link>http://mu-xin.github.io/tags/tmux/</link>
-      <pubDate>Sun, 19 Mar 2017 00:00:00 +0000</pubDate>
-      
-      <guid>http://mu-xin.github.io/tags/tmux/</guid>
       <description></description>
     </item>
     

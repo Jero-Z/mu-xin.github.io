@@ -6,10 +6,28 @@
     <description>Recent content in Categories on Record the life</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Thu, 04 Jul 2019 19:44:24 +0800</lastBuildDate>
+    <lastBuildDate>Sun, 28 Jul 2019 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="http://mu-xin.github.io/categories/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Base</title>
+      <link>http://mu-xin.github.io/categories/base/</link>
+      <pubDate>Sun, 28 Jul 2019 00:00:00 +0000</pubDate>
+      
+      <guid>http://mu-xin.github.io/categories/base/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Other</title>
+      <link>http://mu-xin.github.io/categories/other/</link>
+      <pubDate>Sun, 28 Jul 2019 00:00:00 +0000</pubDate>
+      
+      <guid>http://mu-xin.github.io/categories/other/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>Theory</title>
@@ -89,24 +107,6 @@
       <pubDate>Wed, 14 Nov 2018 00:00:00 +0000</pubDate>
       
       <guid>http://mu-xin.github.io/categories/mathematics/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Other</title>
-      <link>http://mu-xin.github.io/categories/other/</link>
-      <pubDate>Fri, 12 Oct 2018 00:00:00 +0000</pubDate>
-      
-      <guid>http://mu-xin.github.io/categories/other/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Base</title>
-      <link>http://mu-xin.github.io/categories/base/</link>
-      <pubDate>Wed, 12 Sep 2018 00:00:00 +0000</pubDate>
-      
-      <guid>http://mu-xin.github.io/categories/base/</guid>
       <description></description>
     </item>
     
