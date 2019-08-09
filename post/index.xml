@@ -6,10 +6,19 @@
     <description>Recent content in Posts on Record the life</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Sun, 28 Jul 2019 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 09 Aug 2019 14:38:26 +0800</lastBuildDate>
     
 	<atom:link href="http://mu-xin.github.io/post/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>思考一下为什么计算机有65535个端口</title>
+      <link>http://mu-xin.github.io/post/%E6%80%9D%E8%80%83%E4%B8%80%E4%B8%8B%E4%B8%BA%E4%BB%80%E4%B9%88%E8%AE%A1%E7%AE%97%E6%9C%BA%E6%9C%8965535%E4%B8%AA%E7%AB%AF%E5%8F%A3/</link>
+      <pubDate>Fri, 09 Aug 2019 14:38:26 +0800</pubDate>
+      
+      <guid>http://mu-xin.github.io/post/%E6%80%9D%E8%80%83%E4%B8%80%E4%B8%8B%E4%B8%BA%E4%BB%80%E4%B9%88%E8%AE%A1%E7%AE%97%E6%9C%BA%E6%9C%8965535%E4%B8%AA%E7%AB%AF%E5%8F%A3/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>Mac中使用虚拟机的不同姿势</title>
@@ -180,15 +189,6 @@
       
       <guid>http://mu-xin.github.io/post/%E6%97%B6%E9%97%B4%E7%A9%BA%E9%97%B4%E5%A4%8D%E6%9D%82%E5%BA%A6%E5%88%86%E6%9E%90/</guid>
       <description>&lt;p&gt;&lt;img src=&#34;https://i.loli.net/2019/07/29/5d3ec1a23573274621.jpg&#34; alt=&#34;dark-landscape-mountain-169789 (1).jpg&#34; /&gt;&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>计算机二进制基础转换理论</title>
-      <link>http://mu-xin.github.io/post/%E8%AE%A1%E7%AE%97%E6%9C%BA%E4%BA%8C%E8%BF%9B%E5%88%B6%E8%BD%AC%E6%8D%A2%E6%96%B9%E5%BC%8F/</link>
-      <pubDate>Tue, 28 Nov 2017 00:00:00 +0000</pubDate>
-      
-      <guid>http://mu-xin.github.io/post/%E8%AE%A1%E7%AE%97%E6%9C%BA%E4%BA%8C%E8%BF%9B%E5%88%B6%E8%BD%AC%E6%8D%A2%E6%96%B9%E5%BC%8F/</guid>
-      <description>&lt;p&gt;&lt;img src=&#34;https://i.loli.net/2019/07/03/5d1c5affd0b4756843.jpg&#34; alt=&#34;binary&#34; /&gt;&lt;/p&gt;</description>
     </item>
     
   </channel>
