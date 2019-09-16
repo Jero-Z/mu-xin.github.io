@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>Record the life</title>
+  <title>Linux SCP使用 - Record the life</title>
   
 
 <meta name="renderer" content="webkit" />
@@ -23,6 +23,8 @@
 <meta name="mobile-web-app-capable" content="yes">
 
 <meta name="author" content="muxin" />
+  <meta name="description" content="" />
+
 
 
 
@@ -32,8 +34,7 @@
 <meta name="generator" content="Hugo 0.55.6" />
 
 
-<link rel="canonical" href="http://mu-xin.github.io/" />
-<link href="%7balternate%20%7bRSS%20application/rss&#43;xml%20%20index%20alternate%20%20false%20false%20true%20false%20false%200%7d%20/index.xml%20http://mu-xin.github.io/index.xml%7d" rel="alternate" type="application/rss+xml" title="Record the life" />
+<link rel="canonical" href="http://mu-xin.github.io/post/linux-scp%E4%BD%BF%E7%94%A8/" />
 
 
 
@@ -55,18 +56,26 @@
 
 
 
-<meta property="og:title" content="Record the life" />
+<meta property="og:title" content="Linux SCP使用" />
 <meta property="og:description" content="" />
-<meta property="og:type" content="website" />
-<meta property="og:url" content="http://mu-xin.github.io/" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="http://mu-xin.github.io/post/linux-scp%E4%BD%BF%E7%94%A8/" />
+<meta property="article:published_time" content="2019-09-16T16:18:59&#43;08:00"/>
+<meta property="article:modified_time" content="2019-09-16T16:18:59&#43;08:00"/>
 
-<meta property="og:updated_time" content="2019-09-16T16:18:59&#43;08:00"/>
-
-<meta itemprop="name" content="Record the life">
+<meta itemprop="name" content="Linux SCP使用">
 <meta itemprop="description" content="">
 
+
+<meta itemprop="datePublished" content="2019-09-16T16:18:59&#43;08:00" />
+<meta itemprop="dateModified" content="2019-09-16T16:18:59&#43;08:00" />
+<meta itemprop="wordCount" content="54">
+
+
+
+<meta itemprop="keywords" content="" />
 <meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="Record the life"/>
+<meta name="twitter:title" content="Linux SCP使用"/>
 <meta name="twitter:description" content=""/>
 
 <!--[if lte IE 9]>
@@ -153,7 +162,7 @@
   <ul id="menu" class="menu">
     
     
-        <li class="menu-item active">
+        <li class="menu-item">
         
           
           
@@ -218,349 +227,111 @@
     <main id="main" class="main bg-llight">
       <div class="content-wrapper">
         <div id="content" class="content container">
-          
-  <section id="posts" class="posts">
+          <article class="post bg-white">
+    
+    <header class="post-header">
+      <h1 class="post-title">Linux SCP使用</h1>
+      
+      <div class="post-meta">
+        <time datetime="2019-09-16" class="post-time">
+          2019-09-16
+        </time>
+        
+        
+
+        
+        
+
+        
+        
+      </div>
+    </header>
+
     
     
+
     
-      <article class="post bg-white">
-  <header class="post-header">
-    <h1 class="post-title">
-      
-      <a class="post-link" href="/post/linux-scp%E4%BD%BF%E7%94%A8/">Linux SCP使用</a>
-    </h1>
-    
-    <div class="post-meta">
-      <time datetime="2019-09-16" class="post-time">
-        2019-09-16
-      </time>
-      
-      
-      
-      
-    </div>
-  </header>
-  
-  <div class="post-content">
-    
-    <div class="post-summary">
+    <div class="post-content">
       <p><img src="/linux-scp-command.jpg" alt="scp" /></p>
+
+<h2 id="前言">前言</h2>
+
+<p><strong>每次在使用完命令后都没有进行总结,导致每次在服务器上做一些操作都时候都要在线进行查阅资料,十分影响工作效率.so&ndash; 写下这篇来记录工作中那些使用不熟练的命令!</strong></p>
+
+<h3 id="linux-scp-command">Linux SCP Command</h3>
+
+<p>命令详解:</p>
+
+<p>    用于主机之间复制文件和目录,简单的来说就是文件传输使用!
+    
+全称: source copy (文件拷贝),scp是linux系统下基于ssh登陆进行安全的远程文件拷贝命令</p>
+
+<p>食用方式:</p>
+
+<p>scp [可选参数] 本地文件 远程地址</p>
+
+<p>Example:</p>
+
+<pre><code>本地上传文件:
+
+scp \~/download/index.text user\_name@remote\_ip:\~/download/{file\_name}
+
+本地上传目录:
+
+scp -r \~/download/ user\_name@remote\_ip:\~/directory\_name
+</code></pre>
+
+<p><em>上面是之前做的书面笔记,相比也发现了,这些都是在搜索引擎上随便就能找到的!但是在工作中可能会发生各种问题</em></p>
+
+<h3 id="process">Process</h3>
+
+<p><strong>需要在数据库服务器上导出一些数据,给运营人员使用!所以需要导出excel格式的数据.命令大致如下:</strong></p>
+
+<p><code>mysql --database DatabaseName -B -e &quot;select field_name,  from table_name where field_name = 1 order by field_name&quot; &gt; file_name.csv</code></p>
+
+<p>现在文件保存在数据库服务器上了,接下来就是简单的在本地终端执行scp命令来下载到本地OK.</p>
+
+<p>因为服务器上基本都使用ssh来保存用户信息,那么就需要在scp中添加-i option 来指定identity_file</p>
+
+<hr />
+
+<p><strong>个人建议如果在linux下有某个命令不是很清楚都话还是直接使用man 命令来查看帮助手册来都比较快!它会节省你很多时间!</strong></p>
     </div>
-    <div class="read-more">
-      <a href="/post/linux-scp%E4%BD%BF%E7%94%A8/" class="read-more-link">阅读全文</a>
-    </div>
-    
-  </div>
-</article>
 
     
-      <article class="post bg-white">
-  <header class="post-header">
-    <h1 class="post-title">
-      
-      <a class="post-link" href="/post/%E6%80%9D%E8%80%83%E4%B8%80%E4%B8%8B%E4%B8%BA%E4%BB%80%E4%B9%88%E8%AE%A1%E7%AE%97%E6%9C%BA%E6%9C%8965535%E4%B8%AA%E7%AB%AF%E5%8F%A3/">思考一下为什么计算机有65535个端口</a>
-    </h1>
     
-    <div class="post-meta">
-      <time datetime="2019-08-09" class="post-time">
-        2019-08-09
-      </time>
-      
-      
-      
-      
-    </div>
-  </header>
-  
-  <div class="post-content">
-    
-    <div class="post-summary">
-      
-    </div>
-    <div class="read-more">
-      <a href="/post/%E6%80%9D%E8%80%83%E4%B8%80%E4%B8%8B%E4%B8%BA%E4%BB%80%E4%B9%88%E8%AE%A1%E7%AE%97%E6%9C%BA%E6%9C%8965535%E4%B8%AA%E7%AB%AF%E5%8F%A3/" class="read-more-link">阅读全文</a>
-    </div>
-    
-  </div>
-</article>
-
-    
-      <article class="post bg-white">
-  <header class="post-header">
-    <h1 class="post-title">
-      
-      <a class="post-link" href="/post/mac%E4%B8%8B%E7%9A%84%E8%99%9A%E6%8B%9F%E6%9C%BA/">Mac中使用虚拟机的不同姿势</a>
-    </h1>
-    
-    <div class="post-meta">
-      <time datetime="2019-07-28" class="post-time">
-        2019-07-28
-      </time>
-      <div class="post-category">
-          <a href="http://mu-xin.github.io/categories/other/"> Other </a>
-          <a href="http://mu-xin.github.io/categories/base/"> Base </a>
-          
-        </div>
-      
-      
-      
-    </div>
-  </header>
-  
-  <div class="post-content">
-    
-    <div class="post-summary">
-      <p><img src="https://i.loli.net/2019/07/03/5d1c15452c86447120.jpg" alt="Mac" /></p>
-    </div>
-    <div class="read-more">
-      <a href="/post/mac%E4%B8%8B%E7%9A%84%E8%99%9A%E6%8B%9F%E6%9C%BA/" class="read-more-link">阅读全文</a>
-    </div>
-    
-  </div>
-</article>
-
-    
-      <article class="post bg-white">
-  <header class="post-header">
-    <h1 class="post-title">
-      
-      <a class="post-link" href="/post/jetbrains%E5%AE%B6ide%E5%9C%A8%E5%A4%A9%E6%9C%9D%E5%AE%89%E8%A3%85%E6%8F%92%E4%BB%B6%E7%9A%84%E6%96%B9%E5%BC%8F/">JetBrains家IDE在天朝安装插件的方式</a>
-    </h1>
-    
-    <div class="post-meta">
-      <time datetime="2019-07-04" class="post-time">
-        2019-07-04
-      </time>
-      
-      
-      
-      
-    </div>
-  </header>
-  
-  <div class="post-content">
-    
-    <div class="post-summary">
-      <p><img src="https://i.loli.net/2019/07/11/5d26ead745da362175.png" alt="time-out-logo-no-background_orig.png" /></p>
-    </div>
-    <div class="read-more">
-      <a href="/post/jetbrains%E5%AE%B6ide%E5%9C%A8%E5%A4%A9%E6%9C%9D%E5%AE%89%E8%A3%85%E6%8F%92%E4%BB%B6%E7%9A%84%E6%96%B9%E5%BC%8F/" class="read-more-link">阅读全文</a>
-    </div>
-    
-  </div>
-</article>
-
-    
-      <article class="post bg-white">
-  <header class="post-header">
-    <h1 class="post-title">
-      
-      <a class="post-link" href="/post/%E4%BD%BF%E7%94%A8docker%E5%AE%9E%E7%8E%B0mysql%E7%9A%84%E4%B8%BB%E4%BB%8E/">使用Docker实现MySql的主从</a>
-    </h1>
-    
-    <div class="post-meta">
-      <time datetime="2019-07-04" class="post-time">
-        2019-07-04
-      </time>
-      
-      
-      
-      
-    </div>
-  </header>
-  
-  <div class="post-content">
-    
-    <div class="post-summary">
-      <p><img src="https://i.loli.net/2019/07/10/5d25b6d635e2592956.jpg" alt="mysql_replicate.jpg" /></p>
-    </div>
-    <div class="read-more">
-      <a href="/post/%E4%BD%BF%E7%94%A8docker%E5%AE%9E%E7%8E%B0mysql%E7%9A%84%E4%B8%BB%E4%BB%8E/" class="read-more-link">阅读全文</a>
-    </div>
-    
-  </div>
-</article>
-
-    
-      <article class="post bg-white">
-  <header class="post-header">
-    <h1 class="post-title">
-      
-      <a class="post-link" href="/post/%E4%BA%8C%E5%85%AB%E5%AE%9A%E5%BE%8B/">二八定律</a>
-    </h1>
-    
-    <div class="post-meta">
-      <time datetime="2019-07-04" class="post-time">
-        2019-07-04
-      </time>
-      <div class="post-category">
-          <a href="http://mu-xin.github.io/categories/theory/"> Theory </a>
-          
-        </div>
-      
-      
-      
-    </div>
-  </header>
-  
-  <div class="post-content">
-    
-    <div class="post-summary">
-      <p><img src="https://i.loli.net/2019/07/04/5d1de7311f86a46342.jpg" alt="二八" /></p>
-    </div>
-    <div class="read-more">
-      <a href="/post/%E4%BA%8C%E5%85%AB%E5%AE%9A%E5%BE%8B/" class="read-more-link">阅读全文</a>
-    </div>
-    
-  </div>
-</article>
-
-    
-      <article class="post bg-white">
-  <header class="post-header">
-    <h1 class="post-title">
-      
-      <a class="post-link" href="/post/%E6%B6%88%E6%81%AF%E9%98%9F%E5%88%97redis%E7%9A%84%E8%AE%A2%E9%98%85%E5%8F%91%E5%B8%83%E5%92%8Clist/">消息队列、Redis的订阅发布和List</a>
-    </h1>
-    
-    <div class="post-meta">
-      <time datetime="2019-07-04" class="post-time">
-        2019-07-04
-      </time>
-      <div class="post-category">
-          <a href="http://mu-xin.github.io/categories/redis/"> Redis </a>
-          <a href="http://mu-xin.github.io/categories/develop/"> Develop </a>
-          
-        </div>
-      
-      
-      
-    </div>
-  </header>
-  
-  <div class="post-content">
-    
-    <div class="post-summary">
-      <p><img src="https://i.loli.net/2019/07/04/5d1dc1133fc1559064.jpg" alt="queue" /></p>
-    </div>
-    <div class="read-more">
-      <a href="/post/%E6%B6%88%E6%81%AF%E9%98%9F%E5%88%97redis%E7%9A%84%E8%AE%A2%E9%98%85%E5%8F%91%E5%B8%83%E5%92%8Clist/" class="read-more-link">阅读全文</a>
-    </div>
-    
-  </div>
-</article>
-
-    
-      <article class="post bg-white">
-  <header class="post-header">
-    <h1 class="post-title">
-      
-      <a class="post-link" href="/post/%E7%89%B2%E4%BA%A7%E9%98%9F-%E5%A4%87%E6%88%98%E5%A4%87%E8%8D%92%E4%B8%BA%E8%87%AA%E5%B7%B1/">备战备荒为自己</a>
-    </h1>
-    
-    <div class="post-meta">
-      <time datetime="2019-06-02" class="post-time">
-        2019-06-02
-      </time>
-      <div class="post-category">
-          <a href="http://mu-xin.github.io/categories/%E8%AF%BB%E8%80%85%E6%96%87%E6%91%98/"> 读者文摘 </a>
-          <a href="http://mu-xin.github.io/categories/%E5%A5%BD%E6%96%87/"> 好文 </a>
-          
-        </div>
-      
-      
-      
-    </div>
-  </header>
-  
-  <div class="post-content">
-    
-    <div class="post-summary">
-      <p><img src="https://i.loli.net/2019/07/03/5d1ca0607e7ec32698.jpg" alt="思考" /></p>
-    </div>
-    <div class="read-more">
-      <a href="/post/%E7%89%B2%E4%BA%A7%E9%98%9F-%E5%A4%87%E6%88%98%E5%A4%87%E8%8D%92%E4%B8%BA%E8%87%AA%E5%B7%B1/" class="read-more-link">阅读全文</a>
-    </div>
-    
-  </div>
-</article>
-
-    
-      <article class="post bg-white">
-  <header class="post-header">
-    <h1 class="post-title">
-      
-      <a class="post-link" href="/post/quick_sort/">Quick Sort</a>
-    </h1>
-    
-    <div class="post-meta">
-      <time datetime="2019-02-14" class="post-time">
-        2019-02-14
-      </time>
-      
-      
-      
-      
-    </div>
-  </header>
-  
-  <div class="post-content">
-    
-    <div class="post-summary">
-      <p><img src="https://i.loli.net/2019/09/02/zboXDIcFP9islka.jpg" alt="dogs-2921382_1280-squashed.jpg" /></p>
-    </div>
-    <div class="read-more">
-      <a href="/post/quick_sort/" class="read-more-link">阅读全文</a>
-    </div>
-    
-  </div>
-</article>
-
-    
-      <article class="post bg-white">
-  <header class="post-header">
-    <h1 class="post-title">
-      
-      <a class="post-link" href="/post/%E4%B8%AA%E4%BA%BA%E4%B9%A6%E5%8D%95/">2019年个人书单</a>
-    </h1>
-    
-    <div class="post-meta">
-      <time datetime="2019-02-12" class="post-time">
-        2019-02-12
-      </time>
-      <div class="post-category">
-          <a href="http://mu-xin.github.io/categories/%E4%B9%A6%E5%8D%95/"> 书单 </a>
-          
-        </div>
-      
-      
-      
-    </div>
-  </header>
-  
-  <div class="post-content">
-    
-    <div class="post-summary">
-      <p><img src="https://i.loli.net/2019/07/16/5d2d6a8fdfb6c47904.jpg" alt="books-bookshelf--squashed.jpg" /></p>
-    </div>
-    <div class="read-more">
-      <a href="/post/%E4%B8%AA%E4%BA%BA%E4%B9%A6%E5%8D%95/" class="read-more-link">阅读全文</a>
-    </div>
-    
-  </div>
-</article>
-
-    
-  </section>
 
   
   
 
 
 
-  
-  
-  
+    
+    
+
+    <footer class="post-footer">
+      
+
+      
+      <nav class="post-nav">
+        
+        
+          <a class="next" href="/post/%E6%80%9D%E8%80%83%E4%B8%80%E4%B8%8B%E4%B8%BA%E4%BB%80%E4%B9%88%E8%AE%A1%E7%AE%97%E6%9C%BA%E6%9C%8965535%E4%B8%AA%E7%AB%AF%E5%8F%A3/">
+            <span class="next-text nav-default">思考一下为什么计算机有65535个端口</span>
+            <span class="prev-text nav-mobile">下一篇</span>
+            
+            <i class="iconfont">
+              <svg class="icon" viewBox="0 0 1024 1024" version="1.1"
+  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+  width="18" height="18">
+  <path d="M332.091514 74.487481l-75.369571 89.491197c-10.963703 12.998035-10.285251 32.864502 1.499144 44.378743l286.278095 300.375162L266.565125 819.058374c-11.338233 12.190647-11.035334 32.285311 0.638543 44.850487l80.46666 86.564541c11.680017 12.583596 30.356378 12.893658 41.662889 0.716314l377.434212-421.426145c11.332093-12.183484 11.041474-32.266891-0.657986-44.844348l-80.46666-86.564541c-1.772366-1.910513-3.706415-3.533476-5.750981-4.877077L373.270379 71.774697C361.493148 60.273758 343.054193 61.470003 332.091514 74.487481z"></path>
+</svg>
+
+            </i>
+          </a>
+      </nav>
+    </footer>
+  </article>
 
   
   
@@ -569,34 +340,17 @@
   
 
   
-  
-
-  
-  
-  <nav class="pagination">
-    <ul>
-      
-      <li  class="active" >
-        <a href="/">1</a>
-      </li>
-      
-      <li >
-        <a href="/page/2/">2</a>
-      </li>
-      
-      <li >
-        <a href="/page/3/">3</a>
-      </li>
-      
-    </ul>
-  </nav>
 
   
   
 
+  
 
+  
 
+  
 
+    
 
         </div>
       </div>
