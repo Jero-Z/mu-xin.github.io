@@ -21,15 +21,6 @@
     </item>
     
     <item>
-      <title>思考一下为什么计算机有65535个端口</title>
-      <link>http://mu-xin.github.io/post/%E6%80%9D%E8%80%83%E4%B8%80%E4%B8%8B%E4%B8%BA%E4%BB%80%E4%B9%88%E8%AE%A1%E7%AE%97%E6%9C%BA%E6%9C%8965535%E4%B8%AA%E7%AB%AF%E5%8F%A3/</link>
-      <pubDate>Fri, 09 Aug 2019 14:38:26 +0800</pubDate>
-      
-      <guid>http://mu-xin.github.io/post/%E6%80%9D%E8%80%83%E4%B8%80%E4%B8%8B%E4%B8%BA%E4%BB%80%E4%B9%88%E8%AE%A1%E7%AE%97%E6%9C%BA%E6%9C%8965535%E4%B8%AA%E7%AB%AF%E5%8F%A3/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>Mac中使用虚拟机的不同姿势</title>
       <link>http://mu-xin.github.io/post/mac%E4%B8%8B%E7%9A%84%E8%99%9A%E6%8B%9F%E6%9C%BA/</link>
       <pubDate>Sun, 28 Jul 2019 00:00:00 +0000</pubDate>
@@ -189,6 +180,15 @@
       
       <guid>http://mu-xin.github.io/post/redis%E7%9A%84%E5%AE%89%E8%A3%85%E4%B8%8E%E4%BD%BF%E7%94%A8/</guid>
       <description>&lt;p&gt;&lt;img src=&#34;https://i.loli.net/2019/07/03/5d1c81e1daa8854626.jpeg&#34; alt=&#34;redis.jpeg&#34; /&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Apache下的ab测试工具</title>
+      <link>http://mu-xin.github.io/post/apache%E4%B8%8B%E7%9A%84ab%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/</link>
+      <pubDate>Wed, 21 Feb 2018 00:00:00 +0000</pubDate>
+      
+      <guid>http://mu-xin.github.io/post/apache%E4%B8%8B%E7%9A%84ab%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/</guid>
+      <description>&lt;p&gt;&lt;img src=&#34;https://i.loli.net/2019/07/03/5d1c60bc6fc9a68469.jpg&#34; alt=&#34;ab测试&#34; /&gt;&lt;/p&gt;</description>
     </item>
     
   </channel>
