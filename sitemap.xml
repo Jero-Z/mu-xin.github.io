@@ -9,22 +9,29 @@
   </url>
   
   <url>
-    <loc>http://mu-xin.github.io/post/php%E6%BA%90%E7%A0%81%E5%AE%89%E8%A3%85/</loc>
-    <lastmod>2019-10-09T11:39:28+08:00</lastmod>
+    <loc>http://mu-xin.github.io/post/linux%E6%96%87%E4%BB%B6%E6%9D%83%E9%99%90%E5%B0%8F%E7%BB%93/</loc>
+    <lastmod>2019-12-25T15:12:25+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
     <loc>http://mu-xin.github.io/post/</loc>
-    <lastmod>2019-10-09T11:39:28+08:00</lastmod>
+    <lastmod>2019-12-25T15:12:25+08:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>http://mu-xin.github.io/</loc>
-    <lastmod>2019-10-09T11:39:28+08:00</lastmod>
+    <lastmod>2019-12-25T15:12:25+08:00</lastmod>
     <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://mu-xin.github.io/post/php%E6%BA%90%E7%A0%81%E5%AE%89%E8%A3%85/</loc>
+    <lastmod>2019-10-09T11:39:28+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
   </url>
   
   <url>

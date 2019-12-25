@@ -6,7 +6,7 @@
     <description>Recent content on Record the life</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Wed, 09 Oct 2019 11:39:28 +0800</lastBuildDate>
+    <lastBuildDate>Wed, 25 Dec 2019 15:12:25 +0800</lastBuildDate>
     
         <atom:link href="http://mu-xin.github.io/index.xml" rel="self" type="application/rss+xml" />
     
@@ -23,6 +23,17 @@
 有问题左下角,欢迎来信,一定第一时间回复!
 帝都生活不易,不抽烟,寻觅酒友ing(个人酒品良好,不限酒类)
  </description>
+      
+    </item>
+    
+    <item>
+      <title>Linux文件权限小结</title>
+      <link>http://mu-xin.github.io/post/linux%E6%96%87%E4%BB%B6%E6%9D%83%E9%99%90%E5%B0%8F%E7%BB%93/</link>
+      <pubDate>Wed, 25 Dec 2019 15:12:25 +0800</pubDate>
+      
+      <guid>http://mu-xin.github.io/post/linux%E6%96%87%E4%BB%B6%E6%9D%83%E9%99%90%E5%B0%8F%E7%BB%93/</guid>
+      
+        <description>&lt;p&gt;&lt;img src=&#34;http://mu-xin.github.io/ball-63527_1280.jpg&#34; alt=&#34;file_authorization.png&#34; /&gt;&lt;/p&gt;</description>
       
     </item>
     
@@ -221,17 +232,6 @@
       <guid>http://mu-xin.github.io/post/%E9%A9%AC%E5%A4%AA%E6%95%88%E5%BA%94/</guid>
       
         <description>&lt;p&gt;&lt;img src=&#34;https://i.loli.net/2019/07/04/5d1dd077419dd82262.jpg&#34; alt=&#34;马太&#34; /&gt;&lt;/p&gt;</description>
-      
-    </item>
-    
-    <item>
-      <title>职业生涯中的那些网站</title>
-      <link>http://mu-xin.github.io/post/%E8%81%8C%E4%B8%9A%E7%94%9F%E6%B6%AF%E4%B8%AD%E7%9A%84%E9%82%A3%E4%BA%9B%E7%BD%91%E7%AB%99/</link>
-      <pubDate>Mon, 04 Jun 2018 00:00:00 +0000</pubDate>
-      
-      <guid>http://mu-xin.github.io/post/%E8%81%8C%E4%B8%9A%E7%94%9F%E6%B6%AF%E4%B8%AD%E7%9A%84%E9%82%A3%E4%BA%9B%E7%BD%91%E7%AB%99/</guid>
-      
-        <description>&lt;p&gt;&lt;img src=&#34;https://i.loli.net/2019/07/03/5d1c9b36b568f35897.jpg&#34; alt=&#34;web&#34; /&gt;&lt;/p&gt;</description>
       
     </item>
     
