@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>Domain · Record the life</title>
+  <title>Git与GitHub的那些事 - Record the life</title>
   
 
 <meta name="renderer" content="webkit" />
@@ -23,6 +23,8 @@
 <meta name="mobile-web-app-capable" content="yes">
 
 <meta name="author" content="muxin" />
+  <meta name="description" content="" />
+
 
 
 
@@ -32,8 +34,7 @@
 <meta name="generator" content="Hugo 0.55.6" />
 
 
-<link rel="canonical" href="http://mu-xin.github.io/tags/domain/" />
-<link href="%7balternate%20%7bRSS%20application/rss&#43;xml%20%20index%20alternate%20%20false%20false%20true%20false%20false%200%7d%20/tags/domain/index.xml%20http://mu-xin.github.io/tags/domain/index.xml%7d" rel="alternate" type="application/rss+xml" title="Record the life" />
+<link rel="canonical" href="http://mu-xin.github.io/post/git%E4%B8%8Egithub%E7%9A%84%E9%82%A3%E4%BA%9B%E4%BA%8B/" />
 
 
 
@@ -55,18 +56,26 @@
 
 
 
-<meta property="og:title" content="Domain" />
+<meta property="og:title" content="Git与GitHub的那些事" />
 <meta property="og:description" content="" />
-<meta property="og:type" content="website" />
-<meta property="og:url" content="http://mu-xin.github.io/tags/domain/" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="http://mu-xin.github.io/post/git%E4%B8%8Egithub%E7%9A%84%E9%82%A3%E4%BA%9B%E4%BA%8B/" />
+<meta property="article:published_time" content="2019-07-04T21:25:00&#43;08:00"/>
+<meta property="article:modified_time" content="2019-07-04T21:25:00&#43;08:00"/>
 
-<meta property="og:updated_time" content="2018-06-04T00:00:00&#43;00:00"/>
-
-<meta itemprop="name" content="Domain">
+<meta itemprop="name" content="Git与GitHub的那些事">
 <meta itemprop="description" content="">
 
+
+<meta itemprop="datePublished" content="2019-07-04T21:25:00&#43;08:00" />
+<meta itemprop="dateModified" content="2019-07-04T21:25:00&#43;08:00" />
+<meta itemprop="wordCount" content="304">
+
+
+
+<meta itemprop="keywords" content="" />
 <meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="Domain"/>
+<meta name="twitter:title" content="Git与GitHub的那些事"/>
 <meta name="twitter:description" content=""/>
 
 <!--[if lte IE 9]>
@@ -218,55 +227,244 @@
     <main id="main" class="main bg-llight">
       <div class="content-wrapper">
         <div id="content" class="content container">
-          
-
-<section id="archive" class="archive">
-  
+          <article class="post bg-white">
     
-      <div class="archive-title tag">
-        <h2 class="archive-name">标签： Domain</h2>
+    <header class="post-header">
+      <h1 class="post-title">Git与GitHub的那些事</h1>
+      
+      <div class="post-meta">
+        <time datetime="2019-07-04" class="post-time">
+          2019-07-04
+        </time>
+        
+        
+
+        
+        
+
+        
+        
       </div>
+    </header>
+
     
-  
+    
 
-  
-    <div class="archive-post">
-      <time datetime="2018-06-04" class="archive-post-time">
-        2018-06-04
-      </time>
-      <span class="archive-post-title">
-        <a href="/post/%E8%81%8C%E4%B8%9A%E7%94%9F%E6%B6%AF%E4%B8%AD%E7%9A%84%E9%82%A3%E4%BA%9B%E7%BD%91%E7%AB%99/" class="archive-post-link">
-          职业生涯中的那些网站
-        </a>
-      </span>
+    
+    <div class="post-content">
+      <p><img src="../../public/github-squashed.png" alt="github" /></p>
+
+<h2 id="多快好省-简单粗暴">多快好省,简单粗暴</h2>
+
+<h4 id="1-阐述功能">1.阐述功能</h4>
+
+<pre><code>&gt; git :
+</code></pre>
+
+<p><del>Gitis a free and open source distributed version control system designed to handle everything from small to very large projects with speed and efficiency.</del></p>
+
+<p><del>Git is easy to learn and has a tiny footprint with lightning fast performance. It outclasses SCM tools like Subversion, CVS, Perforce, and ClearCase with features like cheap local branching, convenient staging areas, and multiple workflows.</del></p>
+
+<pre><code>⬆️引述于官方首页,简单来说Git是目前世界上最先进的分布式版本控制系统（没有之一）。
+
+
+&gt; github : 
+</code></pre>
+
+<p><del>GitHub, Inc. is a US-based global company that provides hosting for software development version control using Git. It is a subsidiary of Microsoft, which acquired the company in 2018 for US$7.5 billion. It offers the distributed version control and source code management (SCM) functionality of Git, plus its own features. It provides access control and several collaboration features such as bug tracking, feature requests, task management, and wikis for every project.</del></p>
+
+<pre><code>&gt; 最大同人社区（没有之一）
+</code></pre>
+
+<h4 id="2-上手测试">2.上手测试</h4>
+
+<pre><code>1. git init//初始化仓库 
+2. git add //添加文件到暂存区
+3. git commit //生成快照
+4. git remote add origin &quot;git repository address&quot;//添加远端仓库地址
+5. git push 推送快照到远端仓库
+</code></pre>
+
+<h4 id="3-背后细节">3.背后细节</h4>
+
+<pre><code>&gt; 上面的那些操作能满足我这种面向互联网开发程序猿吗?能!也不能
+如果简单的在项目中运用的话,做为一个初级开发其实足够了,再学习一些分支技巧知道提交merge request 的确就足够了,但是作为一个胸有大痣的我怎么可能这么简单的就满足呢?那么接下来就慢慢的深入她,揭开她的面纱吧....
+</code></pre>
+
+<ol>
+<li><p><code>git init</code></p>
+
+<p><strong>命令只做一件事，就是在项目根目录下创建一个.git子目录，用来保存版本信息。</strong></p></li>
+
+<li><p><code>git add</code></p>
+
+<p><strong>这个命令其实是简化了两个操作步骤,</strong></p>
+
+<p><code>git hash-objecgt -w fileName</code></p>
+
+<p><code>git update-index --add --cacheinfo</code></p>
+
+<p><strong>那么问题来了,这两个兄弟又是做了些什么呢?</strong></p>
+
+<p><code>git hash-objecgt -w fileName</code> //生成hash值</p>
+
+<hr />
+
+<p><code>git hash-object -w README.md</code>
+&gt;1439efeb9f724f332c0d935905b12c26ce8009c1`</p>
+
+<p><code>ll .git/objects/14</code>
+&gt; 39efeb9f724f332c0d935905b12c26ce8009c1`</p>
+
+<p><code>git caat-file -p 1439efeb9f724f332c0d935905b12c26ce8009c1</code>
+&gt; # git-flow-process
+Hello Word`</p>
+
+<p><code>git update-index --add --cacheinfo</code>//将hash后的文件添加到暂存区</p>
+
+<hr />
+
+<p><code>git update-index --add --cacheinfo 664(权限) 1439efeb9f724f332c0d935905b12c26ce8009c1 (hash值) README.md(文件名)</code></p>
+
+<p><code>git ls-files --stage</code></p>
+
+<blockquote>
+<p>100644 1439efeb9f724f332c0d935905b12c26ce8009c1 0 <code>README.text</code></p>
+</blockquote>
+
+<p><strong>ok,装逼效果拉满了是吧?其实⬆️面的命令就等同于</strong><code>git add 和 git status</code></p></li>
+
+<li><p><code>git commit</code></p>
+
+<p><strong>提交文件,生成本地快照</strong></p>
+
+<blockquote>
+<p>简单的来说就是本地生成一份快照,或者说归档文件,嗯!就这么简单,可使用 -m参数添加生成快照时的备注信息,以便于后期的浏览和回滚</p>
+</blockquote>
+
+<p><em>一个人玩其实很没有意思的,大家一起来才基情满满嘛!怎么办呢?当然是</em>
+<del>选择原谅他</del>!</p>
+
+<p><em>推送到全球最大的同性交友网站咯,万一那个同志看上你 &emsp;&emsp;&ndash;)写的东西了呢?</em></p>
+
+<p><code>git remote add origin 你的远端仓库地址</code></p>
+
+<blockquote>
+<p>添加远端仓库地址</p>
+</blockquote>
+
+<p>当然了,推送前要标注好自己的身份,好让别人知道你是谁</p>
+
+<p><code>git config user.name &quot;用户名&quot;</code></p>
+
+<p><code>git config user.email &quot;Email 地址&quot;</code></p>
+
+<p><code>git push -u origin master</code>
+&gt; 推送到远端分支,完成提(我敢保证实际项目开发中你肯定没有直接推送master的权限,那怎么办呢?只能引入分支模块了呗,这里不多赘述)</p>
+
+<p><strong>接下来就是github线上进行操作的时候了!</strong></p>
+
+<ol>
+<li>打开浏览器</li>
+<li>登陆github</li>
+<li>点击项目仓库</li>
+<li>点击Pull request</li>
+<li>create pull request</li>
+<li>选择review|assignees等</li>
+<li>点击提交(完毕!)</li>
+</ol></li>
+</ol>
+
+<h3 id="你以为就这样就结束了吗">你以为就这样就结束了吗?</h3>
+
+<pre><code>少年醒醒,开始项目发布了!
+</code></pre>
+
+<p><code>git checkout master</code>//发布版本肯定是在主分支上进行了!</p>
+
+<p><code>git tag version(v0.0.1)</code></p>
+
+<p>该命令会在当前最新版本进行发布,如果想发布过去时间段的怎么办?</p>
+
+<p><code>git tag version(v0.0.1) 3e7cc97bd05d32759bd3c6b64c6fbb89b9aaddbb</code></p>
+
+<p><code>git tag</code>//查看当前所有的tag</p>
+
+<p><strong>当然了,现在只是在本地进行了打标签,如果想发布到github该如何操作呢?</strong></p>
+
+<p><code>git push  origin v0.0.1 | git push origin --tags</code></p>
+
+<p><strong>第一个命令推送指定tag到远端仓库,第二个命令推送本地所有tag到远端</strong></p>
+
+<p><em>就这样简单方便的成功发布了第一版本的项目!</em></p>
     </div>
-  
-</section>
 
-
-
-
-
-
-  
-  
-  
-
-  
-  
-
-  
-  
-
-  
-  
+    
+    
 
   
   
 
 
 
+    
+    
 
+    <footer class="post-footer">
+      
+
+      
+      <nav class="post-nav">
+        
+          <a class="prev" href="/post/%E4%BD%BF%E7%94%A8docker%E5%AE%9E%E7%8E%B0mysql%E7%9A%84%E4%B8%BB%E4%BB%8E/">
+            
+            <i class="iconfont">
+              <svg  class="icon" viewBox="0 0 1024 1024" version="1.1"
+  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+  width="18" height="18">
+  <path d="M691.908486 949.511495l75.369571-89.491197c10.963703-12.998035 10.285251-32.864502-1.499144-44.378743L479.499795 515.267417 757.434875 204.940602c11.338233-12.190647 11.035334-32.285311-0.638543-44.850487l-80.46666-86.564541c-11.680017-12.583596-30.356378-12.893658-41.662889-0.716314L257.233596 494.235404c-11.332093 12.183484-11.041474 32.266891 0.657986 44.844348l80.46666 86.564541c1.772366 1.910513 3.706415 3.533476 5.750981 4.877077l306.620399 321.703933C662.505829 963.726242 680.945807 962.528973 691.908486 949.511495z"></path>
+</svg>
+
+            </i>
+            <span class="prev-text nav-default">使用Docker实现MySql的主从</span>
+            <span class="prev-text nav-mobile">上一篇</span>
+          </a>
+        
+          <a class="next" href="/post/%E4%BA%8C%E5%85%AB%E5%AE%9A%E5%BE%8B/">
+            <span class="next-text nav-default">二八定律</span>
+            <span class="prev-text nav-mobile">下一篇</span>
+            
+            <i class="iconfont">
+              <svg class="icon" viewBox="0 0 1024 1024" version="1.1"
+  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+  width="18" height="18">
+  <path d="M332.091514 74.487481l-75.369571 89.491197c-10.963703 12.998035-10.285251 32.864502 1.499144 44.378743l286.278095 300.375162L266.565125 819.058374c-11.338233 12.190647-11.035334 32.285311 0.638543 44.850487l80.46666 86.564541c11.680017 12.583596 30.356378 12.893658 41.662889 0.716314l377.434212-421.426145c11.332093-12.183484 11.041474-32.266891-0.657986-44.844348l-80.46666-86.564541c-1.772366-1.910513-3.706415-3.533476-5.750981-4.877077L373.270379 71.774697C361.493148 60.273758 343.054193 61.470003 332.091514 74.487481z"></path>
+</svg>
+
+            </i>
+          </a>
+      </nav>
+    </footer>
+  </article>
+
+  
+  
+
+  
+  
+
+  
+
+  
+  
+
+  
+
+  
+
+  
+
+    
 
         </div>
       </div>
