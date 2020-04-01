@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>Linux文件权限小结 - Record the life</title>
+  <title>DockerFile编写时更换apt为国内源 - Record the life</title>
   
 
 <meta name="renderer" content="webkit" />
@@ -34,7 +34,7 @@
 <meta name="generator" content="Hugo 0.55.6" />
 
 
-<link rel="canonical" href="http://mu-xin.github.io/post/linux%E6%96%87%E4%BB%B6%E6%9D%83%E9%99%90%E5%B0%8F%E7%BB%93/" />
+<link rel="canonical" href="http://mu-xin.github.io/post/dockerfile%E7%BC%96%E5%86%99%E6%97%B6%E6%9B%B4%E6%8D%A2apt%E4%B8%BA%E5%9B%BD%E5%86%85%E6%BA%90/" />
 
 
 
@@ -56,26 +56,26 @@
 
 
 
-<meta property="og:title" content="Linux文件权限小结" />
+<meta property="og:title" content="DockerFile编写时更换apt为国内源" />
 <meta property="og:description" content="" />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="http://mu-xin.github.io/post/linux%E6%96%87%E4%BB%B6%E6%9D%83%E9%99%90%E5%B0%8F%E7%BB%93/" />
-<meta property="article:published_time" content="2019-12-25T15:12:25&#43;08:00"/>
-<meta property="article:modified_time" content="2019-12-25T15:12:25&#43;08:00"/>
+<meta property="og:url" content="http://mu-xin.github.io/post/dockerfile%E7%BC%96%E5%86%99%E6%97%B6%E6%9B%B4%E6%8D%A2apt%E4%B8%BA%E5%9B%BD%E5%86%85%E6%BA%90/" />
+<meta property="article:published_time" content="2020-04-01T15:05:43&#43;08:00"/>
+<meta property="article:modified_time" content="2020-04-01T15:05:43&#43;08:00"/>
 
-<meta itemprop="name" content="Linux文件权限小结">
+<meta itemprop="name" content="DockerFile编写时更换apt为国内源">
 <meta itemprop="description" content="">
 
 
-<meta itemprop="datePublished" content="2019-12-25T15:12:25&#43;08:00" />
-<meta itemprop="dateModified" content="2019-12-25T15:12:25&#43;08:00" />
-<meta itemprop="wordCount" content="66">
+<meta itemprop="datePublished" content="2020-04-01T15:05:43&#43;08:00" />
+<meta itemprop="dateModified" content="2020-04-01T15:05:43&#43;08:00" />
+<meta itemprop="wordCount" content="21">
 
 
 
 <meta itemprop="keywords" content="" />
 <meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="Linux文件权限小结"/>
+<meta name="twitter:title" content="DockerFile编写时更换apt为国内源"/>
 <meta name="twitter:description" content=""/>
 
 <!--[if lte IE 9]>
@@ -230,11 +230,11 @@
           <article class="post bg-white">
     
     <header class="post-header">
-      <h1 class="post-title">Linux文件权限小结</h1>
+      <h1 class="post-title">DockerFile编写时更换apt为国内源</h1>
       
       <div class="post-meta">
-        <time datetime="2019-12-25" class="post-time">
-          2019-12-25
+        <time datetime="2020-04-01" class="post-time">
+          2020-04-01
         </time>
         
         
@@ -252,58 +252,23 @@
 
     
     <div class="post-content">
-      <p><img src="/ball-63527_1280.jpg" alt="file_authorization.png" /></p>
+      <p><img src="../../public/apt-repository.png" alt="repository" /></p>
 
-<h1 id="类unix中的权限管理是怎么做到的">类Unix中的权限管理是怎么做到的?</h1>
-
-<p>系统中含有:群组、用户、游客 和一个超级管理员ROOT账户</p>
-
-<p>ROOT账户在系统中可以无法无天的做任意操作</p>
-
-<p>在Linux中一切皆为文件,那么在权限管理方面就是给文件添加不同的权限,简单来说就是一个团伙中的人员可以操作属于该团伙的所有资产(文件)</p>
-
-<p>而个人的话也有属于自己的私有资产,有时候需要将一些资产设置为个人私有,更有甚者可以将资产设为公共资产(大家都可以来使用)</p>
-
-<p>然鹅,这一些都属于国家ROOT  -.-</p>
-
-<h2 id="文件名前面的那些rwx到底是什么东西">文件名前面的那些rwx到底是什么东西?</h2>
-
-<p>首先需要来看下一个文件的固有属性</p>
+<h2 id="dockerfile换源的问题">Dockerfile换源的问题</h2>
 
 <blockquote>
-<p>drwxr-xr-x  5 kong kong 4096 Dec 25 06:54 kong/
--r&mdash;&mdash;&ndash;  1 kong root    0 Dec 25 07:22 uname</p>
+<p>国内进行apt-get updae更新仓库时耗时很长,为了珍惜我们的时间,国内有很多镜像站.
+so 在进行dockerfile编写的时候完全可以使用RUN命令将远端的仓库源地址进行更换!</p>
 </blockquote>
 
-<p>开头有d 则标示该文件为一个文件夹</p>
+<p><code>
+RUN sed -i &quot;s@http://deb.debian.org@http://mirrors.aliyun.com@g&quot; /etc/apt/sources.list
+RUN cat /etc/apt/sources.list
+RUN rm -Rf /var/lib/apt/lists/*
+RUN apt-get update
+</code></p>
 
-<p>没有的则属于一个文件</p>
-
-<p>r = readable = 4</p>
-
-<p>w = wirteble = 2</p>
-
-<p>x = executable = 1</p>
-
-<h2 id="总结">总结</h2>
-
-<p>这下就简单明了了 对于上面的解释就是</p>
-
-<p>kong/这个文件是一个文件夹 他属于kong这个组中的kong这个用户,并且该用户拥有这个文件夹的所有权限,kong这组拥有写和读的权限 其他的人,类似于游客或者anyone 都可以去读</p>
-
-<p>而下面这个uname文件则属于kong这个人的,但是同时也属于root这个组别,其他的任何人都没有任何的对其的权限</p>
-
-<p>那么如何修改文件(夹)所属用户呢?</p>
-
-<p><code>chown userName fileName</code></p>
-
-<p>那么如何修改文件(夹)所属组别呢?</p>
-
-<p><code>chgrp groupName fileName</code></p>
-
-<p>那么如何修改文件(夹)的权限呢?</p>
-
-<p><code>chmod permission fileName</code></p>
+<p><strong>第二行命令其实就是在console中查看检查一下是不是已经成功更换为了aliyun的镜像地址!</strong></p>
     </div>
 
     
@@ -323,22 +288,9 @@
       
       <nav class="post-nav">
         
-          <a class="prev" href="/post/dockerfile%E7%BC%96%E5%86%99%E6%97%B6%E6%9B%B4%E6%8D%A2apt%E4%B8%BA%E5%9B%BD%E5%86%85%E6%BA%90/">
-            
-            <i class="iconfont">
-              <svg  class="icon" viewBox="0 0 1024 1024" version="1.1"
-  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-  width="18" height="18">
-  <path d="M691.908486 949.511495l75.369571-89.491197c10.963703-12.998035 10.285251-32.864502-1.499144-44.378743L479.499795 515.267417 757.434875 204.940602c11.338233-12.190647 11.035334-32.285311-0.638543-44.850487l-80.46666-86.564541c-11.680017-12.583596-30.356378-12.893658-41.662889-0.716314L257.233596 494.235404c-11.332093 12.183484-11.041474 32.266891 0.657986 44.844348l80.46666 86.564541c1.772366 1.910513 3.706415 3.533476 5.750981 4.877077l306.620399 321.703933C662.505829 963.726242 680.945807 962.528973 691.908486 949.511495z"></path>
-</svg>
-
-            </i>
-            <span class="prev-text nav-default">DockerFile编写时更换apt为国内源</span>
-            <span class="prev-text nav-mobile">上一篇</span>
-          </a>
         
-          <a class="next" href="/post/php%E6%BA%90%E7%A0%81%E5%AE%89%E8%A3%85/">
-            <span class="next-text nav-default">PHP源码安装</span>
+          <a class="next" href="/post/linux%E6%96%87%E4%BB%B6%E6%9D%83%E9%99%90%E5%B0%8F%E7%BB%93/">
+            <span class="next-text nav-default">Linux文件权限小结</span>
             <span class="prev-text nav-mobile">下一篇</span>
             
             <i class="iconfont">
