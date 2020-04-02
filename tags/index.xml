@@ -6,10 +6,19 @@
     <description>Recent content in Tags on Record the life</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Sun, 28 Jul 2019 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 01 Apr 2020 16:52:50 +0800</lastBuildDate>
     
 	<atom:link href="http://mu-xin.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Docker</title>
+      <link>http://mu-xin.github.io/tags/docker/</link>
+      <pubDate>Wed, 01 Apr 2020 16:52:50 +0800</pubDate>
+      
+      <guid>http://mu-xin.github.io/tags/docker/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>Computer</title>
@@ -179,15 +188,6 @@
       <pubDate>Tue, 28 Nov 2017 00:00:00 +0000</pubDate>
       
       <guid>http://mu-xin.github.io/tags/binary/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>WebServer</title>
-      <link>http://mu-xin.github.io/tags/webserver/</link>
-      <pubDate>Sun, 28 May 2017 00:00:00 +0000</pubDate>
-      
-      <guid>http://mu-xin.github.io/tags/webserver/</guid>
       <description></description>
     </item>
     

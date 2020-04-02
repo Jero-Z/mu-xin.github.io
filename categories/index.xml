@@ -6,10 +6,19 @@
     <description>Recent content in Categories on Record the life</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Sun, 28 Jul 2019 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 01 Apr 2020 16:52:50 +0800</lastBuildDate>
     
 	<atom:link href="http://mu-xin.github.io/categories/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Docker</title>
+      <link>http://mu-xin.github.io/categories/docker/</link>
+      <pubDate>Wed, 01 Apr 2020 16:52:50 +0800</pubDate>
+      
+      <guid>http://mu-xin.github.io/categories/docker/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>Base</title>

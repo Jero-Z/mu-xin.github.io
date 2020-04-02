@@ -9,22 +9,53 @@
   </url>
   
   <url>
-    <loc>http://mu-xin.github.io/post/2020%E5%B9%B43%E6%9C%8825%E6%97%A5%E5%AD%90%E6%97%B6%E9%9A%8F%E6%83%B3/</loc>
-    <lastmod>2020-04-01T15:31:19+08:00</lastmod>
+    <loc>http://mu-xin.github.io/categories/</loc>
+    <lastmod>2020-04-01T16:52:50+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://mu-xin.github.io/categories/docker/</loc>
+    <lastmod>2020-04-01T16:52:50+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://mu-xin.github.io/tags/docker/</loc>
+    <lastmod>2020-04-01T16:52:50+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://mu-xin.github.io/post/docker%E5%91%BD%E4%BB%A4%E8%A7%A3%E6%9E%90/</loc>
+    <lastmod>2020-04-01T16:52:50+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
     <loc>http://mu-xin.github.io/post/</loc>
-    <lastmod>2020-04-01T15:31:19+08:00</lastmod>
+    <lastmod>2020-04-01T16:52:50+08:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>http://mu-xin.github.io/</loc>
-    <lastmod>2020-04-01T15:31:19+08:00</lastmod>
+    <lastmod>2020-04-01T16:52:50+08:00</lastmod>
     <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://mu-xin.github.io/tags/</loc>
+    <lastmod>2020-04-01T16:52:50+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://mu-xin.github.io/post/2020%E5%B9%B43%E6%9C%8825%E6%97%A5%E5%AD%90%E6%97%B6%E9%9A%8F%E6%83%B3/</loc>
+    <lastmod>2020-04-01T15:31:19+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
   </url>
   
   <url>
@@ -62,12 +93,6 @@
   </url>
   
   <url>
-    <loc>http://mu-xin.github.io/categories/</loc>
-    <lastmod>2019-07-28T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
     <loc>http://mu-xin.github.io/tags/computer/</loc>
     <lastmod>2019-07-28T00:00:00+00:00</lastmod>
     <priority>0</priority>
@@ -82,12 +107,6 @@
   
   <url>
     <loc>http://mu-xin.github.io/categories/other/</loc>
-    <lastmod>2019-07-28T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>http://mu-xin.github.io/tags/</loc>
     <lastmod>2019-07-28T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Docker on Record the life</title>
+    <link>http://mu-xin.github.io/categories/docker/</link>
+    <description>Recent content in Docker on Record the life</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Wed, 01 Apr 2020 16:52:50 +0800</lastBuildDate>
+    
+	<atom:link href="http://mu-xin.github.io/categories/docker/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Docker命令解析</title>
+      <link>http://mu-xin.github.io/post/docker%E5%91%BD%E4%BB%A4%E8%A7%A3%E6%9E%90/</link>
+      <pubDate>Wed, 01 Apr 2020 16:52:50 +0800</pubDate>
+      
+      <guid>http://mu-xin.github.io/post/docker%E5%91%BD%E4%BB%A4%E8%A7%A3%E6%9E%90/</guid>
+      <description>&lt;p&gt;&lt;img src=&#34;http://mu-xin.github.io/business-1845350_1280.jpg&#34; alt=&#34;docker command&#34; /&gt;&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

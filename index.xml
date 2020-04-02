@@ -6,7 +6,7 @@
     <description>Recent content on Record the life</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Wed, 01 Apr 2020 15:31:19 +0800</lastBuildDate>
+    <lastBuildDate>Wed, 01 Apr 2020 16:52:50 +0800</lastBuildDate>
     
         <atom:link href="http://mu-xin.github.io/index.xml" rel="self" type="application/rss+xml" />
     
@@ -23,6 +23,17 @@
 有问题左下角,欢迎来信,一定第一时间回复!
 帝都生活不易,不抽烟,寻觅酒友ing(个人酒品良好,不限酒类)
  </description>
+      
+    </item>
+    
+    <item>
+      <title>Docker命令解析</title>
+      <link>http://mu-xin.github.io/post/docker%E5%91%BD%E4%BB%A4%E8%A7%A3%E6%9E%90/</link>
+      <pubDate>Wed, 01 Apr 2020 16:52:50 +0800</pubDate>
+      
+      <guid>http://mu-xin.github.io/post/docker%E5%91%BD%E4%BB%A4%E8%A7%A3%E6%9E%90/</guid>
+      
+        <description>&lt;p&gt;&lt;img src=&#34;http://mu-xin.github.io/business-1845350_1280.jpg&#34; alt=&#34;docker command&#34; /&gt;&lt;/p&gt;</description>
       
     </item>
     
@@ -221,17 +232,6 @@
       <guid>http://mu-xin.github.io/post/%E4%B8%8D%E8%A6%81%E6%88%90%E4%B8%BA%E8%87%AA%E5%B7%B1%E8%AE%A8%E5%8E%8C%E7%9A%84%E9%82%A3%E7%A7%8D%E7%A8%8B%E5%BA%8F%E5%91%98/</guid>
       
         <description>&lt;p&gt;&lt;img src=&#34;https://i.loli.net/2019/07/03/5d1c96583442b23989.jpg&#34; alt=&#34;brand&#34; /&gt;&lt;/p&gt;</description>
-      
-    </item>
-    
-    <item>
-      <title>如何更快效率的写东西</title>
-      <link>http://mu-xin.github.io/post/%E5%A6%82%E4%BD%95%E6%9B%B4%E5%BF%AB%E6%95%88%E7%8E%87%E7%9A%84%E5%86%99%E4%B8%9C%E8%A5%BF/</link>
-      <pubDate>Wed, 12 Sep 2018 00:00:00 +0000</pubDate>
-      
-      <guid>http://mu-xin.github.io/post/%E5%A6%82%E4%BD%95%E6%9B%B4%E5%BF%AB%E6%95%88%E7%8E%87%E7%9A%84%E5%86%99%E4%B8%9C%E8%A5%BF/</guid>
-      
-        <description>&lt;p&gt;&lt;img src=&#34;https://i.loli.net/2019/07/03/5d1c16186c07c15373.jpg&#34; alt=&#34;workpiece ratio&#34; /&gt;&lt;/p&gt;</description>
       
     </item>
     

@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>2020年3月25日子时随想 - Record the life</title>
+  <title>Docker命令解析 - Record the life</title>
   
 
 <meta name="renderer" content="webkit" />
@@ -34,7 +34,7 @@
 <meta name="generator" content="Hugo 0.55.6" />
 
 
-<link rel="canonical" href="http://mu-xin.github.io/post/2020%E5%B9%B43%E6%9C%8825%E6%97%A5%E5%AD%90%E6%97%B6%E9%9A%8F%E6%83%B3/" />
+<link rel="canonical" href="http://mu-xin.github.io/post/docker%E5%91%BD%E4%BB%A4%E8%A7%A3%E6%9E%90/" />
 
 
 
@@ -56,26 +56,26 @@
 
 
 
-<meta property="og:title" content="2020年3月25日子时随想" />
+<meta property="og:title" content="Docker命令解析" />
 <meta property="og:description" content="" />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="http://mu-xin.github.io/post/2020%E5%B9%B43%E6%9C%8825%E6%97%A5%E5%AD%90%E6%97%B6%E9%9A%8F%E6%83%B3/" />
-<meta property="article:published_time" content="2020-04-01T15:31:19&#43;08:00"/>
-<meta property="article:modified_time" content="2020-04-01T15:31:19&#43;08:00"/>
+<meta property="og:url" content="http://mu-xin.github.io/post/docker%E5%91%BD%E4%BB%A4%E8%A7%A3%E6%9E%90/" />
+<meta property="article:published_time" content="2020-04-01T16:52:50&#43;08:00"/>
+<meta property="article:modified_time" content="2020-04-01T16:52:50&#43;08:00"/>
 
-<meta itemprop="name" content="2020年3月25日子时随想">
+<meta itemprop="name" content="Docker命令解析">
 <meta itemprop="description" content="">
 
 
-<meta itemprop="datePublished" content="2020-04-01T15:31:19&#43;08:00" />
-<meta itemprop="dateModified" content="2020-04-01T15:31:19&#43;08:00" />
-<meta itemprop="wordCount" content="23">
+<meta itemprop="datePublished" content="2020-04-01T16:52:50&#43;08:00" />
+<meta itemprop="dateModified" content="2020-04-01T16:52:50&#43;08:00" />
+<meta itemprop="wordCount" content="737">
 
 
 
-<meta itemprop="keywords" content="" />
+<meta itemprop="keywords" content="Docker," />
 <meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="2020年3月25日子时随想"/>
+<meta name="twitter:title" content="Docker命令解析"/>
 <meta name="twitter:description" content=""/>
 
 <!--[if lte IE 9]>
@@ -230,13 +230,16 @@
           <article class="post bg-white">
     
     <header class="post-header">
-      <h1 class="post-title">2020年3月25日子时随想</h1>
+      <h1 class="post-title">Docker命令解析</h1>
       
       <div class="post-meta">
         <time datetime="2020-04-01" class="post-time">
           2020-04-01
         </time>
-        
+        <div class="post-category">
+            <a href="http://mu-xin.github.io/categories/docker/"> Docker </a>
+            
+          </div>
         
 
         
@@ -252,25 +255,217 @@
 
     
     <div class="post-content">
-      <p><img src="/book-419589_1280.jpg" alt="story" /></p>
+      <p><img src="/business-1845350_1280.jpg" alt="docker command" /></p>
 
-<p>傍晚，手机弹出一条信息“本市今晚6-11级大风，请做好防护准备!”</p>
+<h2 id="前因">前因</h2>
 
-<p>洗漱躺下后狂风也随之而到，合租房内夹板门下的空隙成为了风流动的通道。时而湍急时 而夹带着小曲儿而来。思绪也随之浮起</p>
+<p><strong>近期在玩docker,但是迫于电脑硬盘只有256大小,拉取的镜像太多以及生成的容器没有及时的清理,定睛一看磁盘空间基本快接近枯竭了.没办法,只能去进行手动清理了.清理的过程中发现Docker中的命令其实挺有意思的.那么就简单的记录一下吧!</strong></p>
 
-<p>如果吹进来的是一个少女，用那柔软的双手抚摸着你的身体，从胸口上划到脚尖儿，一阵阵酥 麻的感觉，末了儿还能让你再打个激灵。随后翻身将身上的被子掖严实点!唉~ 谁让你无福 享受这等大自然的服侍呢?</p>
+<h3 id="image">IMAGE</h3>
 
-<p>而我就不一样了，我认为吹进来的是一支殡葬队伍。打头的是刽子手，随后是美容师，再之后 则是入殓师。嗯!一支队伍的配置大概就是这样子吧!</p>
+<p><code>docker images</code></p>
 
-<p>刽子手进门后从头到脚打量了我一番，大步流星地走到床头，一眼就瞄准了被子下面的脖子，手疾眼快一刀下去，颈部一阵凉意。嗯,我被上天抹杀了!美容师是老天在你死后给你整 理遗容的职业，虽然我已经失去了生命但不知为何脸部的触感还在，只觉得美容师快速拨 弄着双手在我脸上来回那么几下，不知是给我抹了多少胭脂水粉、也不知有没有给我涂 上护肤隔离霜啥的!入殓师的身型应该很是健壮，虽然我看不到它但是能明显地感觉到它 一把将我这无头的身体抓起，不过另一只手貌似忘记提起我的脑袋了，直接就将身体扔入 了火化炉，油脂迸溅，竟有一丝烤肉的味道从烟囱飘出，有那么一部分竟然飘到了大气层外，不知道宇宙中其它的智慧生命体会不会闻到一丝这烤肉的味道?</p>
+<pre>REPOSITORY                                  TAG                 IMAGE ID            CREATED             SIZE
+nginx-keepalived-docker-demo_nginx_master   latest              3a59ab4cf4e9        22 hours ago        35MB
+nginx-keepalived-docker-demo_nginx_slave    latest              3a59ab4cf4e9        22 hours ago        35MB
+nginx                                       1.16.1              588bb5d559c2        2 days ago          127MB
+haproxy                                     1.7-alpine          67836177b9f7        8 days ago          7.75MB
+mongo                                       4.2.3               97a9a3e85158        12 days ago         386MB
+debian                                      stable              e1aa81b5fcf3        5 weeks ago         114MB
+mongo                                       latest              bcef5fd2979d        5 weeks ago         386MB
+mysql                                       latest              afaec1334369        5 weeks ago         471MB
+redis                                       latest              44d36d2c2374        2 months ago        98.2MB
+confluentinc/cp-kafka                       5.4.0               7fa4a6c57613        2 months ago        598MB
+centos                                      centos7             5e35e350aded        4 months ago        203MB
+nginx                                       1.13.5-alpine       ea7bef82810a        2 years ago         15.5MB
+php                                         7.1.6-fpm           67514026b84e        2 years ago         382MB
+zookeeper                                   3.4.9               3b83d9104a4c        3 years ago         129MB</pre>
 
-<p>在火化炉运行完毕后，入殓师随后将骨灰盛了出来!“喂，里面有两根脚趾不是我的呀!”算了，反正现在也不会有人能在意到这个细节了。我突然产生了一丝悔意，当初怎么就没有留 下遗言交代一下死后骨灰的去处呢?天葬、海葬、还是直接丢弃?没有人能下这个决定的 时候入殓师便将我骨灰又倒在了床上，顺着失去身体的脑袋一路向下，竟丝毫不差的倒了一米七三那么长，连上脑袋和生前的身高出奇的一致(据考究，此人生前大致有一米八三左右)!我就静静地看着这些流程的进展，竟无一丝的感觉(虽然失去了身体但是脑袋还在思考)。</p>
+<pre>
+docker images --help
 
-<p>随后不知进来一个什么东西，它身形轻快，时而在我脸部，时而在我脚踝(大概的位置吧，虽然那里已是骨灰)。就这样上下游荡了一阵后从我脚尖悄然离去，而且还带走了一些我的骨灰，透过窗户飘向了远方。不知过了多久，来了多少小精灵，它们将我的骨灰一并带走了，飘出房间后我竟然还能感觉到自己的骨灰飘向了何处。</p>
+Usage:  docker images [OPTIONS] [REPOSITORY[:TAG]]
 
-<p>一些骨灰只飘了一米远就直线下落，砰的一声响落在楼下的花园中去滋养刚开出的迎春花、一些飘了很远，落在了深夜下班行色匆匆的行人的衣服上。还有一些落入臭水沟中，落在水面上的时候竟然不起一丝涟漪，嗯!臭水沟是真的臭!一些落入了医生的实验台上，医生 拖着疲惫的身体准备回家，转眼看了一眼显微镜激动地哭了起来，这个就是他们日思夜想 的治疗疫情的抗体结构，谁人能知道，农历己亥年的一场大疫竟然是我的骨灰给平息掉的。也算是死后做了些贡献吧!其余的我也记不清了，大概是随风飘扬，落在北京不同的地方，前门大街，颐和园，故宫，圆明园，王府井，毛线胡同，还有一些落在南站的高铁列车上，我想应该是往南开吧？载我到山东界内后就会剥离开来，让我的一小部分能回到家乡，也算是落叶归根吧!</p>
+List images
 
-<p>夤夜,房间内的鼾声阵阵响起,随风飘往远方!</p>
+Options:
+  -a, --all             Show all images (default hides intermediate images)列出所有镜像
+      --digests         Show digests 现实摘要
+  -f, --filter filter   Filter output based on conditions provided 过滤器
+      --format string   Pretty-print images using a Go template 输出格式
+      --no-trunc        Don't truncate output 完整的输出全部内容
+  -q, --quiet           Only show numeric IDs 只输出镜像ID
+
+
+--format "table {{.ID}}:\t {{.REPOSITYR}}"
+
+.ID Image ID 镜像id
+.Repository Image repository 包名
+.Tag    Image tag 标签
+.Digest Image digest 摘要
+.CreatedSince   Elapsed time since the image was created 创建以前
+.CreatedAt  Time when the image was created 创建以后
+.Size   Image disk size 大小
+
+
+
+--filter dangling=true
+
+dangling (boolean - true or false)
+label (label=<key> or label=<key>=<value>)
+before (<image-name>[:<tag>], <image id> or <image@digest>) - filter images created before given id or references
+since (<image-name>[:<tag>], <image id> or <image@digest>) - filter images created since given id or references
+reference (pattern of an image reference) - filter images whose reference matches the specified pattern 
+</pre>
+
+<h4 id="查找所有nginx的镜像-并只显示该镜像的id"><strong>查找所有nginx的镜像,并只显示该镜像的ID</strong></h4>
+
+<p><code>docker images --filter=reference='nginx*:*'</code></p>
+
+<blockquote>
+<p>匹配REPOSITORY名称,如果含有多个reference的话它们的匹配关系为逻辑或 or 进行匹配</p>
+</blockquote>
+
+<pre>3a59ab4cf4e9
+3a59ab4cf4e9
+588bb5d559c2
+ea7bef82810a
+</pre>
+
+<h4 id="删除所有mongo的镜像"><strong>删除所有mongo的镜像</strong></h4>
+
+<p><code>docker rmi $(docker images --filter=reference='mongo' -q)</code></p>
+
+<blockquote>
+<p>首先先找出所有mongo的镜像id,然后使用rmi命令直接进行删除</p>
+</blockquote>
+
+<pre>
+97a9a3e85158
+bcef5fd2979d
+</pre>
+
+<h4 id="删除所有虚浮-none-镜像"><strong>删除所有虚浮</strong>(none)镜像</h4>
+
+<p><code>docker rmi $(docker images -f &quot;dangling=true&quot; -q)</code></p>
+
+<blockquote>
+<p>官方文档其实已经介绍很清楚了,意思就是先查出所有none的镜像id 然后进行删除,大致思路都一样,万变不离其宗</p>
+</blockquote>
+
+<h2 id="container">CONTAINER</h2>
+
+<p><code>docker ps | docker container ps | docker-compose ps</code></p>
+
+<pre>
+CONTAINER ID        IMAGE               COMMAND                  CREATED             STATUS              PORTS                               NAMES
+e9576e512798        mongo:4.2.3         "docker-entrypoint.s…"   10 days ago         Up 5 days           0.0.0.0:27017->27017/tcp            local_mongo
+2ad6ad6f5560        mysql:latest        "docker-entrypoint.s…"   5 weeks ago         Up 5 days           0.0.0.0:3306->3306/tcp, 33060/tcp   local_mysql
+2020efb812a1        redis:latest        "docker-entrypoint.s…"   5 weeks ago         Up 5 days           0.0.0.0:6379->6379/tcp              local_redis</pre>
+
+<pre>
+docker ps --help
+
+Usage:  docker ps [OPTIONS]
+
+List containers
+
+Options:
+  -a, --all             Show all containers (default shows just running)
+  -f, --filter filter   Filter output based on conditions provided
+      --format string   Pretty-print containers using a Go template
+  -n, --last int        Show n last created containers (includes all states) (default -1)
+  -l, --latest          Show the latest created container (includes all states)
+      --no-trunc        Don't truncate output
+  -q, --quiet           Only display numeric IDs
+  -s, --size            Display total file sizes
+</pre>
+
+<p><strong>原理其实和image命令差不多,但是其中的一些查询key略有变动,例如:</strong></p>
+
+<h5 id="filter-参数"><em>&ndash;filter 参数</em></h5>
+
+<pre>
+id  Container’s ID
+name    Container’s name
+label   An arbitrary string representing either a key or a key-value pair. Expressed as <key> or <key>=<value>
+exited  An integer representing the container’s exit code. Only useful with --all.
+status  One of created, restarting, running, removing, paused, exited, or dead
+ancestor    Filters containers which share a given image as an ancestor. Expressed as <image-name>[:<tag>], <image id>, or <image@digest>
+before or since Filters containers created before or after a given container ID or name
+volume  Filters running containers which have mounted a given volume or bind mount.
+network Filters running containers connected to a given network.
+publish or expose   Filters containers which publish or expose a given port. Expressed as <port>[/<proto>] or <startport-endport>/[<proto>]
+health  Filters containers based on their healthcheck status. One of starting, healthy, unhealthy or none.
+isolation   Windows daemon only. One of default, process, or hyperv.
+is-task Filters containers that are a “task” for a service. Boolean option (true or false)
+</pre>
+
+<p>``
+docker ps &ndash;filter status=exited 查询所有停止运行的容器</p>
+
+<p>//如果需要释放一批停止的容器的话可以执行以下命令</p>
+
+<p>docker rm $(docker ps &ndash;filter status=exited -q)</p>
+
+<p>可以根据容器名称进行查询</p>
+
+<p>docker ps &ndash;filter name=redis// 多个name查询时查询力度为逻辑或 (or)的关系不同key之间查询力度为逻辑与(and)的关系</p>
+
+<p>``</p>
+
+<blockquote>
+<p>条件虽多，但万变不离其宗，只要再记住以下 3 条准则：</p>
+</blockquote>
+
+<ol>
+<li>选项后跟的都是键值对,如果有多个过滤条件，就多次使用 filter 选项。</li>
+<li>相同条件之间的关系是或，不同条件之间的关系是与。</li>
+<li>id 和 name，支持正则表达式，使用起来非常灵活。</li>
+</ol>
+
+<h5 id="format-参数"><em>&ndash;format 参数</em></h5>
+
+<pre>
+.ID Container ID
+.Image  Image ID
+.Command    Quoted command
+.CreatedAt  Time when the container was created.
+.RunningFor Elapsed time since the container was started.
+.Ports  Exposed ports.
+.Status Container status.
+.Size   Container disk size.
+.Names  Container names.
+.Labels All labels assigned to the container.
+.Label  Value of a specific label for this container. For example '{{.Label "com.docker.swarm.cpu"}}'
+.Mounts Names of the volumes mounted in this container.
+.Networks   Names of the networks attached to this container.
+</pre>
+
+<p><em>如果在使用docker ps进行查看容器的时候系统会默认输出以下类目的数据,而我们有可能只关心端口的占用,亦或者状态值,这个时候就需要使用格式化输出参数了</em></p>
+
+<blockquote>
+<p>CONTAINER ID  | IMAGE     |  COMMAND   | CREATED        |    STATUS    |          PORTS           |         NAMES</p>
+</blockquote>
+
+<p><code>docker ps --format &quot;{{.ID}}: {{.Status}}&quot;</code></p>
+
+<pre>
+e9576e512798: Up 5 days
+2ad6ad6f5560: Up 5 days
+2020efb812a1: Up 5 days
+</pre>
+
+<p><em>如果想带上表格列头，需要再 template 中加上 table 指令：</em></p>
+
+<p><code>docker ps --format &quot;table {{.ID}}:\t {{.Image}}&quot;</code></p>
+
+<pre>
+CONTAINER ID:        IMAGE
+e9576e512798:        mongo:4.2.3
+2ad6ad6f5560:        mysql:latest
+2020efb812a1:        redis:latest
+</pre>
     </div>
 
     
@@ -285,27 +480,17 @@
     
 
     <footer class="post-footer">
-      
+      <div class="post-tags">
+          <a href="http://mu-xin.github.io/tags/docker/">Docker</a>
+          
+        </div>
 
       
       <nav class="post-nav">
         
-          <a class="prev" href="/post/docker%E5%91%BD%E4%BB%A4%E8%A7%A3%E6%9E%90/">
-            
-            <i class="iconfont">
-              <svg  class="icon" viewBox="0 0 1024 1024" version="1.1"
-  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-  width="18" height="18">
-  <path d="M691.908486 949.511495l75.369571-89.491197c10.963703-12.998035 10.285251-32.864502-1.499144-44.378743L479.499795 515.267417 757.434875 204.940602c11.338233-12.190647 11.035334-32.285311-0.638543-44.850487l-80.46666-86.564541c-11.680017-12.583596-30.356378-12.893658-41.662889-0.716314L257.233596 494.235404c-11.332093 12.183484-11.041474 32.266891 0.657986 44.844348l80.46666 86.564541c1.772366 1.910513 3.706415 3.533476 5.750981 4.877077l306.620399 321.703933C662.505829 963.726242 680.945807 962.528973 691.908486 949.511495z"></path>
-</svg>
-
-            </i>
-            <span class="prev-text nav-default">Docker命令解析</span>
-            <span class="prev-text nav-mobile">上一篇</span>
-          </a>
         
-          <a class="next" href="/post/dockerfile%E7%BC%96%E5%86%99%E6%97%B6%E6%9B%B4%E6%8D%A2apt%E4%B8%BA%E5%9B%BD%E5%86%85%E6%BA%90/">
-            <span class="next-text nav-default">DockerFile编写时更换apt为国内源</span>
+          <a class="next" href="/post/2020%E5%B9%B43%E6%9C%8825%E6%97%A5%E5%AD%90%E6%97%B6%E9%9A%8F%E6%83%B3/">
+            <span class="next-text nav-default">2020年3月25日子时随想</span>
             <span class="prev-text nav-mobile">下一篇</span>
             
             <i class="iconfont">
