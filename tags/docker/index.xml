@@ -17,7 +17,10 @@
       <pubDate>Wed, 01 Apr 2020 16:52:50 +0800</pubDate>
       
       <guid>http://mu-xin.github.io/post/docker%E5%91%BD%E4%BB%A4%E8%A7%A3%E6%9E%90/</guid>
-      <description>&lt;p&gt;&lt;img src=&#34;http://mu-xin.github.io/business-1845350_1280.jpg&#34; alt=&#34;docker command&#34; /&gt;&lt;/p&gt;</description>
+      <description>&amp;amp;lt!&amp;ndash;more&amp;ndash;&amp;amp;gt
+前因 近期在玩docker,但是迫于电脑硬盘只有256大小,拉取的镜像太多以及生成的容器没有及时的清理,定睛一看磁盘空间基本快接近枯竭了.没办法,只能去进行手动清理了.清理的过程中发现Docker中的命令其实挺有意思的.那么就简单的记录一下吧!
+IMAGE docker images
+REPOSITORY TAG IMAGE ID CREATED SIZE nginx-keepalived-docker-demo_nginx_master latest 3a59ab4cf4e9 22 hours ago 35MB nginx-keepalived-docker-demo_nginx_slave latest 3a59ab4cf4e9 22 hours ago 35MB nginx 1.16.1 588bb5d559c2 2 days ago 127MB haproxy 1.7-alpine 67836177b9f7 8 days ago 7.75MB mongo 4.2.3 97a9a3e85158 12 days ago 386MB debian stable e1aa81b5fcf3 5 weeks ago 114MB mongo latest bcef5fd2979d 5 weeks ago 386MB mysql latest afaec1334369 5 weeks ago 471MB redis latest 44d36d2c2374 2 months ago 98.</description>
     </item>
     
   </channel>
