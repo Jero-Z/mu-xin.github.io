@@ -23,10 +23,7 @@
 <meta name="mobile-web-app-capable" content="yes">
 
 <meta name="author" content="muxin" />
-  <meta name="description" content="&amp;amp;lt!&amp;ndash;more&amp;ndash;&amp;amp;gt
-前因 近期在玩docker,但是迫于电脑硬盘只有256大小,拉取的镜像太多以及生成的容器没有及时的清理,定睛一看磁盘空间基本快接近枯竭了.没办法,只能去进行手动清理了.清理的过程中发现Docker中的命令其实挺有意思的.那么就简单的记录一下吧!
-IMAGE docker images
-REPOSITORY TAG IMAGE ID CREATED SIZE nginx-keepalived-docker-demo_nginx_master latest 3a59ab4cf4e9 22 hours ago 35MB nginx-keepalived-docker-demo_nginx_slave latest 3a59ab4cf4e9 22 hours ago 35MB nginx 1.16.1 588bb5d559c2 2 days ago 127MB haproxy 1.7-alpine 67836177b9f7 8 days ago 7.75MB mongo 4.2.3 97a9a3e85158 12 days ago 386MB debian stable e1aa81b5fcf3 5 weeks ago 114MB mongo latest bcef5fd2979d 5 weeks ago 386MB mysql latest afaec1334369 5 weeks ago 471MB redis latest 44d36d2c2374 2 months ago 98." />
+  <meta name="description" content="" />
 
 
 
@@ -60,35 +57,26 @@ REPOSITORY TAG IMAGE ID CREATED SIZE nginx-keepalived-docker-demo_nginx_master l
 
 
 <meta property="og:title" content="Docker命令解析" />
-<meta property="og:description" content="&amp;lt!&ndash;more&ndash;&amp;gt
-前因 近期在玩docker,但是迫于电脑硬盘只有256大小,拉取的镜像太多以及生成的容器没有及时的清理,定睛一看磁盘空间基本快接近枯竭了.没办法,只能去进行手动清理了.清理的过程中发现Docker中的命令其实挺有意思的.那么就简单的记录一下吧!
-IMAGE docker images
-REPOSITORY TAG IMAGE ID CREATED SIZE nginx-keepalived-docker-demo_nginx_master latest 3a59ab4cf4e9 22 hours ago 35MB nginx-keepalived-docker-demo_nginx_slave latest 3a59ab4cf4e9 22 hours ago 35MB nginx 1.16.1 588bb5d559c2 2 days ago 127MB haproxy 1.7-alpine 67836177b9f7 8 days ago 7.75MB mongo 4.2.3 97a9a3e85158 12 days ago 386MB debian stable e1aa81b5fcf3 5 weeks ago 114MB mongo latest bcef5fd2979d 5 weeks ago 386MB mysql latest afaec1334369 5 weeks ago 471MB redis latest 44d36d2c2374 2 months ago 98." />
+<meta property="og:description" content="" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="http://mu-xin.github.io/post/docker%E5%91%BD%E4%BB%A4%E8%A7%A3%E6%9E%90/" />
 <meta property="article:published_time" content="2020-04-01T16:52:50&#43;08:00"/>
 <meta property="article:modified_time" content="2020-04-01T16:52:50&#43;08:00"/>
 
 <meta itemprop="name" content="Docker命令解析">
-<meta itemprop="description" content="&amp;lt!&ndash;more&ndash;&amp;gt
-前因 近期在玩docker,但是迫于电脑硬盘只有256大小,拉取的镜像太多以及生成的容器没有及时的清理,定睛一看磁盘空间基本快接近枯竭了.没办法,只能去进行手动清理了.清理的过程中发现Docker中的命令其实挺有意思的.那么就简单的记录一下吧!
-IMAGE docker images
-REPOSITORY TAG IMAGE ID CREATED SIZE nginx-keepalived-docker-demo_nginx_master latest 3a59ab4cf4e9 22 hours ago 35MB nginx-keepalived-docker-demo_nginx_slave latest 3a59ab4cf4e9 22 hours ago 35MB nginx 1.16.1 588bb5d559c2 2 days ago 127MB haproxy 1.7-alpine 67836177b9f7 8 days ago 7.75MB mongo 4.2.3 97a9a3e85158 12 days ago 386MB debian stable e1aa81b5fcf3 5 weeks ago 114MB mongo latest bcef5fd2979d 5 weeks ago 386MB mysql latest afaec1334369 5 weeks ago 471MB redis latest 44d36d2c2374 2 months ago 98.">
+<meta itemprop="description" content="">
 
 
 <meta itemprop="datePublished" content="2020-04-01T16:52:50&#43;08:00" />
 <meta itemprop="dateModified" content="2020-04-01T16:52:50&#43;08:00" />
-<meta itemprop="wordCount" content="755">
+<meta itemprop="wordCount" content="754">
 
 
 
 <meta itemprop="keywords" content="Docker," />
 <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Docker命令解析"/>
-<meta name="twitter:description" content="&amp;lt!&ndash;more&ndash;&amp;gt
-前因 近期在玩docker,但是迫于电脑硬盘只有256大小,拉取的镜像太多以及生成的容器没有及时的清理,定睛一看磁盘空间基本快接近枯竭了.没办法,只能去进行手动清理了.清理的过程中发现Docker中的命令其实挺有意思的.那么就简单的记录一下吧!
-IMAGE docker images
-REPOSITORY TAG IMAGE ID CREATED SIZE nginx-keepalived-docker-demo_nginx_master latest 3a59ab4cf4e9 22 hours ago 35MB nginx-keepalived-docker-demo_nginx_slave latest 3a59ab4cf4e9 22 hours ago 35MB nginx 1.16.1 588bb5d559c2 2 days ago 127MB haproxy 1.7-alpine 67836177b9f7 8 days ago 7.75MB mongo 4.2.3 97a9a3e85158 12 days ago 386MB debian stable e1aa81b5fcf3 5 weeks ago 114MB mongo latest bcef5fd2979d 5 weeks ago 386MB mysql latest afaec1334369 5 weeks ago 471MB redis latest 44d36d2c2374 2 months ago 98."/>
+<meta name="twitter:description" content=""/>
 
 <!--[if lte IE 9]>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/classlist/1.1.20170427/classList.min.js"></script>
@@ -267,11 +255,7 @@ REPOSITORY TAG IMAGE ID CREATED SIZE nginx-keepalived-docker-demo_nginx_master l
 
     
     <div class="post-content">
-      
-
-<p><img src="/business-1845350_1280.jpg" alt="docker command" /></p>
-
-<p>&amp;lt!&ndash;more&ndash;&amp;gt</p>
+      <p><img src="/business-1845350_1280.jpg" alt="docker command" /></p>
 
 <h2 id="前因">前因</h2>
 
@@ -479,7 +463,6 @@ e9576e512798:        mongo:4.2.3
 2ad6ad6f5560:        mysql:latest
 2020efb812a1:        redis:latest
 <pre></p>
-
     </div>
 
     
