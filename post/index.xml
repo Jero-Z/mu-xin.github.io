@@ -6,10 +6,19 @@
     <description>Recent content in Posts on Record the life</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Mon, 13 Apr 2020 14:15:00 +0800</lastBuildDate>
+    <lastBuildDate>Fri, 17 Apr 2020 11:56:01 +0800</lastBuildDate>
     
 	<atom:link href="http://mu-xin.github.io/post/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>每天一个Linux命令 Ls</title>
+      <link>http://mu-xin.github.io/post/%E6%AF%8F%E5%A4%A9%E4%B8%80%E4%B8%AAlinux%E5%91%BD%E4%BB%A4-ls/</link>
+      <pubDate>Fri, 17 Apr 2020 11:56:01 +0800</pubDate>
+      
+      <guid>http://mu-xin.github.io/post/%E6%AF%8F%E5%A4%A9%E4%B8%80%E4%B8%AAlinux%E5%91%BD%E4%BB%A4-ls/</guid>
+      <description>&lt;p&gt;&lt;img src=&#34;http://mu-xin.github.io/linux-151619_1280.png&#34; alt=&#34;linux-commmand&#34; /&gt;&lt;/p&gt;</description>
+    </item>
     
     <item>
       <title>每天一个Linux命令 Tree</title>
@@ -90,15 +99,6 @@
       
       <guid>http://mu-xin.github.io/post/mac%E4%B8%8B%E7%9A%84%E8%99%9A%E6%8B%9F%E6%9C%BA/</guid>
       <description>&lt;p&gt;&lt;img src=&#34;https://i.loli.net/2019/07/03/5d1c15452c86447120.jpg&#34; alt=&#34;Mac&#34; /&gt;&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>JetBrains家IDE在天朝安装插件的方式</title>
-      <link>http://mu-xin.github.io/post/jetbrains%E5%AE%B6ide%E5%9C%A8%E5%A4%A9%E6%9C%9D%E5%AE%89%E8%A3%85%E6%8F%92%E4%BB%B6%E7%9A%84%E6%96%B9%E5%BC%8F/</link>
-      <pubDate>Thu, 04 Jul 2019 21:39:41 +0800</pubDate>
-      
-      <guid>http://mu-xin.github.io/post/jetbrains%E5%AE%B6ide%E5%9C%A8%E5%A4%A9%E6%9C%9D%E5%AE%89%E8%A3%85%E6%8F%92%E4%BB%B6%E7%9A%84%E6%96%B9%E5%BC%8F/</guid>
-      <description>&lt;p&gt;&lt;img src=&#34;https://i.loli.net/2019/07/11/5d26ead745da362175.png&#34; alt=&#34;time-out-logo-no-background_orig.png&#34; /&gt;&lt;/p&gt;</description>
     </item>
     
   </channel>

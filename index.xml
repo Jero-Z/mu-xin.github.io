@@ -6,7 +6,7 @@
     <description>Recent content on Record the life</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Mon, 13 Apr 2020 14:15:00 +0800</lastBuildDate>
+    <lastBuildDate>Fri, 17 Apr 2020 11:56:01 +0800</lastBuildDate>
     
         <atom:link href="http://mu-xin.github.io/index.xml" rel="self" type="application/rss+xml" />
     
@@ -23,6 +23,17 @@
 有问题左下角,欢迎来信,一定第一时间回复!
 帝都生活不易,不抽烟,寻觅酒友ing(个人酒品良好,不限酒类)
  </description>
+      
+    </item>
+    
+    <item>
+      <title>每天一个Linux命令 Ls</title>
+      <link>http://mu-xin.github.io/post/%E6%AF%8F%E5%A4%A9%E4%B8%80%E4%B8%AAlinux%E5%91%BD%E4%BB%A4-ls/</link>
+      <pubDate>Fri, 17 Apr 2020 11:56:01 +0800</pubDate>
+      
+      <guid>http://mu-xin.github.io/post/%E6%AF%8F%E5%A4%A9%E4%B8%80%E4%B8%AAlinux%E5%91%BD%E4%BB%A4-ls/</guid>
+      
+        <description>&lt;p&gt;&lt;img src=&#34;http://mu-xin.github.io/linux-151619_1280.png&#34; alt=&#34;linux-commmand&#34; /&gt;&lt;/p&gt;</description>
       
     </item>
     
@@ -111,17 +122,6 @@
       <guid>http://mu-xin.github.io/post/linux-scp%E4%BD%BF%E7%94%A8/</guid>
       
         <description>&lt;p&gt;&lt;img src=&#34;http://mu-xin.github.io/linux-scp-command.jpg&#34; alt=&#34;scp&#34; /&gt;&lt;/p&gt;</description>
-      
-    </item>
-    
-    <item>
-      <title>Mac中使用虚拟机的不同姿势</title>
-      <link>http://mu-xin.github.io/post/mac%E4%B8%8B%E7%9A%84%E8%99%9A%E6%8B%9F%E6%9C%BA/</link>
-      <pubDate>Sun, 28 Jul 2019 00:00:00 +0000</pubDate>
-      
-      <guid>http://mu-xin.github.io/post/mac%E4%B8%8B%E7%9A%84%E8%99%9A%E6%8B%9F%E6%9C%BA/</guid>
-      
-        <description>&lt;p&gt;&lt;img src=&#34;https://i.loli.net/2019/07/03/5d1c15452c86447120.jpg&#34; alt=&#34;Mac&#34; /&gt;&lt;/p&gt;</description>
       
     </item>
     
