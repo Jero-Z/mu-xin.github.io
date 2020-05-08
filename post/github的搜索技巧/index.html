@@ -69,7 +69,7 @@
 
 <meta itemprop="datePublished" content="2018-12-11T16:24:32&#43;08:00" />
 <meta itemprop="dateModified" content="2018-12-11T16:24:32&#43;08:00" />
-<meta itemprop="wordCount" content="41">
+<meta itemprop="wordCount" content="81">
 
 
 
@@ -310,6 +310,26 @@
 
 <p><strong>最为关键的是上述的高阶搜索方式中是支持组合条件搜索的,例如:</strong>
 <code>in:description:第三方支付 pushed:&gt;2019-12-12 stars:&gt;1500</code></p>
+
+<h3 id="组合条件使用">组合条件使用</h3>
+
+<ol>
+<li>搜索名字包含 spring boot ,并且 star 在 1000 以上的项目。</li>
+</ol>
+
+<p><code>in:name spring boot stars:&gt;1000</code></p>
+
+<ol>
+<li>搜索描述中包含 spring boot,并且 star 在1000以上，language 为 java 的项目。</li>
+</ol>
+
+<p><code>in:description spring boot stars:&gt;1000 language:java</code></p>
+
+<ol>
+<li>搜索 readme 中包含关键字【测试自动化框架】，并且 star 在 100 以上，language 是 python 的项目.</li>
+</ol>
+
+<p><code>in:readme 测试自动化框架 stars:&gt;100 language:python</code></p>
 
 <p><em>使用好了高级搜索后,小伙伴们可以愉快的去<del>gay</del> coding了-.-</em></p>
     </div>
