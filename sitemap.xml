@@ -485,6 +485,13 @@
   </url>
   
   <url>
+    <loc>http://mu-xin.github.io/post/%E6%AF%8F%E5%A4%A9%E4%B8%80%E4%B8%AAlinux%E5%91%BD%E4%BB%A4-uptime/</loc>
+    <lastmod>2018-05-22T16:09:34+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
     <loc>http://mu-xin.github.io/post/mysql8.0%E7%9A%84%E9%82%A3%E4%BA%9B%E6%96%B0%E7%89%B9%E6%80%A7/</loc>
     <lastmod>2018-05-04T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
