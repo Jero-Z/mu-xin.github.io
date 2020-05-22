@@ -66,7 +66,7 @@
 <meta itemprop="description" content="">
 <meta itemprop="datePublished" content="2019-05-07T11:54:55&#43;08:00" />
 <meta itemprop="dateModified" content="2019-05-07T11:54:55&#43;08:00" />
-<meta itemprop="wordCount" content="0">
+<meta itemprop="wordCount" content="42">
 
 
 
@@ -248,7 +248,60 @@
 
     
     <div class="post-content">
-      
+      <p><img src="/master-slvae.jpg" alt="master-slave"></p>
+<p><strong>近期在处理公司的数据迁移问题,找了一些资料来看,大概解决思路有一下两种:</strong></p>
+<ol>
+<li>不停机,增量备份,增量恢复的方式
+<ol>
+<li>优点:用户无痛无感较为友好</li>
+<li>缺点:实现较为麻烦,数量巨大的情况下实施有风险,平滑迁移对项目要求高</li>
+</ol>
+</li>
+<li>停机停服,在一段时间内进行数据的同步
+<ol>
+<li>优点:实现简单明了,对于项目的契合度也相对较高</li>
+<li>缺点:生产环境需要停机停服,对用户相对不友好</li>
+</ol>
+</li>
+</ol>
+<p><em>结合以上情况以及项目当前进度执行一下步骤进行问题的处理:</em></p>
+<ol>
+<li>全量备份</li>
+<li>新增一个从库,使用全量备份数据恢复到一个从库(减轻从库同步数据量大的问题)</li>
+<li>开启主从数据同步</li>
+<li>对单个服务单元进行停机,保证其他区正常生产</li>
+<li>执行同步迁移脚本,完成数据同步,并开放服务单元</li>
+</ol>
+<p>在实施过程中就使用到了MySql的主从同步问题,之前也在Docker中实现过主从同步方式,但是这次使用Docker-compose进行管理,更加的高效方便</p>
+<ol>
+<li>
+<p>使用前期的Dockerfile进行镜像的构建</p>
+</li>
+<li>
+<p>编写docker-compose.yml文件</p>
+</li>
+<li>
+<p>修改my.conf文件</p>
+<blockquote>
+<p>[mysqld]
+<code>server-id=1001</code>同一局域网内注意要唯一
+<code>log-bin=mysql-bin</code>开启二进制日志功能,也可自行编写脚本读取该二进制文件,进行数据的同步</p>
+</blockquote>
+</li>
+<li>
+<p>在主库上创建从库的账户,并执行命令
+<code>show master status</code>查看主库状态,记住File、Position的值，在Slaver中将用到</p>
+</li>
+<li>
+<p>进入从库,执行:
+<code>change master to master_host='主库地址', master_user='用户名', master_password='密码', master_port=3306, master_log_file='mysql-bin.000003', master_log_pos= 154, master_connect_retry=30;</code></p>
+</li>
+<li>
+<p>开启同步,查看从库状态</p>
+<p><code>start slave</code>
+<code>show slave status</code></p>
+</li>
+</ol>
     </div>
 
     
