@@ -31,7 +31,7 @@
 
 
 
-<meta name="generator" content="Hugo 0.55.6" />
+<meta name="generator" content="Hugo 0.70.0" />
 
 
 <link rel="canonical" href="http://mu-xin.github.io/post/git%E4%B8%8Egithub%E7%9A%84%E9%82%A3%E4%BA%9B%E4%BA%8B/" />
@@ -50,7 +50,7 @@
 
 
 
-<link rel="stylesheet" href="/sass/jane.min.98eb6e9b65e7db1489f57e9917a82404ffa5fa0c13df6e4993091387d8628dbf.css" integrity="sha256-mOtum2Xn2xSJ9X6ZF6gkBP&#43;l&#43;gwT325JkwkTh9hijb8=" media="screen" crossorigin="anonymous">
+<link rel="stylesheet" href="/sass/jane.min.06b243fac4668f09b63eac07ce36069187f227ab53d5acc9c92c28413cd1a177.css" integrity="sha256-BrJD&#43;sRmjwm2PqwHzjYGkYfyJ6tT1azJySwoQTzRoXc=" media="screen" crossorigin="anonymous">
 
 
 
@@ -60,21 +60,17 @@
 <meta property="og:description" content="" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="http://mu-xin.github.io/post/git%E4%B8%8Egithub%E7%9A%84%E9%82%A3%E4%BA%9B%E4%BA%8B/" />
-<meta property="article:published_time" content="2019-07-04T21:25:00&#43;08:00"/>
-<meta property="article:modified_time" content="2019-07-04T21:25:00&#43;08:00"/>
-
+<meta property="article:published_time" content="2019-07-04T21:25:00+08:00" />
+<meta property="article:modified_time" content="2019-07-04T21:25:00+08:00" />
 <meta itemprop="name" content="Git与GitHub的那些事">
 <meta itemprop="description" content="">
-
-
 <meta itemprop="datePublished" content="2019-07-04T21:25:00&#43;08:00" />
 <meta itemprop="dateModified" content="2019-07-04T21:25:00&#43;08:00" />
-<meta itemprop="wordCount" content="304">
+<meta itemprop="wordCount" content="301">
 
 
 
-<meta itemprop="keywords" content="" />
-<meta name="twitter:card" content="summary"/>
+<meta itemprop="keywords" content="" /><meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Git与GitHub的那些事"/>
 <meta name="twitter:description" content=""/>
 
@@ -252,118 +248,88 @@
 
     
     <div class="post-content">
-      <p><img src="/github-394322_1280.png" alt="github" /></p>
-
-<h2 id="多快好省-简单粗暴">多快好省,简单粗暴</h2>
-
-<h4 id="1-阐述功能">1.阐述功能</h4>
-
+      <p><img src="/github-394322_1280.png" alt="github"></p>
+<h2 id="多快好省简单粗暴">多快好省,简单粗暴</h2>
+<h4 id="1阐述功能">1.阐述功能</h4>
 <pre><code>&gt; git :
 </code></pre>
-
 <p><del>Gitis a free and open source distributed version control system designed to handle everything from small to very large projects with speed and efficiency.</del></p>
-
 <p><del>Git is easy to learn and has a tiny footprint with lightning fast performance. It outclasses SCM tools like Subversion, CVS, Perforce, and ClearCase with features like cheap local branching, convenient staging areas, and multiple workflows.</del></p>
-
 <pre><code>⬆️引述于官方首页,简单来说Git是目前世界上最先进的分布式版本控制系统（没有之一）。
 
 
 &gt; github : 
 </code></pre>
-
 <p><del>GitHub, Inc. is a US-based global company that provides hosting for software development version control using Git. It is a subsidiary of Microsoft, which acquired the company in 2018 for US$7.5 billion. It offers the distributed version control and source code management (SCM) functionality of Git, plus its own features. It provides access control and several collaboration features such as bug tracking, feature requests, task management, and wikis for every project.</del></p>
-
 <pre><code>&gt; 最大同人社区（没有之一）
 </code></pre>
-
-<h4 id="2-上手测试">2.上手测试</h4>
-
+<h4 id="2上手测试">2.上手测试</h4>
 <pre><code>1. git init//初始化仓库 
 2. git add //添加文件到暂存区
 3. git commit //生成快照
 4. git remote add origin &quot;git repository address&quot;//添加远端仓库地址
 5. git push 推送快照到远端仓库
 </code></pre>
-
-<h4 id="3-背后细节">3.背后细节</h4>
-
+<h4 id="3背后细节">3.背后细节</h4>
 <pre><code>&gt; 上面的那些操作能满足我这种面向互联网开发程序猿吗?能!也不能
 如果简单的在项目中运用的话,做为一个初级开发其实足够了,再学习一些分支技巧知道提交merge request 的确就足够了,但是作为一个胸有大痣的我怎么可能这么简单的就满足呢?那么接下来就慢慢的深入她,揭开她的面纱吧....
 </code></pre>
-
 <ol>
-<li><p><code>git init</code></p>
-
-<p><strong>命令只做一件事，就是在项目根目录下创建一个.git子目录，用来保存版本信息。</strong></p></li>
-
-<li><p><code>git add</code></p>
-
+<li>
+<p><code>git init</code></p>
+<p><strong>命令只做一件事，就是在项目根目录下创建一个.git子目录，用来保存版本信息。</strong></p>
+</li>
+<li>
+<p><code>git add</code></p>
 <p><strong>这个命令其实是简化了两个操作步骤,</strong></p>
-
 <p><code>git hash-objecgt -w fileName</code></p>
-
 <p><code>git update-index --add --cacheinfo</code></p>
-
 <p><strong>那么问题来了,这两个兄弟又是做了些什么呢?</strong></p>
-
 <p><code>git hash-objecgt -w fileName</code> //生成hash值</p>
-
-<hr />
-
-<p><code>git hash-object -w README.md</code>
-&gt;1439efeb9f724f332c0d935905b12c26ce8009c1`</p>
-
-<p><code>ll .git/objects/14</code>
-&gt; 39efeb9f724f332c0d935905b12c26ce8009c1`</p>
-
-<p><code>git caat-file -p 1439efeb9f724f332c0d935905b12c26ce8009c1</code>
-&gt; # git-flow-process
+<hr>
+<p><code>git hash-object -w README.md </code></p>
+<blockquote>
+<p>1439efeb9f724f332c0d935905b12c26ce8009c1`</p>
+</blockquote>
+<p><code>ll .git/objects/14</code></p>
+<blockquote>
+<p>39efeb9f724f332c0d935905b12c26ce8009c1`</p>
+</blockquote>
+<p><code>git caat-file -p 1439efeb9f724f332c0d935905b12c26ce8009c1</code></p>
+<blockquote>
+<p># git-flow-process
 Hello Word`</p>
-
+</blockquote>
 <p><code>git update-index --add --cacheinfo</code>//将hash后的文件添加到暂存区</p>
-
-<hr />
-
+<hr>
 <p><code>git update-index --add --cacheinfo 664(权限) 1439efeb9f724f332c0d935905b12c26ce8009c1 (hash值) README.md(文件名)</code></p>
-
 <p><code>git ls-files --stage</code></p>
-
 <blockquote>
 <p>100644 1439efeb9f724f332c0d935905b12c26ce8009c1 0 <code>README.text</code></p>
 </blockquote>
-
-<p><strong>ok,装逼效果拉满了是吧?其实⬆️面的命令就等同于</strong><code>git add 和 git status</code></p></li>
-
-<li><p><code>git commit</code></p>
-
+<p><strong>ok,装逼效果拉满了是吧?其实⬆️面的命令就等同于</strong><code>git add 和 git status</code></p>
+</li>
+<li>
+<p><code>git commit</code></p>
 <p><strong>提交文件,生成本地快照</strong></p>
-
 <blockquote>
 <p>简单的来说就是本地生成一份快照,或者说归档文件,嗯!就这么简单,可使用 -m参数添加生成快照时的备注信息,以便于后期的浏览和回滚</p>
 </blockquote>
-
 <p><em>一个人玩其实很没有意思的,大家一起来才基情满满嘛!怎么办呢?当然是</em>
 <del>选择原谅他</del>!</p>
-
-<p><em>推送到全球最大的同性交友网站咯,万一那个同志看上你 &emsp;&emsp;&ndash;)写的东西了呢?</em></p>
-
+<p><em>推送到全球最大的同性交友网站咯,万一那个同志看上你   &ndash;)写的东西了呢?</em></p>
 <p><code>git remote add origin 你的远端仓库地址</code></p>
-
 <blockquote>
 <p>添加远端仓库地址</p>
 </blockquote>
-
 <p>当然了,推送前要标注好自己的身份,好让别人知道你是谁</p>
-
-<p><code>git config user.name &quot;用户名&quot;</code></p>
-
+<p><code>git config user.name &quot;用户名&quot;  </code></p>
 <p><code>git config user.email &quot;Email 地址&quot;</code></p>
-
-<p><code>git push -u origin master</code>
-&gt; 推送到远端分支,完成提(我敢保证实际项目开发中你肯定没有直接推送master的权限,那怎么办呢?只能引入分支模块了呗,这里不多赘述)</p>
-
+<p><code>git push -u origin master</code></p>
+<blockquote>
+<p>推送到远端分支,完成提(我敢保证实际项目开发中你肯定没有直接推送master的权限,那怎么办呢?只能引入分支模块了呗,这里不多赘述)</p>
+</blockquote>
 <p><strong>接下来就是github线上进行操作的时候了!</strong></p>
-
 <ol>
 <li>打开浏览器</li>
 <li>登陆github</li>
@@ -372,30 +338,20 @@ Hello Word`</p>
 <li>create pull request</li>
 <li>选择review|assignees等</li>
 <li>点击提交(完毕!)</li>
-</ol></li>
 </ol>
-
+</li>
+</ol>
 <h3 id="你以为就这样就结束了吗">你以为就这样就结束了吗?</h3>
-
 <pre><code>少年醒醒,开始项目发布了!
 </code></pre>
-
 <p><code>git checkout master</code>//发布版本肯定是在主分支上进行了!</p>
-
 <p><code>git tag version(v0.0.1)</code></p>
-
 <p>该命令会在当前最新版本进行发布,如果想发布过去时间段的怎么办?</p>
-
 <p><code>git tag version(v0.0.1) 3e7cc97bd05d32759bd3c6b64c6fbb89b9aaddbb</code></p>
-
 <p><code>git tag</code>//查看当前所有的tag</p>
-
 <p><strong>当然了,现在只是在本地进行了打标签,如果想发布到github该如何操作呢?</strong></p>
-
 <p><code>git push  origin v0.0.1 | git push origin --tags</code></p>
-
 <p><strong>第一个命令推送指定tag到远端仓库,第二个命令推送本地所有tag到远端</strong></p>
-
 <p><em>就这样简单方便的成功发布了第一版本的项目!</em></p>
     </div>
 

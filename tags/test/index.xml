@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Test on Record the life</title>
@@ -17,7 +17,7 @@
       <pubDate>Wed, 21 Feb 2018 00:00:00 +0000</pubDate>
       
       <guid>http://mu-xin.github.io/post/apache%E4%B8%8B%E7%9A%84ab%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/</guid>
-      <description>&lt;p&gt;&lt;img src=&#34;https://i.loli.net/2019/07/03/5d1c60bc6fc9a68469.jpg&#34; alt=&#34;ab测试&#34; /&gt;&lt;/p&gt;</description>
+      <description>&lt;p&gt;&lt;img src=&#34;https://i.loli.net/2019/07/03/5d1c60bc6fc9a68469.jpg&#34; alt=&#34;ab测试&#34;&gt;&lt;/p&gt;</description>
     </item>
     
   </channel>

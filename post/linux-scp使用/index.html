@@ -31,7 +31,7 @@
 
 
 
-<meta name="generator" content="Hugo 0.55.6" />
+<meta name="generator" content="Hugo 0.70.0" />
 
 
 <link rel="canonical" href="http://mu-xin.github.io/post/linux-scp%E4%BD%BF%E7%94%A8/" />
@@ -50,7 +50,7 @@
 
 
 
-<link rel="stylesheet" href="/sass/jane.min.98eb6e9b65e7db1489f57e9917a82404ffa5fa0c13df6e4993091387d8628dbf.css" integrity="sha256-mOtum2Xn2xSJ9X6ZF6gkBP&#43;l&#43;gwT325JkwkTh9hijb8=" media="screen" crossorigin="anonymous">
+<link rel="stylesheet" href="/sass/jane.min.06b243fac4668f09b63eac07ce36069187f227ab53d5acc9c92c28413cd1a177.css" integrity="sha256-BrJD&#43;sRmjwm2PqwHzjYGkYfyJ6tT1azJySwoQTzRoXc=" media="screen" crossorigin="anonymous">
 
 
 
@@ -60,21 +60,17 @@
 <meta property="og:description" content="" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="http://mu-xin.github.io/post/linux-scp%E4%BD%BF%E7%94%A8/" />
-<meta property="article:published_time" content="2019-09-16T16:18:59&#43;08:00"/>
-<meta property="article:modified_time" content="2019-09-16T16:18:59&#43;08:00"/>
-
+<meta property="article:published_time" content="2019-09-16T16:18:59+08:00" />
+<meta property="article:modified_time" content="2019-09-16T16:18:59+08:00" />
 <meta itemprop="name" content="Linux SCP使用">
 <meta itemprop="description" content="">
-
-
 <meta itemprop="datePublished" content="2019-09-16T16:18:59&#43;08:00" />
 <meta itemprop="dateModified" content="2019-09-16T16:18:59&#43;08:00" />
 <meta itemprop="wordCount" content="54">
 
 
 
-<meta itemprop="keywords" content="" />
-<meta name="twitter:card" content="summary"/>
+<meta itemprop="keywords" content="" /><meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Linux SCP使用"/>
 <meta name="twitter:description" content=""/>
 
@@ -252,26 +248,17 @@
 
     
     <div class="post-content">
-      <p><img src="/linux-scp-command.jpg" alt="scp" /></p>
-
+      <p><img src="/linux-scp-command.jpg" alt="scp"></p>
 <h2 id="前言">前言</h2>
-
 <p><strong>每次在使用完命令后都没有进行总结,导致每次在服务器上做一些操作都时候都要在线进行查阅资料,十分影响工作效率.so&ndash; 写下这篇来记录工作中那些使用不熟练的命令!</strong></p>
-
 <h3 id="linux-scp-command">Linux SCP Command</h3>
-
 <p>命令详解:</p>
-
 <p>    用于主机之间复制文件和目录,简单的来说就是文件传输使用!
     
 全称: source copy (文件拷贝),scp是linux系统下基于ssh登陆进行安全的远程文件拷贝命令</p>
-
 <p>食用方式:</p>
-
 <p>scp [可选参数] 本地文件 远程地址</p>
-
 <p>Example:</p>
-
 <pre><code>本地上传文件:
 
 scp \~/download/index.text user\_name@remote\_ip:\~/download/{file\_name}
@@ -280,21 +267,13 @@ scp \~/download/index.text user\_name@remote\_ip:\~/download/{file\_name}
 
 scp -r \~/download/ user\_name@remote\_ip:\~/directory\_name
 </code></pre>
-
 <p><em>上面是之前做的书面笔记,相比也发现了,这些都是在搜索引擎上随便就能找到的!但是在工作中可能会发生各种问题</em></p>
-
 <h3 id="process">Process</h3>
-
 <p><strong>需要在数据库服务器上导出一些数据,给运营人员使用!所以需要导出excel格式的数据.命令大致如下:</strong></p>
-
 <p><code>mysql --database DatabaseName -B -e &quot;select field_name,  from table_name where field_name = 1 order by field_name&quot; &gt; file_name.csv</code></p>
-
 <p>现在文件保存在数据库服务器上了,接下来就是简单的在本地终端执行scp命令来下载到本地OK.</p>
-
 <p>因为服务器上基本都使用ssh来保存用户信息,那么就需要在scp中添加-i option 来指定identity_file</p>
-
-<hr />
-
+<hr>
 <p><strong>个人建议如果在linux下有某个命令不是很清楚都话还是直接使用man 命令来查看帮助手册来都比较快!它会节省你很多时间!</strong></p>
     </div>
 

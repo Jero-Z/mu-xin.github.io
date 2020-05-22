@@ -31,7 +31,7 @@
 
 
 
-<meta name="generator" content="Hugo 0.55.6" />
+<meta name="generator" content="Hugo 0.70.0" />
 
 
 <link rel="canonical" href="http://mu-xin.github.io/post/php%E5%AE%9E%E7%8E%B0html%E8%BD%ACpdf/" />
@@ -50,7 +50,7 @@
 
 
 
-<link rel="stylesheet" href="/sass/jane.min.98eb6e9b65e7db1489f57e9917a82404ffa5fa0c13df6e4993091387d8628dbf.css" integrity="sha256-mOtum2Xn2xSJ9X6ZF6gkBP&#43;l&#43;gwT325JkwkTh9hijb8=" media="screen" crossorigin="anonymous">
+<link rel="stylesheet" href="/sass/jane.min.06b243fac4668f09b63eac07ce36069187f227ab53d5acc9c92c28413cd1a177.css" integrity="sha256-BrJD&#43;sRmjwm2PqwHzjYGkYfyJ6tT1azJySwoQTzRoXc=" media="screen" crossorigin="anonymous">
 
 
 
@@ -60,21 +60,17 @@
 <meta property="og:description" content="" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="http://mu-xin.github.io/post/php%E5%AE%9E%E7%8E%B0html%E8%BD%ACpdf/" />
-<meta property="article:published_time" content="2018-10-14T15:00:40&#43;08:00"/>
-<meta property="article:modified_time" content="2018-10-14T15:00:40&#43;08:00"/>
-
+<meta property="article:published_time" content="2018-10-14T15:00:40+08:00" />
+<meta property="article:modified_time" content="2018-10-14T15:00:40+08:00" />
 <meta itemprop="name" content="PHP实现HTML转PDF">
 <meta itemprop="description" content="">
-
-
 <meta itemprop="datePublished" content="2018-10-14T15:00:40&#43;08:00" />
 <meta itemprop="dateModified" content="2018-10-14T15:00:40&#43;08:00" />
-<meta itemprop="wordCount" content="118">
+<meta itemprop="wordCount" content="92">
 
 
 
-<meta itemprop="keywords" content="" />
-<meta name="twitter:card" content="summary"/>
+<meta itemprop="keywords" content="" /><meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="PHP实现HTML转PDF"/>
 <meta name="twitter:description" content=""/>
 
@@ -252,105 +248,71 @@
 
     
     <div class="post-content">
-      <p><img src="/change-html-pdf.jpg" alt="html-pdf" /></p>
-
+      <p><img src="/change-html-pdf.jpg" alt="html-pdf"></p>
 <p><strong>因业务需求,需要将html转为pdf,然后进行文件的下载!</strong></p>
-
 <p><strong>先分析一波执行步骤:</strong></p>
-
 <ol>
 <li>安装插件</li>
 <li>生成pdf</li>
 <li>保存到OSS</li>
 </ol>
-
-<h3 id="1-install-package">1- Install Package</h3>
-
-<p><em>现有轮子有两种</em>
-1. laravel-dompdf
-2. laravel-snappy (推荐)</p>
-
+<h3 id="1--install-package">1- Install Package</h3>
+<p><em>现有轮子有两种</em></p>
+<ol>
+<li>laravel-dompdf</li>
+<li>laravel-snappy (推荐)</li>
+</ol>
 <p><code>composer require barryvdh/laravel-snappy</code></p>
-
-<h3 id="2-install-dependency">2- Install Dependency</h3>
-
+<h3 id="2--install-dependency">2- Install Dependency</h3>
 <ol>
 <li><code>composer require h4cc/wkhtmltopdf-amd64</code>#安装扩展
-
 <ol>
 <li><code>cp vendor/h4cc/wkhtmltopdf-amd64/bin/wkhtmltopdf-amd64 /usr/local/bin/</code># 将执行插件移动到系统应用中 (Linux可以跳过该操作 ps:我开发机为Mac OS)</li>
 <li><code>chmod +x /usr/local/bin/wkhtmltopdf-amd64</code> #添加可执行权限</li>
 <li>#linux下使用需要安装一下几个库的支持<code>libxrender1 libfontconfig1</code></li>
-</ol></li>
+</ol>
+</li>
 <li><code>apt-get install -y xfonts-intl-chinese ttf-wqy-microhei</code>#添加中文字体库,否则会乱码出现方块</li>
 </ol>
-
-<h3 id="3-application-config">3- Application Config</h3>
-
+<h3 id="3--application-config">3- Application Config</h3>
 <ol>
-<li>添加Serviceprovider</li>
-</ol>
-
+<li>
+<p>添加Serviceprovider</p>
 <p><code>Barryvdh\Snappy\ServiceProvider::class,</code></p>
-
-<ol>
-<li><p>添加Facade 到 aliases</p>
-
-<p><code>'PDF' =&gt; Barryvdh\Snappy\Facades\SnappyPdf::class</code></p></li>
-
-<li><p>生成配置文件</p></li>
-</ol>
-
-<p><code>php artisan vendor:publish --provider=&quot;Barryvdh\Snappy\ServiceProvider&quot;</code></p>
-
-<pre><code>------
-
-#配置如下
-</code></pre>
-
-<p><pre>
-   &lsquo;pdf&rsquo; =&gt; [
-        &lsquo;enabled&rsquo; =&gt; true,
-        &lsquo;binary&rsquo; =&gt; base_path(&lsquo;vendor/h4cc/wkhtmltopdf-amd64/bin/wkhtmltopdf-amd64&rsquo;),
-        #&lsquo;binary&rsquo; =&gt; &lsquo;/usr/local/bin/wkhtmltopdf&rsquo;, 本地开发时使用这个
-        &lsquo;timeout&rsquo; =&gt; false,
-        &lsquo;options&rsquo; =&gt; [],
-        &lsquo;env&rsquo;     =&gt; [],
-    ],
-   </per></p>
-
-<ol>
-<li><p>使用并生成文件保存到OSS</p>
-
+</li>
+<li>
+<p>添加Facade 到 aliases</p>
+<p><code>'PDF' =&gt; Barryvdh\Snappy\Facades\SnappyPdf::class</code></p>
+</li>
+<li>
+<p>生成配置文件</p>
+<p><code>php artisan vendor:publish --provider=&quot;Barryvdh\Snappy\ServiceProvider&quot; </code></p>
+<hr>
+<p>#配置如下</p>
+<!-- raw HTML omitted -->
+</li>
+<li>
+<p>使用并生成文件保存到OSS</p>
 <p>``</p>
-
 <p>$snappy = app(&lsquo;snappy.pdf.wrapper&rsquo;);</p>
-
-<p>\$snappy-&gt;loadHTML($fileString);//通过html加载</p>
-
+<p>$snappy-&gt;loadHTML($fileString);//通过html加载</p>
 <p>$cacheStr = $snappy-&gt;output();//获取数据流</p>
-
 <p>$path = &lsquo;files/&rsquo; . $contractId . &lsquo;.pdf&rsquo;;</p>
-
 <p>$client = new \OSS\OssClient(access_id, access_key, endpoint);</p>
-
 <p>$client-&gt;putObject(bucket, $path, $cacheStr);</p>
-
 <p>$client-&gt;signUrl(config(&lsquo;filesystems.disks.oss.bucket&rsquo;), $path, 1200);//设置为url20分钟超时</p>
-
-<p>``</p></li>
+<p>``</p>
+</li>
 </ol>
-
-<h3 id="4-extra-tip">4- Extra Tip:</h3>
-
+<h3 id="4--extra-tip">4- Extra Tip:</h3>
 <ol>
 <li>126等错误的话先检查权限是否给出,再检查依赖包是否都安装完成</li>
 <li>乱码错误
-
 <ol>
 <li>字体方块:安装中文字体库</li>
 <li>字体显示不出来“非方块式乱码”:html声明头有问题,建议修改为utf-8格式</li>
-</ol></li>
+</ol>
+</li>
 </ol>
     </div>
 

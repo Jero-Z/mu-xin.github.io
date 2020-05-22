@@ -1,0 +1,21 @@
+---
+title: "Pecl安装swolle遇到的一些问题"
+date: 2020-05-12T11:40:21+08:00
+draft: true
+---
+
+1.开启openssl时提示not found!
+
+Apple has deprecated use of OpenSSL in favor of its own TLS and crypto libraries
+
+Generally there are no consequences of this for you. If you build your
+own software and it requires this formula, you'll need to add to your
+build variables:
+
+当前解决思路为:
+1.brew install OpenSSL
+2.导入环境变量
+LDFLAGS:  -L/usr/local/opt/openssl/lib
+CPPFLAGS: -I/usr/local/opt/openssl/include
+
+另外貌似也可以使用brew install libgcrypt

@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Message Queue on Record the life</title>
@@ -17,7 +17,7 @@
       <pubDate>Thu, 04 Jul 2019 00:00:00 +0000</pubDate>
       
       <guid>http://mu-xin.github.io/post/%E6%B6%88%E6%81%AF%E9%98%9F%E5%88%97redis%E7%9A%84%E8%AE%A2%E9%98%85%E5%8F%91%E5%B8%83%E5%92%8Clist/</guid>
-      <description>&lt;p&gt;&lt;img src=&#34;https://i.loli.net/2019/07/04/5d1dc1133fc1559064.jpg&#34; alt=&#34;queue&#34; /&gt;&lt;/p&gt;</description>
+      <description>&lt;p&gt;&lt;img src=&#34;https://i.loli.net/2019/07/04/5d1dc1133fc1559064.jpg&#34; alt=&#34;queue&#34;&gt;&lt;/p&gt;</description>
     </item>
     
   </channel>

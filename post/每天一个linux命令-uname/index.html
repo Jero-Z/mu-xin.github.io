@@ -31,7 +31,7 @@
 
 
 
-<meta name="generator" content="Hugo 0.55.6" />
+<meta name="generator" content="Hugo 0.70.0" />
 
 
 <link rel="canonical" href="http://mu-xin.github.io/post/%E6%AF%8F%E5%A4%A9%E4%B8%80%E4%B8%AAlinux%E5%91%BD%E4%BB%A4-uname/" />
@@ -50,7 +50,7 @@
 
 
 
-<link rel="stylesheet" href="/sass/jane.min.98eb6e9b65e7db1489f57e9917a82404ffa5fa0c13df6e4993091387d8628dbf.css" integrity="sha256-mOtum2Xn2xSJ9X6ZF6gkBP&#43;l&#43;gwT325JkwkTh9hijb8=" media="screen" crossorigin="anonymous">
+<link rel="stylesheet" href="/sass/jane.min.06b243fac4668f09b63eac07ce36069187f227ab53d5acc9c92c28413cd1a177.css" integrity="sha256-BrJD&#43;sRmjwm2PqwHzjYGkYfyJ6tT1azJySwoQTzRoXc=" media="screen" crossorigin="anonymous">
 
 
 
@@ -60,21 +60,17 @@
 <meta property="og:description" content="" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="http://mu-xin.github.io/post/%E6%AF%8F%E5%A4%A9%E4%B8%80%E4%B8%AAlinux%E5%91%BD%E4%BB%A4-uname/" />
-<meta property="article:published_time" content="2019-05-24T14:59:51&#43;08:00"/>
-<meta property="article:modified_time" content="2019-05-24T14:59:51&#43;08:00"/>
-
+<meta property="article:published_time" content="2019-05-24T14:59:51+08:00" />
+<meta property="article:modified_time" content="2019-05-24T14:59:51+08:00" />
 <meta itemprop="name" content="每天一个Linux命令 Uname">
 <meta itemprop="description" content="">
-
-
 <meta itemprop="datePublished" content="2019-05-24T14:59:51&#43;08:00" />
 <meta itemprop="dateModified" content="2019-05-24T14:59:51&#43;08:00" />
 <meta itemprop="wordCount" content="171">
 
 
 
-<meta itemprop="keywords" content="" />
-<meta name="twitter:card" content="summary"/>
+<meta itemprop="keywords" content="" /><meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="每天一个Linux命令 Uname"/>
 <meta name="twitter:description" content=""/>
 
@@ -252,35 +248,30 @@
 
     
     <div class="post-content">
-      <p><img src="/linux-151619_1280.png" alt="linux-commmand" /></p>
-
-<h2 id="linux-command-uname">Linux command &ndash; uname</h2>
-
+      <p><img src="/linux-151619_1280.png" alt="linux-commmand"></p>
+<h2 id="linux-command----uname">Linux command &ndash; uname</h2>
 <p><strong>&rdquo; uname &ndash; Print operating system name&rdquo;</strong>#输出操作系统名称</p>
-
 <blockquote>
 <p>The uname utility writes symbols representing one or more system characteristics to the standard output.</p>
 </blockquote>
-
 <p>基本使用:</p>
+<pre><code>uname
+   #选项
+    -a      Behave as though all of the options -mnrsv were specified. #输出方式为指定了所有的选项
 
-<pre><code> uname
-    #选项
-     -a      Behave as though all of the options -mnrsv were specified. #输出方式为指定了所有的选项
+    -m      print the machine hardware name. #输出硬件名称
 
-     -m      print the machine hardware name. #输出硬件名称
+    -n      print the nodename (the nodename may be a name that the system is known by to a communications network). #输出当前登陆者的名称
 
-     -n      print the nodename (the nodename may be a name that the system is known by to a communications network). #输出当前登陆者的名称
+    -p      print the machine processor architecture name.# 处理器架构名称
 
-     -p      print the machine processor architecture name.# 处理器架构名称
+    -r      print the operating system release.#发布的版本
 
-     -r      print the operating system release.#发布的版本
+    -s      print the operating system name.(defalt)
 
-     -s      print the operating system name.(defalt)
+    -v      print the operating system version.#系统版本
 
-     -v      print the operating system version.#系统版本
-
-     If no options are specified, uname prints the operating system name as if the -s option had been specified.//如果没有指定任何选项的话则会使用默认-s选项输出系统名称
+    If no options are specified, uname prints the operating system name as if the -s option had been specified.//如果没有指定任何选项的话则会使用默认-s选项输出系统名称
 
 
 
@@ -309,9 +300,7 @@ sw_vers
 ProductName:    Mac OS X
 ProductVersion: 10.15.4
 BuildVersion:   19E287
-</code></pre>
-
-<h4 id="以上操作皆为mac-os-系统"><em>以上操作皆为Mac OS 系统</em></h4>
+</code></pre><h4 id="以上操作皆为mac-os-系统"><em>以上操作皆为Mac OS 系统</em></h4>
     </div>
 
     

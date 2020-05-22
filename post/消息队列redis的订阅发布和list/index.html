@@ -31,7 +31,7 @@
 
 
 
-<meta name="generator" content="Hugo 0.55.6" />
+<meta name="generator" content="Hugo 0.70.0" />
 
 
 <link rel="canonical" href="http://mu-xin.github.io/post/%E6%B6%88%E6%81%AF%E9%98%9F%E5%88%97redis%E7%9A%84%E8%AE%A2%E9%98%85%E5%8F%91%E5%B8%83%E5%92%8Clist/" />
@@ -50,7 +50,7 @@
 
 
 
-<link rel="stylesheet" href="/sass/jane.min.98eb6e9b65e7db1489f57e9917a82404ffa5fa0c13df6e4993091387d8628dbf.css" integrity="sha256-mOtum2Xn2xSJ9X6ZF6gkBP&#43;l&#43;gwT325JkwkTh9hijb8=" media="screen" crossorigin="anonymous">
+<link rel="stylesheet" href="/sass/jane.min.06b243fac4668f09b63eac07ce36069187f227ab53d5acc9c92c28413cd1a177.css" integrity="sha256-BrJD&#43;sRmjwm2PqwHzjYGkYfyJ6tT1azJySwoQTzRoXc=" media="screen" crossorigin="anonymous">
 
 
 
@@ -60,21 +60,17 @@
 <meta property="og:description" content="" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="http://mu-xin.github.io/post/%E6%B6%88%E6%81%AF%E9%98%9F%E5%88%97redis%E7%9A%84%E8%AE%A2%E9%98%85%E5%8F%91%E5%B8%83%E5%92%8Clist/" />
-<meta property="article:published_time" content="2019-07-04T00:00:00&#43;00:00"/>
-<meta property="article:modified_time" content="2019-07-04T00:00:00&#43;00:00"/>
-
+<meta property="article:published_time" content="2019-07-04T00:00:00+00:00" />
+<meta property="article:modified_time" content="2019-07-04T00:00:00+00:00" />
 <meta itemprop="name" content="消息队列、Redis的订阅发布和List">
 <meta itemprop="description" content="">
-
-
 <meta itemprop="datePublished" content="2019-07-04T00:00:00&#43;00:00" />
 <meta itemprop="dateModified" content="2019-07-04T00:00:00&#43;00:00" />
 <meta itemprop="wordCount" content="49">
 
 
 
-<meta itemprop="keywords" content="Redis,Message Queue," />
-<meta name="twitter:card" content="summary"/>
+<meta itemprop="keywords" content="Redis,Message Queue," /><meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="消息队列、Redis的订阅发布和List"/>
 <meta name="twitter:description" content=""/>
 
@@ -256,95 +252,77 @@
 
     
     <div class="post-content">
-      <p><img src="https://i.loli.net/2019/07/04/5d1dc1133fc1559064.jpg" alt="queue" /></p>
-
+      <p><img src="https://i.loli.net/2019/07/04/5d1dc1133fc1559064.jpg" alt="queue"></p>
 <h3 id="事先表白">事先表白</h3>
-
 <p><em>消息队列、发布订阅(pub/sub)、List</em> 不知有没有人和我一样,对这些东西一直都是傻傻的分不清楚?那么今天我就来好好缕缕!</p>
-
 <h3 id="消息队列">消息队列</h3>
-
 <blockquote>
 <p>消息队列（英语：<strong>Message queue</strong>）是一种进程间通信或同一进程的不同线程间的通信方式 —— wiki</p>
 </blockquote>
-
 <p>接下来说说我所理解的消息队列吧!</p>
-
 <p>消息==“字面意思”</p>
-
 <p>队列==“在计算机中是一种先进先出的数据结构”</p>
-
 <p>合起来就是把需要传递的消息放入一根管道中(<em>队列</em>) 简称 MQ</p>
-
-<h3 id="pub-sub">PUB/SUB</h3>
-
+<h3 id="pubsub">PUB/SUB</h3>
 <p>学术上来说,发布/订阅就是一种消息范式,发布者不需要知道要发给谁,只需要将发布的消息按照指定的类型分类存放就好了,而订阅者按照自己的喜好进行接收(<em>拿取</em>)无需了解有哪些发布者存在.</p>
-
 <p>Redis中的pub/sub就是实现了这个范式,换句话来说也就是实现了消息队列</p>
-
 <p>和Redis中的pub/sub一样,还有其他很多实现消息队列的中间件:</p>
-
 <ul>
 <li>Kafka</li>
 <li>AciveMQ</li>
 <li>RabbitMQ</li>
 <li>RocketMQ</li>
 </ul>
-
 <h3 id="redis中的list">Redis中的List</h3>
-
 <p>上面的两位大哥都有自己的明确定位,Redis中的List跟他们又有啥关系?</p>
-
 <p><code>lpush blpop这两个命令貌似构成了一个管道</code></p>
-
 <p>说到底还是和List的底层使用链表实现有关</p>
-
 <h3 id="最后总结">最后总结</h3>
-
 <ol>
-<li>为什么要用消息队列,什么场景下使用MQ
-
+<li>
+<p>为什么要用消息队列,什么场景下使用MQ</p>
 <ul>
 <li>分布式系统异步通信</li>
 <li>物联网</li>
 <li>数据同步</li>
 <li>高扩展性应用</li>
-</ul></li>
-
-<li><p>消息队列的优点和缺点</p>
-
+</ul>
+</li>
+<li>
+<p>消息队列的优点和缺点</p>
 <p><strong>优点</strong></p>
-
 <ul>
 <li>解耦</li>
 <li>异步</li>
 <li>削峰</li>
 </ul>
-
 <p><strong>缺点</strong></p>
-
 <ul>
 <li>系统复杂度提高</li>
 <li>一致性问题</li>
 <li>可用性降低</li>
-</ul></li>
-
-<li><p>如何选择MQ</p>
-
-<p>个人对于此问题没有过深研究,有需要的话可以取<a href="https://segmentfault.com/a/1190000019123489">这里</a>查看</p></li>
-
-<li><p>怎么保证消息没有重复消费</p>
-
+</ul>
+</li>
+<li>
+<p>如何选择MQ</p>
+<p>个人对于此问题没有过深研究,有需要的话可以取<a href="https://segmentfault.com/a/1190000019123489">这里</a>查看</p>
+</li>
+<li>
+<p>怎么保证消息没有重复消费</p>
 <ol>
-<li><p>如果是拿这个消息做数据库insert操作（事实上update和delete重复也不影响）给这个消息做一个唯一主键，那么就算出现重复消费的情况，就会导致主键冲突，避免数据库出现脏数据。</p></li>
-
-<li><p>当拿到这个消息做redis的set的操作，那就容易了，不用解决，因为你无论set几次结果都是一样的，set操作本来就算幂等操作。</p></li>
-
-<li><p>如果上面两种情况还不行，准备一个第三方存储,来做消费记录。以redis为例，给消息分配一个全局id，只要消费过该消息，将<id,message>以K-V形式写入redis。那消费者开始消费前，先去redis中查询有没消费记录即可。</p></li>
-</ol></li>
+<li>
+<p>如果是拿这个消息做数据库insert操作（事实上update和delete重复也不影响）给这个消息做一个唯一主键，那么就算出现重复消费的情况，就会导致主键冲突，避免数据库出现脏数据。</p>
+</li>
+<li>
+<p>当拿到这个消息做redis的set的操作，那就容易了，不用解决，因为你无论set几次结果都是一样的，set操作本来就算幂等操作。</p>
+</li>
+<li>
+<p>如果上面两种情况还不行，准备一个第三方存储,来做消费记录。以redis为例，给消息分配一个全局id，只要消费过该消息，将&lt;id,message&gt;以K-V形式写入redis。那消费者开始消费前，先去redis中查询有没消费记录即可。</p>
+</li>
 </ol>
-
-<p>参考于-<a href="https://segmentfault.com/a/1190000019123489">https://segmentfault.com/a/1190000019123489</a></p>
+</li>
+</ol>
+<p>参考于-https://segmentfault.com/a/1190000019123489</p>
     </div>
 
     

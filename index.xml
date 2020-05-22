@@ -6,7 +6,7 @@
     <description>Recent content on Record the life</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Fri, 17 Apr 2020 11:56:01 +0800</lastBuildDate>
+    <lastBuildDate>Sun, 20 Aug 2017 21:38:52 +0800</lastBuildDate>
     
         <atom:link href="http://mu-xin.github.io/index.xml" rel="self" type="application/rss+xml" />
     
@@ -18,110 +18,22 @@
       
       <guid>http://mu-xin.github.io/about/</guid>
       
-        <description> 目前是一个非科班出身的developer(自诩为一个伪文青),主要进行后端开发.
- 初入江湖时手持:PHP(毕竟是世界上最好的语言嘛-.-) 置身江湖后怀揣:Golang、Python、Java、Docker 携带法宝有: MBP、JetBrains全家桶  个人经历  18岁入伍,接受为期两年的熏陶 21岁闯入帝都,开启一段(或许很长时间的)江湖闯荡中 2019年开始新的生活,重新上路,期待迎接更好的自己和遇见自己的良人   喜欢的人和事  余华 龙应台 王小波 加夫列尔·加西亚·马尔克斯 路遥   健身:为了更好的喝酒 看书:身体去不了远方(毕竟没有钱),书带我去 看电影:一个人去电影院很多次,嗯!很多次了 玩游戏:这个看时间吧,毕竟岁月不饶人 逛街:一个人逛街除了有点尬,其他的也OK啦 做饭:喜欢做饭,就是喜欢做饭.  关于本站的其他声明  单纯为了培养自己的自律能力,非技术帖、非鸡汤文、没有任何政治立场!
-有问题左下角,欢迎来信,一定第一时间回复!
-帝都生活不易,不抽烟,寻觅酒友ing(个人酒品良好,不限酒类)
+        <description>目前是一个非科班出身的developer(自诩为一个伪文青),主要进行后端开发.
+ 初入江湖时手持:PHP(毕竟是世界上最好的语言嘛-.-) 置身江湖后怀揣:Golang、Python、Java、Docker 携带法宝有: MBP、JetBrains全家桶  个人经历   18岁入伍,接受为期两年的熏陶 21岁闯入帝都,开启一段(或许很长时间的)江湖闯荡中 2019年开始新的生活,重新上路,期待迎接更好的自己和遇见自己的良人  喜欢的人和事   余华 龙应台 王小波 加夫列尔·加西亚·马尔克斯 路遥    健身:为了更好的喝酒 看书:身体去不了远方(毕竟没有钱),书带我去 看电影:一个人去电影院很多次,嗯!很多次了 玩游戏:这个看时间吧,毕竟岁月不饶人 逛街:一个人逛街除了有点尬,其他的也OK啦 做饭:喜欢做饭,就是喜欢做饭.  关于本站的其他声明   单纯为了培养自己的自律能力,非技术帖、非鸡汤文、没有任何政治立场!
+  有问题左下角,欢迎来信,一定第一时间回复!
+  帝都生活不易,不抽烟,寻觅酒友ing(个人酒品良好,不限酒类)
  </description>
       
     </item>
     
     <item>
-      <title>每天一个Linux命令 Ls</title>
-      <link>http://mu-xin.github.io/post/%E6%AF%8F%E5%A4%A9%E4%B8%80%E4%B8%AAlinux%E5%91%BD%E4%BB%A4-ls/</link>
-      <pubDate>Fri, 17 Apr 2020 11:56:01 +0800</pubDate>
+      <title>Posts</title>
+      <link>http://mu-xin.github.io/post/</link>
+      <pubDate>Fri, 22 May 2020 13:36:44 +0800</pubDate>
       
-      <guid>http://mu-xin.github.io/post/%E6%AF%8F%E5%A4%A9%E4%B8%80%E4%B8%AAlinux%E5%91%BD%E4%BB%A4-ls/</guid>
+      <guid>http://mu-xin.github.io/post/</guid>
       
-        <description>&lt;p&gt;&lt;img src=&#34;http://mu-xin.github.io/linux-151619_1280.png&#34; alt=&#34;linux-commmand&#34; /&gt;&lt;/p&gt;</description>
-      
-    </item>
-    
-    <item>
-      <title>每天一个Linux命令 Tree</title>
-      <link>http://mu-xin.github.io/post/%E6%AF%8F%E5%A4%A9%E4%B8%80%E4%B8%AAlinux%E5%91%BD%E4%BB%A4-tree/</link>
-      <pubDate>Mon, 13 Apr 2020 14:15:00 +0800</pubDate>
-      
-      <guid>http://mu-xin.github.io/post/%E6%AF%8F%E5%A4%A9%E4%B8%80%E4%B8%AAlinux%E5%91%BD%E4%BB%A4-tree/</guid>
-      
-        <description>&lt;p&gt;&lt;img src=&#34;http://mu-xin.github.io/linux-151619_1280.png&#34; alt=&#34;linux-commmand&#34; /&gt;&lt;/p&gt;</description>
-      
-    </item>
-    
-    <item>
-      <title>2020年3月25日子时随想</title>
-      <link>http://mu-xin.github.io/post/2020%E5%B9%B43%E6%9C%8825%E6%97%A5%E5%AD%90%E6%97%B6%E9%9A%8F%E6%83%B3/</link>
-      <pubDate>Wed, 01 Apr 2020 15:31:19 +0800</pubDate>
-      
-      <guid>http://mu-xin.github.io/post/2020%E5%B9%B43%E6%9C%8825%E6%97%A5%E5%AD%90%E6%97%B6%E9%9A%8F%E6%83%B3/</guid>
-      
-        <description>&lt;p&gt;&lt;img src=&#34;http://mu-xin.github.io/book-419589_1280.jpg&#34; alt=&#34;story&#34; /&gt;&lt;/p&gt;</description>
-      
-    </item>
-    
-    <item>
-      <title>DockerFile编写时更换apt为国内源</title>
-      <link>http://mu-xin.github.io/post/dockerfile%E7%BC%96%E5%86%99%E6%97%B6%E6%9B%B4%E6%8D%A2apt%E4%B8%BA%E5%9B%BD%E5%86%85%E6%BA%90/</link>
-      <pubDate>Sun, 01 Mar 2020 15:05:43 +0800</pubDate>
-      
-      <guid>http://mu-xin.github.io/post/dockerfile%E7%BC%96%E5%86%99%E6%97%B6%E6%9B%B4%E6%8D%A2apt%E4%B8%BA%E5%9B%BD%E5%86%85%E6%BA%90/</guid>
-      
-        <description>&lt;p&gt;&lt;img src=&#34;../../public/apt-repository.png&#34; alt=&#34;repository&#34; /&gt;&lt;/p&gt;</description>
-      
-    </item>
-    
-    <item>
-      <title>Docker命令解析</title>
-      <link>http://mu-xin.github.io/post/docker%E5%91%BD%E4%BB%A4%E8%A7%A3%E6%9E%90/</link>
-      <pubDate>Sun, 02 Feb 2020 16:52:50 +0800</pubDate>
-      
-      <guid>http://mu-xin.github.io/post/docker%E5%91%BD%E4%BB%A4%E8%A7%A3%E6%9E%90/</guid>
-      
-        <description>&lt;p&gt;&lt;img src=&#34;http://mu-xin.github.io/business-1845350_1280.jpg&#34; alt=&#34;docker command&#34; /&gt;&lt;/p&gt;</description>
-      
-    </item>
-    
-    <item>
-      <title>Dockerfile&#43;Docker Compose配置nginx&#43;php环境</title>
-      <link>http://mu-xin.github.io/post/dockerfile&#43;docker-compose/</link>
-      <pubDate>Fri, 03 Jan 2020 10:57:11 +0800</pubDate>
-      
-      <guid>http://mu-xin.github.io/post/dockerfile&#43;docker-compose/</guid>
-      
-        <description>&lt;p&gt;&lt;img src=&#34;http://mu-xin.github.io/dock-441989_1280.jpg&#34; alt=&#34;docker-compose&#34; /&gt;&lt;/p&gt;</description>
-      
-    </item>
-    
-    <item>
-      <title>Linux文件权限小结</title>
-      <link>http://mu-xin.github.io/post/linux%E6%96%87%E4%BB%B6%E6%9D%83%E9%99%90%E5%B0%8F%E7%BB%93/</link>
-      <pubDate>Wed, 25 Dec 2019 15:12:25 +0800</pubDate>
-      
-      <guid>http://mu-xin.github.io/post/linux%E6%96%87%E4%BB%B6%E6%9D%83%E9%99%90%E5%B0%8F%E7%BB%93/</guid>
-      
-        <description>&lt;p&gt;&lt;img src=&#34;http://mu-xin.github.io/ball-63527_1280.jpg&#34; alt=&#34;file_authorization.png&#34; /&gt;&lt;/p&gt;</description>
-      
-    </item>
-    
-    <item>
-      <title>PHP源码安装</title>
-      <link>http://mu-xin.github.io/post/php%E6%BA%90%E7%A0%81%E5%AE%89%E8%A3%85/</link>
-      <pubDate>Wed, 09 Oct 2019 11:39:28 +0800</pubDate>
-      
-      <guid>http://mu-xin.github.io/post/php%E6%BA%90%E7%A0%81%E5%AE%89%E8%A3%85/</guid>
-      
-        <description>&lt;p&gt;&lt;img src=&#34;http://mu-xin.github.io/php-logo.png&#34; alt=&#34;php-logo.png&#34; /&gt;&lt;/p&gt;</description>
-      
-    </item>
-    
-    <item>
-      <title>Linux SCP使用</title>
-      <link>http://mu-xin.github.io/post/linux-scp%E4%BD%BF%E7%94%A8/</link>
-      <pubDate>Mon, 16 Sep 2019 16:18:59 +0800</pubDate>
-      
-      <guid>http://mu-xin.github.io/post/linux-scp%E4%BD%BF%E7%94%A8/</guid>
-      
-        <description>&lt;p&gt;&lt;img src=&#34;http://mu-xin.github.io/linux-scp-command.jpg&#34; alt=&#34;scp&#34; /&gt;&lt;/p&gt;</description>
+        <description></description>
       
     </item>
     

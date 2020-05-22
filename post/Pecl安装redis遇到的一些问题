@@ -1,0 +1,15 @@
+---
+title: "Pecl安装redis遇到的一些问题"
+date: 2020-05-12T11:22:19+08:00
+draft: false
+---
+
+
+
+1. 缺少依赖libzstd
+
+brew install zstd
+
+2.缺少igbinary.h文件
+
+pecl install igbinary

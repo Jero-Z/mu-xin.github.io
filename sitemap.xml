@@ -10,14 +10,16 @@
   
   <url>
     <loc>http://mu-xin.github.io/post/</loc>
-    <lastmod>2020-04-17T11:56:01+08:00</lastmod>
-    <priority>0</priority>
+    <lastmod>2020-05-22T13:36:44+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>http://mu-xin.github.io/</loc>
-    <lastmod>2020-04-17T11:56:01+08:00</lastmod>
-    <priority>0</priority>
+    <loc>http://mu-xin.github.io/post/%E4%B8%80%E6%9C%B5%E4%BA%91/</loc>
+    <lastmod>2020-05-22T13:36:44+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
   </url>
   
   <url>
@@ -51,19 +53,22 @@
   <url>
     <loc>http://mu-xin.github.io/categories/</loc>
     <lastmod>2020-02-02T16:52:50+08:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>http://mu-xin.github.io/categories/docker/</loc>
-    <lastmod>2020-02-02T16:52:50+08:00</lastmod>
-    <priority>0</priority>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
   </url>
   
   <url>
     <loc>http://mu-xin.github.io/tags/docker/</loc>
     <lastmod>2020-02-02T16:52:50+08:00</lastmod>
-    <priority>0</priority>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://mu-xin.github.io/categories/docker/</loc>
+    <lastmod>2020-02-02T16:52:50+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
   </url>
   
   <url>
@@ -76,7 +81,8 @@
   <url>
     <loc>http://mu-xin.github.io/tags/</loc>
     <lastmod>2020-02-02T16:52:50+08:00</lastmod>
-    <priority>0</priority>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
   </url>
   
   <url>
@@ -110,13 +116,15 @@
   <url>
     <loc>http://mu-xin.github.io/categories/base/</loc>
     <lastmod>2019-07-28T00:00:00+00:00</lastmod>
-    <priority>0</priority>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
   </url>
   
   <url>
     <loc>http://mu-xin.github.io/tags/computer/</loc>
     <lastmod>2019-07-28T00:00:00+00:00</lastmod>
-    <priority>0</priority>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
   </url>
   
   <url>
@@ -129,18 +137,27 @@
   <url>
     <loc>http://mu-xin.github.io/categories/other/</loc>
     <lastmod>2019-07-28T00:00:00+00:00</lastmod>
-    <priority>0</priority>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
   </url>
   
   <url>
     <loc>http://mu-xin.github.io/tags/virtual/</loc>
     <lastmod>2019-07-28T00:00:00+00:00</lastmod>
-    <priority>0</priority>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
   </url>
   
   <url>
     <loc>http://mu-xin.github.io/post/jetbrains%E5%AE%B6ide%E5%9C%A8%E5%A4%A9%E6%9C%9D%E5%AE%89%E8%A3%85%E6%8F%92%E4%BB%B6%E7%9A%84%E6%96%B9%E5%BC%8F/</loc>
     <lastmod>2019-07-04T21:39:41+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://mu-xin.github.io/post/%E4%B8%89%E5%88%86%E9%92%9F%E4%BA%86%E8%A7%A3cgi_fastgi_php-fpm/</loc>
+    <lastmod>2019-07-04T21:32:46+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
@@ -160,15 +177,17 @@
   </url>
   
   <url>
-    <loc>http://mu-xin.github.io/categories/theory/</loc>
+    <loc>http://mu-xin.github.io/tags/theory/</loc>
     <lastmod>2019-07-04T19:44:24+08:00</lastmod>
-    <priority>0</priority>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>http://mu-xin.github.io/tags/theory/</loc>
+    <loc>http://mu-xin.github.io/categories/theory/</loc>
     <lastmod>2019-07-04T19:44:24+08:00</lastmod>
-    <priority>0</priority>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
   </url>
   
   <url>
@@ -181,25 +200,29 @@
   <url>
     <loc>http://mu-xin.github.io/categories/develop/</loc>
     <lastmod>2019-07-04T00:00:00+00:00</lastmod>
-    <priority>0</priority>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
   </url>
   
   <url>
     <loc>http://mu-xin.github.io/tags/message-queue/</loc>
     <lastmod>2019-07-04T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>http://mu-xin.github.io/categories/redis/</loc>
-    <lastmod>2019-07-04T00:00:00+00:00</lastmod>
-    <priority>0</priority>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
   </url>
   
   <url>
     <loc>http://mu-xin.github.io/tags/redis/</loc>
     <lastmod>2019-07-04T00:00:00+00:00</lastmod>
-    <priority>0</priority>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://mu-xin.github.io/categories/redis/</loc>
+    <lastmod>2019-07-04T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
   </url>
   
   <url>
@@ -212,7 +235,8 @@
   <url>
     <loc>http://mu-xin.github.io/tags/other/</loc>
     <lastmod>2019-06-02T00:00:00+00:00</lastmod>
-    <priority>0</priority>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
   </url>
   
   <url>
@@ -225,19 +249,22 @@
   <url>
     <loc>http://mu-xin.github.io/categories/%E5%A5%BD%E6%96%87/</loc>
     <lastmod>2019-06-02T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>http://mu-xin.github.io/categories/%E8%AF%BB%E8%80%85%E6%96%87%E6%91%98/</loc>
-    <lastmod>2019-06-02T00:00:00+00:00</lastmod>
-    <priority>0</priority>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
   </url>
   
   <url>
     <loc>http://mu-xin.github.io/tags/%E8%AF%BB%E8%80%85%E6%96%87%E6%91%98/</loc>
     <lastmod>2019-06-02T00:00:00+00:00</lastmod>
-    <priority>0</priority>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://mu-xin.github.io/categories/%E8%AF%BB%E8%80%85%E6%96%87%E6%91%98/</loc>
+    <lastmod>2019-06-02T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
   </url>
   
   <url>
@@ -283,27 +310,31 @@
   </url>
   
   <url>
-    <loc>http://mu-xin.github.io/categories/%E4%B9%A6%E5%8D%95/</loc>
-    <lastmod>2019-02-12T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
     <loc>http://mu-xin.github.io/tags/%E4%B9%A6%E5%8D%95/</loc>
     <lastmod>2019-02-12T00:00:00+00:00</lastmod>
-    <priority>0</priority>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>http://mu-xin.github.io/categories/en/</loc>
-    <lastmod>2019-01-03T00:00:00+00:00</lastmod>
-    <priority>0</priority>
+    <loc>http://mu-xin.github.io/categories/%E4%B9%A6%E5%8D%95/</loc>
+    <lastmod>2019-02-12T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
   </url>
   
   <url>
     <loc>http://mu-xin.github.io/tags/en/</loc>
     <lastmod>2019-01-03T00:00:00+00:00</lastmod>
-    <priority>0</priority>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://mu-xin.github.io/categories/en/</loc>
+    <lastmod>2019-01-03T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
   </url>
   
   <url>
@@ -323,7 +354,8 @@
   <url>
     <loc>http://mu-xin.github.io/categories/development/</loc>
     <lastmod>2018-11-14T00:00:00+00:00</lastmod>
-    <priority>0</priority>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
   </url>
   
   <url>
@@ -334,21 +366,24 @@
   </url>
   
   <url>
-    <loc>http://mu-xin.github.io/categories/mathematics/</loc>
+    <loc>http://mu-xin.github.io/tags/mathematics/</loc>
     <lastmod>2018-11-14T00:00:00+00:00</lastmod>
-    <priority>0</priority>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>http://mu-xin.github.io/tags/mathematics/</loc>
+    <loc>http://mu-xin.github.io/categories/mathematics/</loc>
     <lastmod>2018-11-14T00:00:00+00:00</lastmod>
-    <priority>0</priority>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
   </url>
   
   <url>
     <loc>http://mu-xin.github.io/tags/%E7%AE%97%E6%B3%95/</loc>
     <lastmod>2018-11-14T00:00:00+00:00</lastmod>
-    <priority>0</priority>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
   </url>
   
   <url>
@@ -368,7 +403,8 @@
   <url>
     <loc>http://mu-xin.github.io/tags/mac/</loc>
     <lastmod>2018-09-12T00:00:00+00:00</lastmod>
-    <priority>0</priority>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
   </url>
   
   <url>
@@ -386,15 +422,17 @@
   </url>
   
   <url>
-    <loc>http://mu-xin.github.io/categories/golang/</loc>
+    <loc>http://mu-xin.github.io/tags/golang/</loc>
     <lastmod>2018-07-10T00:00:00+00:00</lastmod>
-    <priority>0</priority>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>http://mu-xin.github.io/tags/golang/</loc>
+    <loc>http://mu-xin.github.io/categories/golang/</loc>
     <lastmod>2018-07-10T00:00:00+00:00</lastmod>
-    <priority>0</priority>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
   </url>
   
   <url>
@@ -407,7 +445,8 @@
   <url>
     <loc>http://mu-xin.github.io/tags/language/</loc>
     <lastmod>2018-07-10T00:00:00+00:00</lastmod>
-    <priority>0</priority>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
   </url>
   
   <url>
@@ -420,19 +459,22 @@
   <url>
     <loc>http://mu-xin.github.io/tags/domain/</loc>
     <lastmod>2018-06-04T00:00:00+00:00</lastmod>
-    <priority>0</priority>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
   </url>
   
   <url>
     <loc>http://mu-xin.github.io/categories/learn/</loc>
     <lastmod>2018-06-04T00:00:00+00:00</lastmod>
-    <priority>0</priority>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
   </url>
   
   <url>
     <loc>http://mu-xin.github.io/categories/web/</loc>
     <lastmod>2018-06-04T00:00:00+00:00</lastmod>
-    <priority>0</priority>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
   </url>
   
   <url>
@@ -452,7 +494,8 @@
   <url>
     <loc>http://mu-xin.github.io/tags/environment/</loc>
     <lastmod>2018-03-01T00:00:00+00:00</lastmod>
-    <priority>0</priority>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
   </url>
   
   <url>
@@ -465,7 +508,8 @@
   <url>
     <loc>http://mu-xin.github.io/categories/apache/</loc>
     <lastmod>2018-02-21T00:00:00+00:00</lastmod>
-    <priority>0</priority>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
   </url>
   
   <url>
@@ -478,13 +522,15 @@
   <url>
     <loc>http://mu-xin.github.io/tags/development/</loc>
     <lastmod>2018-02-21T00:00:00+00:00</lastmod>
-    <priority>0</priority>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
   </url>
   
   <url>
     <loc>http://mu-xin.github.io/tags/test/</loc>
     <lastmod>2018-02-21T00:00:00+00:00</lastmod>
-    <priority>0</priority>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
   </url>
   
   <url>
@@ -504,7 +550,8 @@
   <url>
     <loc>http://mu-xin.github.io/tags/binary/</loc>
     <lastmod>2017-11-28T00:00:00+00:00</lastmod>
-    <priority>0</priority>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
   </url>
   
   <url>
@@ -515,9 +562,17 @@
   </url>
   
   <url>
+    <loc>http://mu-xin.github.io/</loc>
+    <lastmod>2017-08-28T21:41:52+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
     <loc>http://mu-xin.github.io/categories/nginx/</loc>
     <lastmod>2017-05-28T00:00:00+00:00</lastmod>
-    <priority>0</priority>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
   </url>
   
   <url>
@@ -530,25 +585,29 @@
   <url>
     <loc>http://mu-xin.github.io/tags/webserver/</loc>
     <lastmod>2017-05-28T00:00:00+00:00</lastmod>
-    <priority>0</priority>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
   </url>
   
   <url>
     <loc>http://mu-xin.github.io/tags/tmux/</loc>
     <lastmod>2017-03-19T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>http://mu-xin.github.io/categories/tools/</loc>
-    <lastmod>2017-03-19T00:00:00+00:00</lastmod>
-    <priority>0</priority>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
   </url>
   
   <url>
     <loc>http://mu-xin.github.io/tags/tools/</loc>
     <lastmod>2017-03-19T00:00:00+00:00</lastmod>
-    <priority>0</priority>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://mu-xin.github.io/categories/tools/</loc>
+    <lastmod>2017-03-19T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
   </url>
   
   <url>
@@ -566,15 +625,17 @@
   </url>
   
   <url>
-    <loc>http://mu-xin.github.io/categories/github/</loc>
+    <loc>http://mu-xin.github.io/tags/github/</loc>
     <lastmod>2016-03-27T00:00:00+00:00</lastmod>
-    <priority>0</priority>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>http://mu-xin.github.io/tags/github/</loc>
+    <loc>http://mu-xin.github.io/categories/github/</loc>
     <lastmod>2016-03-27T00:00:00+00:00</lastmod>
-    <priority>0</priority>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
   </url>
   
   <url>

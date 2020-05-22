@@ -31,7 +31,7 @@
 
 
 
-<meta name="generator" content="Hugo 0.55.6" />
+<meta name="generator" content="Hugo 0.70.0" />
 
 
 <link rel="canonical" href="http://mu-xin.github.io/post/docker%E5%91%BD%E4%BB%A4%E8%A7%A3%E6%9E%90/" />
@@ -50,7 +50,7 @@
 
 
 
-<link rel="stylesheet" href="/sass/jane.min.98eb6e9b65e7db1489f57e9917a82404ffa5fa0c13df6e4993091387d8628dbf.css" integrity="sha256-mOtum2Xn2xSJ9X6ZF6gkBP&#43;l&#43;gwT325JkwkTh9hijb8=" media="screen" crossorigin="anonymous">
+<link rel="stylesheet" href="/sass/jane.min.06b243fac4668f09b63eac07ce36069187f227ab53d5acc9c92c28413cd1a177.css" integrity="sha256-BrJD&#43;sRmjwm2PqwHzjYGkYfyJ6tT1azJySwoQTzRoXc=" media="screen" crossorigin="anonymous">
 
 
 
@@ -60,21 +60,17 @@
 <meta property="og:description" content="" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="http://mu-xin.github.io/post/docker%E5%91%BD%E4%BB%A4%E8%A7%A3%E6%9E%90/" />
-<meta property="article:published_time" content="2020-02-02T16:52:50&#43;08:00"/>
-<meta property="article:modified_time" content="2020-02-02T16:52:50&#43;08:00"/>
-
+<meta property="article:published_time" content="2020-02-02T16:52:50+08:00" />
+<meta property="article:modified_time" content="2020-02-02T16:52:50+08:00" />
 <meta itemprop="name" content="Docker命令解析">
 <meta itemprop="description" content="">
-
-
 <meta itemprop="datePublished" content="2020-02-02T16:52:50&#43;08:00" />
 <meta itemprop="dateModified" content="2020-02-02T16:52:50&#43;08:00" />
-<meta itemprop="wordCount" content="754">
+<meta itemprop="wordCount" content="40">
 
 
 
-<meta itemprop="keywords" content="Docker," />
-<meta name="twitter:card" content="summary"/>
+<meta itemprop="keywords" content="Docker," /><meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Docker命令解析"/>
 <meta name="twitter:description" content=""/>
 
@@ -255,214 +251,28 @@
 
     
     <div class="post-content">
-      <p><img src="/business-1845350_1280.jpg" alt="docker command" /></p>
-
+      <p><img src="/business-1845350_1280.jpg" alt="docker command"></p>
 <h2 id="前因">前因</h2>
-
 <p><strong>近期在玩docker,但是迫于电脑硬盘只有256大小,拉取的镜像太多以及生成的容器没有及时的清理,定睛一看磁盘空间基本快接近枯竭了.没办法,只能去进行手动清理了.清理的过程中发现Docker中的命令其实挺有意思的.那么就简单的记录一下吧!</strong></p>
-
 <h3 id="image">IMAGE</h3>
-
 <p><code>docker images</code></p>
-
-<pre>REPOSITORY                                  TAG                 IMAGE ID            CREATED             SIZE
-nginx-keepalived-docker-demo_nginx_master   latest              3a59ab4cf4e9        22 hours ago        35MB
-nginx-keepalived-docker-demo_nginx_slave    latest              3a59ab4cf4e9        22 hours ago        35MB
-nginx                                       1.16.1              588bb5d559c2        2 days ago          127MB
-haproxy                                     1.7-alpine          67836177b9f7        8 days ago          7.75MB
-mongo                                       4.2.3               97a9a3e85158        12 days ago         386MB
-debian                                      stable              e1aa81b5fcf3        5 weeks ago         114MB
-mongo                                       latest              bcef5fd2979d        5 weeks ago         386MB
-mysql                                       latest              afaec1334369        5 weeks ago         471MB
-redis                                       latest              44d36d2c2374        2 months ago        98.2MB
-confluentinc/cp-kafka                       5.4.0               7fa4a6c57613        2 months ago        598MB
-centos                                      centos7             5e35e350aded        4 months ago        203MB
-nginx                                       1.13.5-alpine       ea7bef82810a        2 years ago         15.5MB
-php                                         7.1.6-fpm           67514026b84e        2 years ago         382MB
-zookeeper                                   3.4.9               3b83d9104a4c        3 years ago         129MB<pre>
-
-
-
-<pre>
-docker images --help
-
-Usage:  docker images [OPTIONS] [REPOSITORY[:TAG]]
-
-List images
-
-Options:
-  -a, --all             Show all images (default hides intermediate images)列出所有镜像
-      --digests         Show digests 现实摘要
-  -f, --filter filter   Filter output based on conditions provided 过滤器
-      --format string   Pretty-print images using a Go template 输出格式
-      --no-trunc        Don't truncate output 完整的输出全部内容
-  -q, --quiet           Only show numeric IDs 只输出镜像ID
-
-
---format "table {{.ID}}:\t {{.REPOSITYR}}"
-
-.ID Image ID 镜像id
-.Repository Image repository 包名
-.Tag    Image tag 标签
-.Digest Image digest 摘要
-.CreatedSince   Elapsed time since the image was created 创建以前
-.CreatedAt  Time when the image was created 创建以后
-.Size   Image disk size 大小
-
-
-
---filter dangling=true
-
-dangling (boolean - true or false)
-label (label=&ltkey&gt or label=&ltkey&gt=&ltvalue&gt)
-before (&ltimage-name&gt[:&lttag&gt], &ltimage id&gt or &ltimage@digest&gt) - filter images created before given id or references
-since (&ltimage-name&gt[:&lttag&gt], &ltimage id&gt or &ltimage@digest&gt) - filter images created since given id or references
-reference (pattern of an image reference) - filter images whose reference matches the specified pattern 
-<pre>
-
-
-#### **查找所有nginx的镜像,并只显示该镜像的ID**
-
-`docker images --filter=reference='nginx*:*'`
-
-&gt 匹配REPOSITORY名称,如果含有多个reference的话它们的匹配关系为逻辑或 or 进行匹配
-
-<pre>3a59ab4cf4e9
-3a59ab4cf4e9
-588bb5d559c2
-ea7bef82810a
-<pre>
-
-#### **删除所有mongo的镜像**
-
-
-`docker rmi $(docker images --filter=reference='mongo' -q)`
-
-&gt 首先先找出所有mongo的镜像id,然后使用rmi命令直接进行删除
-
-<pre>
-97a9a3e85158
-bcef5fd2979d
-<pre>
-
-
-#### **删除所有虚浮**(none)镜像
-
-`docker rmi $(docker images -f "dangling=true" -q)`
-
-&gt 官方文档其实已经介绍很清楚了,意思就是先查出所有none的镜像id 然后进行删除,大致思路都一样,万变不离其宗
-
-
-
-##  CONTAINER
-
-`docker ps | docker container ps | docker-compose ps`
-
-
-<pre>
-CONTAINER ID        IMAGE               COMMAND                  CREATED             STATUS              PORTS                               NAMES
-e9576e512798        mongo:4.2.3         "docker-entrypoint.s…"   10 days ago         Up 5 days           0.0.0.0:27017-&gt27017/tcp            local_mongo
-2ad6ad6f5560        mysql:latest        "docker-entrypoint.s…"   5 weeks ago         Up 5 days           0.0.0.0:3306-&gt3306/tcp, 33060/tcp   local_mysql
-2020efb812a1        redis:latest        "docker-entrypoint.s…"   5 weeks ago         Up 5 days           0.0.0.0:6379-&gt6379/tcp              local_redis<pre>
-
-
-<pre>
-docker ps --help
-
-Usage:  docker ps [OPTIONS]
-
-List containers
-
-Options:
-  -a, --all             Show all containers (default shows just running)
-  -f, --filter filter   Filter output based on conditions provided
-      --format string   Pretty-print containers using a Go template
-  -n, --last int        Show n last created containers (includes all states) (default -1)
-  -l, --latest          Show the latest created container (includes all states)
-      --no-trunc        Don't truncate output
-  -q, --quiet           Only display numeric IDs
-  -s, --size            Display total file sizes
-<pre>
-
-**原理其实和image命令差不多,但是其中的一些查询key略有变动,例如:**
-##### *--filter 参数*
-<pre>
-id  Container’s ID
-name    Container’s name
-label   An arbitrary string representing either a key or a key-value pair. Expressed as &ltkey&gt or &ltkey&gt=&ltvalue&gt
-exited  An integer representing the container’s exit code. Only useful with --all.
-status  One of created, restarting, running, removing, paused, exited, or dead
-ancestor    Filters containers which share a given image as an ancestor. Expressed as &ltimage-name&gt[:&lttag&gt], &ltimage id&gt, or &ltimage@digest&gt
-before or since Filters containers created before or after a given container ID or name
-volume  Filters running containers which have mounted a given volume or bind mount.
-network Filters running containers connected to a given network.
-publish or expose   Filters containers which publish or expose a given port. Expressed as &ltport&gt[/&ltproto&gt] or &ltstartport-endport&gt/[&ltproto&gt]
-health  Filters containers based on their healthcheck status. One of starting, healthy, unhealthy or none.
-isolation   Windows daemon only. One of default, process, or hyperv.
-is-task Filters containers that are a “task” for a service. Boolean option (true or false)
-</pre>
-
+<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
 <p>``
 docker ps &ndash;filter status=exited 查询所有停止运行的容器</p>
-
 <p>//如果需要释放一批停止的容器的话可以执行以下命令</p>
-
 <p>docker rm $(docker ps &ndash;filter status=exited -q)</p>
-
 <p>可以根据容器名称进行查询</p>
-
 <p>docker ps &ndash;filter name=redis// 多个name查询时查询力度为逻辑或 (or)的关系不同key之间查询力度为逻辑与(and)的关系</p>
-
 <p>``</p>
-
 <p>&amp;gt 条件虽多，但万变不离其宗，只要再记住以下 3 条准则：</p>
-
 <ol>
 <li>选项后跟的都是键值对,如果有多个过滤条件，就多次使用 filter 选项。</li>
 <li>相同条件之间的关系是或，不同条件之间的关系是与。</li>
 <li>id 和 name，支持正则表达式，使用起来非常灵活。</li>
 </ol>
-
-<h5 id="format-参数"><em>&ndash;format 参数</em></h5>
-
-<p><pre>
-.ID Container ID
-.Image  Image ID
-.Command    Quoted command
-.CreatedAt  Time when the container was created.
-.RunningFor Elapsed time since the container was started.
-.Ports  Exposed ports.
-.Status Container status.
-.Size   Container disk size.
-.Names  Container names.
-.Labels All labels assigned to the container.
-.Label  Value of a specific label for this container. For example &lsquo;{{.Label &ldquo;com.docker.swarm.cpu&rdquo;}}&rsquo;
-.Mounts Names of the volumes mounted in this container.
-.Networks   Names of the networks attached to this container.
-<pre></p>
-
-<p><em>如果在使用docker ps进行查看容器的时候系统会默认输出以下类目的数据,而我们有可能只关心端口的占用,亦或者状态值,这个时候就需要使用格式化输出参数了</em></p>
-
-<p>&amp;gt CONTAINER ID  | IMAGE     |  COMMAND   | CREATED        |    STATUS    |          PORTS           |         NAMES</p>
-
-<p><code>docker ps --format &quot;{{.ID}}: {{.Status}}&quot;</code></p>
-
-<p><pre>
-e9576e512798: Up 5 days
-2ad6ad6f5560: Up 5 days
-2020efb812a1: Up 5 days
-<pre></p>
-
-<p><em>如果想带上表格列头，需要再 template 中加上 table 指令：</em></p>
-
-<p><code>docker ps --format &quot;table {{.ID}}:\t {{.Image}}&quot;</code></p>
-
-<p><pre>
-CONTAINER ID:        IMAGE
-e9576e512798:        mongo:4.2.3
-2ad6ad6f5560:        mysql:latest
-2020efb812a1:        redis:latest
-<pre></p>
+<h5 id="--format-参数"><em>&ndash;format 参数</em></h5>
+<!-- raw HTML omitted -->
     </div>
 
     
