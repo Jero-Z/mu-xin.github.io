@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>使用Docker实现MySql的主从 - Record the life</title>
+  <title>Http的进化 - Record the life</title>
   
 
 <meta name="renderer" content="webkit" />
@@ -34,7 +34,7 @@
 <meta name="generator" content="Hugo 0.70.0" />
 
 
-<link rel="canonical" href="http://mu-xin.github.io/post/%E4%BD%BF%E7%94%A8docker%E5%AE%9E%E7%8E%B0mysql%E7%9A%84%E4%B8%BB%E4%BB%8E/" />
+<link rel="canonical" href="http://mu-xin.github.io/post/http/" />
 
 
 
@@ -56,22 +56,22 @@
 
 
 
-<meta property="og:title" content="使用Docker实现MySql的主从" />
+<meta property="og:title" content="Http的进化" />
 <meta property="og:description" content="" />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="http://mu-xin.github.io/post/%E4%BD%BF%E7%94%A8docker%E5%AE%9E%E7%8E%B0mysql%E7%9A%84%E4%B8%BB%E4%BB%8E/" />
-<meta property="article:published_time" content="2019-07-04T21:25:39+08:00" />
-<meta property="article:modified_time" content="2019-07-04T21:25:39+08:00" />
-<meta itemprop="name" content="使用Docker实现MySql的主从">
+<meta property="og:url" content="http://mu-xin.github.io/post/http/" />
+<meta property="article:published_time" content="2019-07-04T21:30:21+08:00" />
+<meta property="article:modified_time" content="2019-07-04T21:30:21+08:00" />
+<meta itemprop="name" content="Http的进化">
 <meta itemprop="description" content="">
-<meta itemprop="datePublished" content="2019-07-04T21:25:39&#43;08:00" />
-<meta itemprop="dateModified" content="2019-07-04T21:25:39&#43;08:00" />
+<meta itemprop="datePublished" content="2019-07-04T21:30:21&#43;08:00" />
+<meta itemprop="dateModified" content="2019-07-04T21:30:21&#43;08:00" />
 <meta itemprop="wordCount" content="115">
 
 
 
 <meta itemprop="keywords" content="" /><meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="使用Docker实现MySql的主从"/>
+<meta name="twitter:title" content="Http的进化"/>
 <meta name="twitter:description" content=""/>
 
 <!--[if lte IE 9]>
@@ -226,7 +226,7 @@
           <article class="post bg-white">
     
     <header class="post-header">
-      <h1 class="post-title">使用Docker实现MySql的主从</h1>
+      <h1 class="post-title">Http的进化</h1>
       
       <div class="post-meta">
         <time datetime="2019-07-04" class="post-time">
@@ -248,73 +248,135 @@
 
     
     <div class="post-content">
-      <p><img src="https://i.loli.net/2019/07/10/5d25b6d635e2592956.jpg" alt="mysql_replicate.jpg"></p>
-<h2 id="前言">前言</h2>
-<p>先说一下为什么会在docker中进行mysql的主从安装!</p>
-<p>之前一直在虚拟机或者云主机中进行环境配置,但是介于有时候网络的原因或宿主机配置不是很够的情况下去做这个就有点尴尬了.</p>
-<p>docker的好处就无需多说了,简单方便,谁用谁知道</p>
-<p>废话不多说,先来看一下环境</p>
-<p>OS:</p>
-<pre><code>2015MBP
-Docker Version:18.09.2
-MYSql:5.7.17
-</code></pre>
-<p>MySql主从复制的方式:</p>
-<pre><code>MySQL 5.6 开始主从复制有两种方式：基于日志（binlog）和 基于 GTID（全局事务标示符）。
-
-本文只涉及基于日志 binlog 的 主从配置。
-</code></pre>
-<h2 id="配置">配置</h2>
-<pre><code>docker pull mysql:5.7
-
-起master库
-docker run --name mdb1 -e MYSQL_ROOT_PASSWORD=secret -p 13307:3306 -v ~/docker/mysql_data:/var/lib/mysql -d IMAGE ID
-
-起slave库
-docker run --name sdb1 -e MYSQL_ROOT_PASSWORD=secret -p 13308:3306 -d IMAGE ID
-
-进入容器
-docker exec -it mdb1 bash
-
-修改主库配置文件
-vim /etc/mysql/my.cnf
-
-//用于标示该数据库为主库 ,从库配置文件需修改为小于该value的值
-server_id=1
-
-
-创建从数据库的用户,用于连接同步数据
-CREATE USER 'sync'@'%' IDENTIFIED BY 'sync';
-
-更新权限
-GRANT REPLICATION SLAVE ON *.* TO 'sync'@'%';	
-
-查看主库状态,记住File、Position的值，在Slaver中将用到
-show master status;
-
-进入从库容器
-docker exec -it sdb1 bash
-
-mysql -u root -p
-
-//设置主库的连接
-change master to
-master_host='主库地址',
-master_user='sync',
-master_password='sync',
-master_port=端口号,
-master_log_file='binlog.000005',//file 的值
-master_log_pos=1686;//Position的值
-
-开启同步
-start slave;
-
-
-查看状态
-show slave status;
-
-</code></pre><h2 id="后语">后语</h2>
-<p>其实配置还是很方便的,这个只是其中的简单配置,下次有时间使用DockerFile + Docker Compose 来做管理</p>
+      <p><img src="/http-squashed.png" alt="http"></p>
+<p>近期在从头梳理个人技术栈,开始位置我想一定在http这块了,如果再向前扒那就太远了.借助搜索引擎找了一圈资料感觉收获颇丰,在此进行记录一番.
+如有错误还请及时指出,避免误导大家.</p>
+<hr>
+<h3 id="http的发展历程">http的发展历程</h3>
+<p>http其实是建立在OSI七层网络协议应用层的一个网络协议,同级别的还有ssh、ftp、sftp、telnet、smtp等,通常跑在 TCP/IP 协议栈之上，依靠 IP 协议实现寻址和路由、TCP 协议实现可靠数据传输、DNS 协议实现域名查找、SSL/TLS 协议实现安全通信。此外，还有一些协议依赖于 HTTP，例如 WebSocket、HTTPDNS 等。这些协议相互交织，构成了一个协议网，而 HTTP 则处于中心地位。</p>
+<h3 id="http的进化历程">http的进化历程</h3>
+<!-- raw HTML omitted -->
+<p><strong>http/0.9</strong></p>
+<!-- raw HTML omitted -->
+<p><strong>http/1.0</strong></p>
+<!-- raw HTML omitted -->
+<ol>
+<li>引入了请求头和响应头。request:(accept:accept-encoding:accept-language等)response:(content-encoding:content-type:等)</li>
+<li>引入了响应状态码。</li>
+<li>开始支持多种数据类型。</li>
+<li>开始支持客户端通过POST方法向web服务器提交数据，支持GET、HEAD、POST方法。</li>
+<li>支持长连接（但默认还是使用短连接,具体复用时间的长短可以由服务器控制，一般在15s左右）</li>
+<li>加入缓存机制以及身份认证。</li>
+</ol>
+<!-- raw HTML omitted -->
+<p><strong>http/1.1</strong></p>
+<!-- raw HTML omitted -->
+<p>HTTP/1.1相较于HTTP/1.0协议的区别主要体现在：</p>
+<p>，并能很好地配合代理服务器工作。还支持以&quot;管道方式&quot;在同时发送多个请求，以便降低线路负载，提高传输速度。</p>
+<ol>
+<li>缓存处理,引入了实体标签，Cache-Control头。</li>
+<li>默认为长连接,keep-alive和请求的流水线(管道化pipelining)处理,在一个tcp连接上可以传输多个http请求和响应(多路复用?),减少了建立和连接的消耗和延迟</li>
+<li>范围请求功能,带宽优化及网络连接的使用,主要体现在支持文件断点续传</li>
+<li>错误通知的管理,错误状态码的新增</li>
+<li>消息在网络中的发送时,支持动态生成的内容,引入了Chunk transfer机制;服务器将数据分割成若干大小的数据块，每个数据块发送时都会附上数据块的长度，最后使用一个零长度的块来结束。这样就可以支持动态内容了。</li>
+<li>互联网地址的维护,提供了虚拟主机的功能(HOST域)</li>
+</ol>
+<p>extra:
+管道化机制必须通过永久连接完成,并且只有幂等的操作请求才可以进行管道化.有点类似于队列机制FIFO,但是如果头部请求操作对象过大时会造成管道阻塞.</p>
+<!-- raw HTML omitted -->
+<p><em>在http1.0被抱怨最多的就是连接无法复用</em></p>
+<p>连接无法复用:会导致每次请求都经历三次握手和慢启动。要知道tcp的建立都要经历三次握手和满启动,在高延迟的场景下影响较明显，慢启动则对文件类的大请求影响较大。</p>
+<p>对于http1.0的实现，在第一个请求没有收到回复之前，后续从应用层发出的请求只能排队，请求2，3，4，5只能等请求1的response回来之后才能逐个发出。网络通畅的时候性能影响不大，一旦请求1的request因为什么原因没有抵达服务器，或者response因为网络阻塞没有及时返回，影响的就是所有后续请求，问题就变得比较严重了。</p>
+<p>http/1.1对于http/1.0连接无法复用的改进方式</p>
+<ol>
+<li>基于tcp的长连接
+<ol>
+<li>缺点:基于tcp的socket网络编程技术难度相对复杂的多,需要自己指定协议</li>
+<li>优点:但是回报很大,信息交换很及时,在请求量爆发时还能减轻服务器的压力</li>
+<li>example:google protobuf|json|xml|binary|thrift</li>
+</ol>
+</li>
+<li>http long-poling (轮询)
+<ol>
+<li>缺点:数据通道单向、稳定性差</li>
+<li>优点:服务器新数据产生后无需再次建立新的tcp连接</li>
+</ol>
+</li>
+<li>http streaming(数据流长响应)
+<ol>
+<li>缺点:业务无法按照请求进行分割,一些代理服务器会等到服务器response结束后才会将结果推送到客户端,对于streaming这种长响应来说客户端会一只处于等待过程中.</li>
+<li>优点:不会产生重复的header数据</li>
+</ol>
+</li>
+<li>web socket
+<ol>
+<li>缺点:近些年才开始作为主流方案实时</li>
+<li>优点:提供双工通道</li>
+</ol>
+</li>
+</ol>
+<p><strong>http2.0</strong></p>
+<p>HTTP/2是HTTP协议自1999年HTTP 1.1发布后的首个更新，主要基于google 的SPDY协议。</p>
+<p>记录2.0之前必须要提出google的SPDY协议</p>
+<p><strong>需求:</strong></p>
+<ol>
+<li>降低延迟，客户端的单连接单请求，server的FIFO响应队列都是延迟的大头。</li>
+<li>http最初设计都是客户端发起请求，然后server响应，server无法主动push内容到客户端。</li>
+<li>压缩http header，http1.x的header越来越膨胀，cookie和user agent很容易让header的size增至1kb大小，甚至更多。而且由于http的无状态特性，header必须每次request都重复携带，很浪费流量。</li>
+</ol>
+<p><strong>基础功能:</strong></p>
+<ol>
+<li>多路复用</li>
+<li>请求优先级</li>
+<li>header压缩</li>
+</ol>
+<p><strong>高级功能:</strong></p>
+<ol>
+<li>server推送</li>
+<li>server暗示</li>
+</ol>
+<p>HTTP2.0主要改动</p>
+<!-- raw HTML omitted -->
+<ol>
+<li>新的二进制格式（Binary Format）</li>
+<li>请求的优先级</li>
+<li>服务器的推送</li>
+<li>头部压缩
+<ol>
+<li>头信息使用zip或者compress进行压缩后再发送</li>
+<li>客户端和服务器维护一张头信息表,所有字段都会存入这个表,生成一个索引号.后续的请求只需要发送一个索引号便可以高效率的进行数据的传输</li>
+</ol>
+</li>
+</ol>
+<!-- raw HTML omitted -->
+<p><em>在http/1.1中使用了pipelining(管道化机制)不过pipelining并不是救世主，它也存在不少缺陷：</em></p>
+<ol>
+<li>head of blocking 是网络信息交互的罪魁祸首,头阻塞后健康的请求会被不健康的请求影响，而且这种体验的损耗受网络环境影响，出现随机且难以监控。</li>
+<li>非幂等请求不能使用</li>
+<li>很大部分的http代理服务器不支持pipelining</li>
+<li>可能会导致新的Front of queue blocking问题</li>
+</ol>
+<blockquote>
+<p>可以参考chrome对于pipeling的<a href="https://www.chromium.org/developers/design-documents/network-stack/http-pipelining">问题描述</a></p>
+</blockquote>
+<p>在http/2.0市场占有率逐步上升的时候也有其他的言论在:</p>
+<p>“http2 是大倒退，GOOGLE搞出来的违反潮流的私货，会导致性能严重降低，最大的倒退就是把可读的文本协议变成二进制不可读，这是历史的大倒退,http json等技术为什么能成功流行很大一个因素是因为人类可读，HTTP2倒退到人类不可读绝对是反退货的设计，IT圣经&lt;黑客与画家》中早就一针见血地说过（程序写出来是给人看的,附带能在机器上运行。） 为什么BSON那些技术会失败,GOOGLE还没吸引教训，果不其然HTTP2还没开始正式使用就在搞HTTP3来擦屁股了,google用自己的技术霸权来带歪全世界也是有责任的”</p>
+<p>“FreeBSD和Varnish cache的开发者保罗-恒宁·坎瀑批评称，这个标准文件的准备过程短得不切实际，而且未基于除了SPDY之外的任何协议，以至于其他协议失去了对草案进行改进的机会。”</p>
+<p>“Kampala批评说，这个协议本身与HTTP不一致，而且还毫无必要地变得极为复杂。他还认为，这个协议违背了互联网协议的分层原则，例如说，将本属于TCP传输层的流控制(flow control)功能放入了协议中。”</p>
+<blockquote>
+<p>你我都是时代浪潮中的一员,技术本身是没有任何价值的,只有技术驱动社会的进步时才有具体的价值.</p>
+</blockquote>
+<p><strong>http3.0</strong></p>
+<p>HTTP/3基于UDP协议实现了类似于TCP的多路复用数据流、传输可靠性等功能，这套功能被称为QUIC协议。</p>
+<!-- raw HTML omitted -->
+<ol>
+<li>流量控制、传输可靠性功能:QUIC在UDP的基础上增加了一层来保证数据传输可靠性，它提供了数据包重传、拥塞控制、以及其他一些TCP中的特性。</li>
+<li>集成TLS加密功能：目前QUIC使用TLS1.3，减少了握手所花费的RTT数。</li>
+<li>多路复用：同一tcp连接上可以有多个独立的逻辑数据流，实现了数据流的单独传输，解决了TCP的队头阻塞问题。</li>
+<li>快速握手：由于基于UDP，可以实现使用0 ~ 1个RTT来建立连接。</li>
+</ol>
+<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
     </div>
 
     
@@ -334,7 +396,7 @@ show slave status;
       
       <nav class="post-nav">
         
-          <a class="prev" href="/post/http/">
+          <a class="prev" href="/post/%E4%B8%89%E5%88%86%E9%92%9F%E4%BA%86%E8%A7%A3cgi_fastgi_php-fpm/">
             
             <i class="iconfont">
               <svg  class="icon" viewBox="0 0 1024 1024" version="1.1"
@@ -344,12 +406,12 @@ show slave status;
 </svg>
 
             </i>
-            <span class="prev-text nav-default">Http的进化</span>
+            <span class="prev-text nav-default">三分钟了解CGI FastGI PHP-Fpm</span>
             <span class="prev-text nav-mobile">上一篇</span>
           </a>
         
-          <a class="next" href="/post/git%E4%B8%8Egithub%E7%9A%84%E9%82%A3%E4%BA%9B%E4%BA%8B/">
-            <span class="next-text nav-default">Git与GitHub的那些事</span>
+          <a class="next" href="/post/%E4%BD%BF%E7%94%A8docker%E5%AE%9E%E7%8E%B0mysql%E7%9A%84%E4%B8%BB%E4%BB%8E/">
+            <span class="next-text nav-default">使用Docker实现MySql的主从</span>
             <span class="prev-text nav-mobile">下一篇</span>
             
             <i class="iconfont">
