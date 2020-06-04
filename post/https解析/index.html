@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>归档 - Record the life</title>
+  <title>Https解析 - Record the life</title>
   
 
 <meta name="renderer" content="webkit" />
@@ -23,6 +23,8 @@
 <meta name="mobile-web-app-capable" content="yes">
 
 <meta name="author" content="muxin" />
+  <meta name="description" content="" />
+
 
 
 
@@ -32,8 +34,7 @@
 <meta name="generator" content="Hugo 0.70.0" />
 
 
-<link rel="canonical" href="http://mu-xin.github.io/post/" />
-<link href="%7balternate%20%7bRSS%20application/rss&#43;xml%20%20index%20alternate%20%20false%20false%20true%20false%20false%200%7d%20/post/index.xml%20http://mu-xin.github.io/post/index.xml%7d" rel="alternate" type="application/rss+xml" title="Record the life" />
+<link rel="canonical" href="http://mu-xin.github.io/post/https%E8%A7%A3%E6%9E%90/" />
 
 
 
@@ -55,14 +56,22 @@
 
 
 
-<meta property="og:title" content="Posts" />
+<meta property="og:title" content="Https解析" />
 <meta property="og:description" content="" />
-<meta property="og:type" content="website" />
-<meta property="og:url" content="http://mu-xin.github.io/post/" />
-<meta property="og:updated_time" content="2020-05-22T13:36:44+08:00" />
-<meta itemprop="name" content="Posts">
-<meta itemprop="description" content=""><meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="Posts"/>
+<meta property="og:type" content="article" />
+<meta property="og:url" content="http://mu-xin.github.io/post/https%E8%A7%A3%E6%9E%90/" />
+<meta property="article:published_time" content="2020-02-04T14:42:20+08:00" />
+<meta property="article:modified_time" content="2020-02-04T14:42:20+08:00" />
+<meta itemprop="name" content="Https解析">
+<meta itemprop="description" content="">
+<meta itemprop="datePublished" content="2020-02-04T14:42:20&#43;08:00" />
+<meta itemprop="dateModified" content="2020-02-04T14:42:20&#43;08:00" />
+<meta itemprop="wordCount" content="42">
+
+
+
+<meta itemprop="keywords" content="" /><meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Https解析"/>
 <meta name="twitter:description" content=""/>
 
 <!--[if lte IE 9]>
@@ -160,7 +169,7 @@
 
       </li>
     
-        <li class="menu-item active">
+        <li class="menu-item">
         
           
           
@@ -214,184 +223,161 @@
     <main id="main" class="main bg-llight">
       <div class="content-wrapper">
         <div id="content" class="content container">
-          
-<section id="archive" class="archive">
+          <article class="post bg-white">
     
-      <div class="collection-title">
-        <h2 class="archive-year">2018</h2>
+    <header class="post-header">
+      <h1 class="post-title">Https解析</h1>
+      
+      <div class="post-meta">
+        <time datetime="2020-02-04" class="post-time">
+          2020-02-04
+        </time>
+        
+        
+
+        
+        
+
+        
+        
       </div>
+    </header>
 
-    <div class="archive-post">
-      <time datetime="2018-10-12" class="archive-post-time">
-        2018-10-12
-      </time>
-      <span class="archive-post-title">
-        <a href="/post/%E4%B8%8D%E8%A6%81%E6%88%90%E4%B8%BA%E8%87%AA%E5%B7%B1%E8%AE%A8%E5%8E%8C%E7%9A%84%E9%82%A3%E7%A7%8D%E7%A8%8B%E5%BA%8F%E5%91%98/" class="archive-post-link">
-          不要成为自己讨厌的那种程序员
-        </a>
-      </span>
-    </div>
+    
     
 
-    <div class="archive-post">
-      <time datetime="2018-09-12" class="archive-post-time">
-        2018-09-12
-      </time>
-      <span class="archive-post-title">
-        <a href="/post/%E5%A6%82%E4%BD%95%E6%9B%B4%E5%BF%AB%E6%95%88%E7%8E%87%E7%9A%84%E5%86%99%E4%B8%9C%E8%A5%BF/" class="archive-post-link">
-          如何更快效率的写东西
-        </a>
-      </span>
+    
+    <div class="post-content">
+      <p><img src="/http-squashed.png" alt="http"></p>
+<h2 id="https的深入解析">HTTPS的深入解析</h2>
+<p>平时大家在构建个人网站的时候或者在为公司项目升级为HTTPS的时候有没有想过,其实http已经实现了信息交互的功能为什么还需要https这个东西?
+相比有一些经验的小伙伴就说了,http是明文传输的在网络环境愈渐复杂的今天一些用户的个人隐私资料是不希望被他人得到的,为了保证信息交互的安全性才发展出了https.(100昏),理解的很深刻啊!</p>
+<p>下面就掰开了揉碎了,使用白话文来说一下https.</p>
+<p>https = http+ssl+tls</p>
+<p>我们都知道,http是建立在应用层上的一种通信协议,如果直接改动http的话帝国这么多年的建设肯定毁于一旦了,那么想实现加密的功能该怎么做呢?</p>
+<p>唉!咱们二年级就知道一句话,互联网开发没有什么是一个中间键解决不了的,如果有那就用两个!</p>
+<p>开个玩笑,其实https的实现也是在http的应用层和tcp的传输层中间新增了一层交换协议,通俗的话来说就是多个一个中间人.</p>
+<p>先来阐述一下大概的知识哈:</p>
+<ol>
+<li>
+<p>http的风险
+(1)第三方可以获取通信内容
+(2)第三方可以修改通信内容
+(3)第三方可以冒充通信身份</p>
+</li>
+<li>
+<p>https的目标
+(1) <strong>所有</strong>信息都是加密传播,包括通信建立的初期的密钥的交换,第三方无法窃听
+(2)具有校验机制,如果被篡改后能立即发现
+(3)配置身份证书,防止通信方身份被冒充</p>
+</li>
+<li>
+<p>基本的运行过程</p>
+<ol>
+<li>
+<p>tcp的连接建立</p>
+<p><img src="./https/tcp_communication.png" alt="tcp-communication"></p>
+<p>可以清除的看到,tcp的三次握手过程</p>
+<p>TCP:</p>
+<ol>
+<li>client&mdash;&gt;server Seq=0</li>
+<li>server&mdash;-&gt;client Seq=0 Ack=1</li>
+<li>client&mdash;-&gt;server Seq=1 Ack=1</li>
+</ol>
+<p><img src="./https/tcp-link.jpg" alt="tcp-link"></p>
+</li>
+<li>
+<p>https的基本实现历程</p>
+<p><img src="./https/https-photo.png" alt="https"></p>
+<p>上图基本为一个大致的思路,下面就是https的思路过程</p>
+<ol>
+<li>明文传输</li>
+</ol>
+<p><img src="./https/http-base-send.jpg" alt="http-photo"></p>
+<p>账户余额都被看到了,那不等于底裤都被人扒开了么&hellip;</p>
+<ol>
+<li>对称加密</li>
+</ol>
+<p><img src="./https/http-send-data.jpg" alt="https-photo"></p>
+<p>信使在传输时也是不可靠的,有可能被打劫后被歹徒替换身份和通关文书</p>
+<ol>
+<li>非对称加密</li>
+</ol>
+<p>非对称加密的效率很低,如何保证使用对称加密而且信使不会被劫持呢? 使用第三方证明?</p>
+<p><img src="./https/https-send.jpg" alt="https-end"></p>
+<p>至此，整个握手阶段全部结束。接下来，客户端与服务器进入加密通信，就完全是使用普通的HTTP协议，只不过用&quot;会话密钥&quot;加密内容。这样既保证了安全,有兼顾了效率!</p>
+</li>
+</ol>
+</li>
+</ol>
     </div>
+
+    
     
 
-    <div class="archive-post">
-      <time datetime="2018-08-30" class="archive-post-time">
-        2018-08-30
-      </time>
-      <span class="archive-post-title">
-        <a href="/post/%E5%A5%A5%E5%8D%A1%E5%A7%86%E5%89%83%E5%88%80%E7%90%86%E8%AE%BA/" class="archive-post-link">
-          奥卡姆剃刀 (Ocham&#39;s razor)
-        </a>
-      </span>
-    </div>
+  
+  
+
+
+
+    
     
 
-    <div class="archive-post">
-      <time datetime="2018-07-10" class="archive-post-time">
-        2018-07-10
-      </time>
-      <span class="archive-post-title">
-        <a href="/post/golang%E7%9A%84%E5%AE%89%E8%A3%85/" class="archive-post-link">
-          Golang不同平台的安装
-        </a>
-      </span>
-    </div>
-    
-
-    <div class="archive-post">
-      <time datetime="2018-07-04" class="archive-post-time">
-        2018-07-04
-      </time>
-      <span class="archive-post-title">
-        <a href="/post/%E9%A9%AC%E5%A4%AA%E6%95%88%E5%BA%94/" class="archive-post-link">
-          马太效应
-        </a>
-      </span>
-    </div>
-    
-
-    <div class="archive-post">
-      <time datetime="2018-06-04" class="archive-post-time">
-        2018-06-04
-      </time>
-      <span class="archive-post-title">
-        <a href="/post/%E8%81%8C%E4%B8%9A%E7%94%9F%E6%B6%AF%E4%B8%AD%E7%9A%84%E9%82%A3%E4%BA%9B%E7%BD%91%E7%AB%99/" class="archive-post-link">
-          职业生涯中的那些网站
-        </a>
-      </span>
-    </div>
-    
-
-    <div class="archive-post">
-      <time datetime="2018-05-22" class="archive-post-time">
-        2018-05-22
-      </time>
-      <span class="archive-post-title">
-        <a href="/post/%E6%AF%8F%E5%A4%A9%E4%B8%80%E4%B8%AAlinux%E5%91%BD%E4%BB%A4%E4%B9%8B-%E6%9F%A5%E7%9C%8B%E7%B3%BB%E7%BB%9F%E7%8E%AF%E5%A2%83/" class="archive-post-link">
-          每天一个Linux命令之--查看系统环境
-        </a>
-      </span>
-    </div>
-    
-
-    <div class="archive-post">
-      <time datetime="2018-05-04" class="archive-post-time">
-        2018-05-04
-      </time>
-      <span class="archive-post-title">
-        <a href="/post/mysql8.0%E7%9A%84%E9%82%A3%E4%BA%9B%E6%96%B0%E7%89%B9%E6%80%A7/" class="archive-post-link">
-          MySql8.0的一些新特性
-        </a>
-      </span>
-    </div>
-    
-
-    <div class="archive-post">
-      <time datetime="2018-03-01" class="archive-post-time">
-        2018-03-01
-      </time>
-      <span class="archive-post-title">
-        <a href="/post/redis%E7%9A%84%E5%AE%89%E8%A3%85%E4%B8%8E%E4%BD%BF%E7%94%A8/" class="archive-post-link">
-          Redis的安装与使用
-        </a>
-      </span>
-    </div>
-    
-
-    <div class="archive-post">
-      <time datetime="2018-02-21" class="archive-post-time">
-        2018-02-21
-      </time>
-      <span class="archive-post-title">
-        <a href="/post/apache%E4%B8%8B%E7%9A%84ab%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/" class="archive-post-link">
-          Apache下的ab测试工具
-        </a>
-      </span>
-    </div></section>
-
-
-
-
-
-
-  
-  
-  
-
-  
-  
-
-  
-  
-
-  
-  
-
-  
-  
-  <nav class="pagination">
-    <ul>
+    <footer class="post-footer">
       
-      <li >
-        <a href="/post/">1</a>
-      </li>
+
       
-      <li >
-        <a href="/post/page/2/">2</a>
-      </li>
-      
-      <li >
-        <a href="/post/page/3/">3</a>
-      </li>
-      
-      <li  class="active" >
-        <a href="/post/page/4/">4</a>
-      </li>
-      
-      <li >
-        <a href="/post/page/5/">5</a>
-      </li>
-      
-    </ul>
-  </nav>
+      <nav class="post-nav">
+        
+          <a class="prev" href="/post/dockerfile%E7%BC%96%E5%86%99%E6%97%B6%E6%9B%B4%E6%8D%A2apt%E4%B8%BA%E5%9B%BD%E5%86%85%E6%BA%90/">
+            
+            <i class="iconfont">
+              <svg  class="icon" viewBox="0 0 1024 1024" version="1.1"
+  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+  width="18" height="18">
+  <path d="M691.908486 949.511495l75.369571-89.491197c10.963703-12.998035 10.285251-32.864502-1.499144-44.378743L479.499795 515.267417 757.434875 204.940602c11.338233-12.190647 11.035334-32.285311-0.638543-44.850487l-80.46666-86.564541c-11.680017-12.583596-30.356378-12.893658-41.662889-0.716314L257.233596 494.235404c-11.332093 12.183484-11.041474 32.266891 0.657986 44.844348l80.46666 86.564541c1.772366 1.910513 3.706415 3.533476 5.750981 4.877077l306.620399 321.703933C662.505829 963.726242 680.945807 962.528973 691.908486 949.511495z"></path>
+</svg>
+
+            </i>
+            <span class="prev-text nav-default">DockerFile编写时更换apt为国内源</span>
+            <span class="prev-text nav-mobile">上一篇</span>
+          </a>
+        
+          <a class="next" href="/post/docker%E5%91%BD%E4%BB%A4%E8%A7%A3%E6%9E%90/">
+            <span class="next-text nav-default">Docker命令解析</span>
+            <span class="prev-text nav-mobile">下一篇</span>
+            
+            <i class="iconfont">
+              <svg class="icon" viewBox="0 0 1024 1024" version="1.1"
+  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+  width="18" height="18">
+  <path d="M332.091514 74.487481l-75.369571 89.491197c-10.963703 12.998035-10.285251 32.864502 1.499144 44.378743l286.278095 300.375162L266.565125 819.058374c-11.338233 12.190647-11.035334 32.285311 0.638543 44.850487l80.46666 86.564541c11.680017 12.583596 30.356378 12.893658 41.662889 0.716314l377.434212-421.426145c11.332093-12.183484 11.041474-32.266891-0.657986-44.844348l-80.46666-86.564541c-1.772366-1.910513-3.706415-3.533476-5.750981-4.877077L373.270379 71.774697C361.493148 60.273758 343.054193 61.470003 332.091514 74.487481z"></path>
+</svg>
+
+            </i>
+          </a>
+      </nav>
+    </footer>
+  </article>
 
   
   
 
+  
+  
 
+  
 
+  
+  
 
+  
+
+  
+
+  
+
+    
 
         </div>
       </div>
